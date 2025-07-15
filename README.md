@@ -31,21 +31,9 @@ This repository contains scripts and workflows for processing modelling outputs 
 
 ## 3. ITI Compilation
 
-### Part 1
-
-* Initial ITI compilation for the entire Area of Interest (AOI).
-* Script developed with Liam’s assistance.
-* Output:
-
-  ```
-  S:/1845/2/03_MappingAnalysisData/02_Data/06_Hexagon_Production/02_Process/csv_output/A_5/ITI_compile_A_5.csv
-  ```
-
-### Part 2
 
 * Prep multiprocessing files and complete ITI compilation for the full AOI.
 * Exclude `admin_fields` from ITI inputs.
-* Update NSR and FMU using other AOI data.
 * Outputs:
 
   ```
@@ -65,7 +53,7 @@ This repository contains scripts and workflows for processing modelling outputs 
     S:/1845/2/03_MappingAnalysisData/02_Data/06_Hexagon_Production/02_Process/csv_output/A_5/A_5_Hex_predicted_output.csv
     S:/1845/2/03_MappingAnalysisData/02_Data/06_Hexagon_Production/02_Process/csv_output/A_5/A_5_treeList_predicted_output.csv
     ```
-* **Skip**: 3003\_d & 3003\_e (handled via AWS).
+*  3003\_d & 3003\_e are handled with AWS, the code introduction can be found here: https://forsiteconsultants.sharepoint.com/:o:/s/RMT--Biometrics/Em_Nf7VGdJNDr-z4YbZzLfkBzVivd_FbJNQKSKxBEWUFGg?e=Ndndcv.
 
 ## 5. Crown Closure (CC) Calculation
 
@@ -85,33 +73,16 @@ This repository contains scripts and workflows for processing modelling outputs 
 
 3. **3008**
 
-   * Split the merged hexagon dataset by FMU if multiple FMUs overlap.
+   * Split the merged hexagon dataset by FMU for easier use by the client.
 
 4. **3010**
 
    * QC mapping: review image output quality and optimize for faster rendering.
 
-![QC Mapping Example](https://github.com/user-attachments/assets/2dcf24d1-d490-4522-b82f-fa56a5be1cb6)
-
 ---
 
-## Usage
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-org/hexagon-production.git
-   cd hexagon-production
-   ```
-
-2. Configure paths and dependencies in `config.yaml`.
-
-3. Run the desired scripts in sequence (e.g., `3002_add_attributes.py`, `1003_prep_and_iti.py`, etc.).
-
-4. Verify outputs in `02_Process/csv_output/A_5/` and perform QC.
-
----
 
 ## Contact
 
-For questions or support, contact Jimmy Ke ([jimmy.ke@example.com](mailto:jimmy.ke@example.com)).
+For questions or support, contact Anita Li and Jimmy Ke.
