@@ -1,0 +1,81 @@
+# hex config file
+# project folder
+root_folder: 'S:\1845\2\03_MappingAnalysisData\02_Data\06_Hexagon_Production'
+csv_folder: 'S:\1845\2\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\csv_output'
+work_gdb: 'S:\1845\2\03_MappingAnalysisData\02_Data\06_Hexagon_Production\working.gdb'
+area: 'AREA_B'
+spatial_reference: 'NAD 1983 CSRS UTM Zone 11N'
+
+# hexagon data
+hex_orig_folder: 'S:\1845\2\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\hex_orig'
+hex_output_folder: 'S:\1845\2\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\hex_output'
+hex_gdb: 'AMI_AREA_B_Hexagon.gdb'
+hex_fc: 'AMI_AREA_B_Hexagon'
+hex_id: 'HEX_ID'
+
+
+# ITI related
+iti_gdb: 'S:\1845\2\03_MappingAnalysisData\02_Data\09_QC_GDB\area_b.sde'
+iti_fields: ['HEX_ID', 'HEIGHT', 'GROSS_VOL', 'GROSS_MVOL', 'NETMERCHVO', 'BASAL_AREA', 'SPECIES', 'DBH', 'LOC_DENSTY', 'DWB_FACTOR']
+
+
+# modeling related
+hex_y_variables: [
+  'PLOT_CON_GVOL_PRED_HA', 'PLOT_DEC_GVOL_PRED_HA', 'PLOT_CON_GMVOL_PRED_HA', 'PLOT_DEC_GMVOL_PRED_HA', 
+  'PLOT_CON_SPH_GT_5m', 'PLOT_DEC_SPH_GT_5m', 
+  'PLOT_CON_BA_HA', 'PLOT_DEC_BA_HA', 'PLOT_CON_MBA_HA', 'PLOT_DEC_MBA_HA', 'PLOT_CON_STEM_PER_M3', 'PLOT_DEC_STEM_PER_M3'
+  ]
+# 'PLOT_CON_MERCH_SPH', 'PLOT_DEC_MERCH_SPH',  
+
+
+treelist_y_variables: [
+  'PLOT_BPH', 'PLOT_BPH_con', 'PLOT_BPH_dec', 'PLOT_BPHL', 'PLOT_HL', 'PLOT_M3D_con', 'PLOT_M3D_dec', 'PLOT_M3DL', 
+  'PLOT_M3H_con', 'PLOT_M3H_dec', 'PLOT_M3HL', 'PLOT_MBDBH_con', 'PLOT_MBDBH_dec', 'PLOT_MBDBHL', 'PLOT_mHt3_con', 'PLOT_mHt3_dec', 
+  'PLOT_mHt3L', 'PLOT_MTDBH_con', 'PLOT_MTDBH_dec', 'PLOT_MTDBHL', 'PLOT_MTHT_con', 'PLOT_MTHT_dec', 'PLOT_MTHTL', 'PLOT_QMD', 
+  'PLOT_QMD_con', 'PLOT_QMD_dec', 'PLOT_QMDL', 'PLOT_QMHT_con', 'PLOT_QMHT_dec', 'PLOT_QMHTL', 'PLOT_S2DBH_con', 'PLOT_S2DBH_dec', 
+  'PLOT_S2DBHL', 'PLOT_S2HT_con', 'PLOT_S2HT_dec', 'PLOT_S2HTL', 'PLOT_SPH', 'PLOT_SPH_con', 'PLOT_SPH_dec', 'PLOT_SPHL'
+  ]
+
+plot_chars_folder: 'S:\1845\2\03_MappingAnalysisData\02_Data\06_Hexagon_Production\01_PLOT_CHARS_ORIG\HexCloudChars'
+boruta_output_folder: 'S:\1845\2\03_MappingAnalysisData\02_Data\05_Modelling\06_HexModels\Boruta\output'
+model_output_folder: 'S:\1845\2\03_MappingAnalysisData\02_Data\05_Modelling\06_HexModels\model_output'
+
+
+# other variables
+# ALL species variables
+# BC VERSION
+spp: ['ac', 'at', 'ep', 'bl', 'pl', 'sb', 'sx', 'dp', 'sn']
+con_sp: ['bl', 'pl', 'sb', 'sx', 'dp', 'sn']
+dec_sp: ['ac', 'at', 'ep']
+dead_all: ['dp', 'sn', dx]
+dead_oth: ['sn']
+dead_pl: 'dp'
+
+# AB VERSION
+spp: ['aw', 'bw', 'dp', 'fb', 'lt', 'pb', 'pl', 'sb', 'sn', 'sw']
+con_sp: ['fb', 'lt', 'pl', 'sb', 'sw', 'dp']
+dec_sp: ['aw', 'bw', 'pb', 'sn']
+dead_all: ['dp', 'sn']
+dead_pl: ['dp']
+dead_other: ['sn']
+
+
+# # dead species vol suffix
+# # replace dead species code with BC NET_175 VOL format
+# dead_spp_suffix: {'ds': 'DS', 'dp': 'DP', 'dx': 'DS', 'df': 'DF', 'db': 'DB', 'sn': 'DX'}
+
+# min threhold for modeling adjustment
+minTrees: 9
+merchMinTrees: 5
+minTopHt: 10
+
+
+# SET MODELING MAX
+maxSPH: 8000
+maxMSPH: 2000
+
+maxBA: 150
+maxMBA: 125
+
+maxGMVOL: 1200
+maxNMVOL: 1000
