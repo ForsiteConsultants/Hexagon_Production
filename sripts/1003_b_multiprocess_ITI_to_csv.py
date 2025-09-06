@@ -11,7 +11,7 @@
 #       ITI trees gdb - organized into processing groups and grids
 #       hexagon feature class  
 #  
-from trees_to_csv_sp_split_ami import *
+from shared.trees_to_csv_sp_split_ami import *
 import os
 import time
 import warnings

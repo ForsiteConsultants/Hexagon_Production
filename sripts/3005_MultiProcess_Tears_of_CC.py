@@ -1,4 +1,4 @@
-from trees_to_csv_sp_split_ami import *
+from shared.trees_to_csv_sp_split_ami import *
 import arcpy
 from arcpy.sa import *
 import os

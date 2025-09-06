@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import math, os, shutil
 import time
-from trees_to_csv_sp_split_ami import *
+from shared.trees_to_csv_sp_split_ami import *
 from multiprocessing import Pool
 
 #Adding fields to the hexagon feature classes to prepare for summarized data

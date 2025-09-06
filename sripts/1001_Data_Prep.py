@@ -1,6 +1,6 @@
 import arcpy
 import os
-from trees_to_csv_sp_split_ami import *
+from shared.trees_to_csv_sp_split_ami import *
 
 config = read_yaml_config()
 hex_root = config['root_folder']

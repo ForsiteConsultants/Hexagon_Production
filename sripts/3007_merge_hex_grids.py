@@ -12,7 +12,7 @@ import pandas as pd
 import time
 from numpy.lib.type_check import mintypecode
 import numpy as np
-from trees_to_csv_sp_split_ami import *
+from shared.trees_to_csv_sp_split_ami import *
 
 
 

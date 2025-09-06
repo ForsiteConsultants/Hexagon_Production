@@ -49,7 +49,7 @@ from sklearn.linear_model import BayesianRidge
 from sklearn.kernel_ridge import KernelRidge
 from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import Ridge
-from functions_pkgs import *
+from shared.functions_pkgs import *
 
 def scatter_plts(data, plt_title, x_column, y_column, x_title, y_title, axis_max,
                  add_rmse = False, rmse_ = 1, rmse_p=1):

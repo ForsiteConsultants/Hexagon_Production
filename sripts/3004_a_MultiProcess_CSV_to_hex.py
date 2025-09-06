@@ -12,7 +12,7 @@ from numpy.lib.type_check import mintypecode
 import pandas as pd
 import numpy as np
 import math
-from trees_to_csv_sp_split_ami import *
+from shared.trees_to_csv_sp_split_ami import *
 from multiprocessing import Pool
 
 
