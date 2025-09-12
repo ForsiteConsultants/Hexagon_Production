@@ -1,6 +1,9 @@
 import arcpy, os
 import time
 from multiprocessing import Pool
+from shared.logger_utils import get_logger
+
+logger = get_logger('3010_MultiProcess_Mapping_QA')
 
 #######################
 ## note olga: for canfor GP i ran it as 3 distinct areas
@@ -11,42 +14,38 @@ from multiprocessing import Pool
 #this piece of code loops throught the dictionary of colours and then activates the field, and applies the colour scale
 
 def create_QC_maps(area, col, aprx_file, field):
-    aprx = arcpy.mp.ArcGISProject(aprx_file)
-    #here you use the list, to get the MAP that you want to edit
-    m = aprx.listMaps(area)[0]
-    #this is the LAYOUT
-    lyt = aprx.listLayouts('Area_'+ area)[0]
-    # this will get the layer you want from your map (m)
-    lyr = m.listLayers(area + '_hexagon')[0]
-    # print(lyr.name)
-    print(field)
-    #This is all sybmology stuff. you'll want to change this section to activate a layer
-    sym = lyr.symbology
-    sym.renderer.field = field
-    
-    sym.renderer.colorRamp = aprx.listColorRamps(col)[0]
-    lyr.symbology = sym
-
-    legend = lyt.listElements("LEGEND_ELEMENT", "Legend")[0]
-    legend.addItem(lyr)
-
     try:
-        os.makedirs(os.path.join(output_root, area, "jpeg"))
-    except:
-        pass
-    lyt.exportToJPEG(os.path.join(output_root, area, "jpeg", field+".jpg"), resolution=200)
-    
-    del aprx
+        logger.info(f"Processing field: {field}")
+        aprx = arcpy.mp.ArcGISProject(aprx_file)
+        m = aprx.listMaps(area)[0]
+        lyt = aprx.listLayouts('Area_'+ area)[0]
+        lyr = m.listLayers(area + '_hexagon_merged')[0]
+        sym = lyr.symbology
+        sym.renderer.field = field
+        sym.renderer.colorRamp = aprx.listColorRamps(col)[0]
+        lyr.symbology = sym
+        legend = lyt.listElements("LEGEND_ELEMENT", "Legend")[0]
+        legend.addItem(lyr)
+        try:
+            os.makedirs(os.path.join(output_root, area, "jpeg"))
+        except Exception as e:
+            logger.warning(f"Could not create jpeg folder: {e}")
+        lyt.exportToJPEG(os.path.join(output_root, area, "jpeg", field+".jpg"), resolution=100)
+        logger.info(f"Exported JPEG for field: {field}")
+        del aprx
+    except Exception as e:
+        logger.error(f"Error processing field {field}: {e}", exc_info=True)
 
 Start = time.time()
 
-area = 'AMI_AREA_B'
+area = 'AMI_AREA_G'
 col = 'Voxel Sequential'
 field = 'TOTAL_BA_HA'
-aprx_file = r"S:\1845\2\03_MappingAnalysisData\01_ArcMapProjects\AreaB_ITI_QC_FINAL_numeric_template.aprx"
-output_root = r'S:\1845\2\03_MappingAnalysisData\04_Plotfiles\QC_HEX'
+aprx_file = r"S:\1845\5\03_MappingAnalysisData\01_ArcMapProjects\AreaG_ITI_QC_FINAL_numeric_template.aprx"
+output_root = r'S:\1845\5\03_MappingAnalysisData\04_Plotfiles\QC_HEX'
 
-field_list = ['CON_DWB_FACTOR', 'DEC_DWB_FACTOR', 'TOP_HEIGHT', 'MAX_HT_ITI',  
+field_list = ['Crown_Closure', 'CON_AV_DIAM', 'DEC_AV_DIAM', 'CON_LOREY_HT', 'DEC_LOREY_HT',
+              'CON_DWB_FACTOR', 'DEC_DWB_FACTOR', 'TOP_HEIGHT', 'MAX_HT_ITI',  
           'DEC_NET_VOL_TREE', 'CON_STEM_PER_M3', 'DEC_STEM_PER_M3', 'CON_NET_VOL_TREE', 
           'TOTAL_SPH_GT_5m', 'CON_SPH_GT_5m', 'DEC_SPH_GT_5m', 
           'TOTAL_MERCH_SPH', 'CON_MERCH_SPH', 'DEC_MERCH_SPH', 
@@ -59,17 +58,22 @@ field_list = ['CON_DWB_FACTOR', 'DEC_DWB_FACTOR', 'TOP_HEIGHT', 'MAX_HT_ITI',
           'aw_pct','bw_pct','pb_pct','fb_pct','pl_pct','lt_pct',
           'sw_pct','sb_pct','dp_pct', 'sn_pct']
 
-field_list = ['Crown_Closure', 'CON_AV_DIAM', 'DEC_AV_DIAM', 'CON_LOREY_HT', 'DEC_LOREY_HT']
+# field_list = []
+
+# field_list = ['CON_BA_HA']
 
 args = [(area, col, aprx_file, field) for field in field_list]
 
+
 if __name__ == '__main__':
-    with Pool(processes=2) as pool:
-        pool.starmap(create_QC_maps, args)
+    try:
+        with Pool(processes=2) as pool:
+            pool.starmap(create_QC_maps, args)
+        logger.info("Multi-processing completed successfully.")
+    except Exception as e:
+        logger.error(f"Multi-processing failed: {e}", exc_info=True)
 
-# create_QC_maps(area, col, aprx_file, field)
-End = time.time()
-
-print(round((End - Start)/60, 2), ' mins to finish')
+    End = time.time()
+    logger.info(f"{round((End - Start)/60, 2)} mins to finish")
 
 

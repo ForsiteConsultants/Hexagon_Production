@@ -13,7 +13,9 @@ import time
 from numpy.lib.type_check import mintypecode
 import numpy as np
 from shared.trees_to_csv_sp_split_ami import *
+from shared.logger_utils import get_logger
 
+logger = get_logger('3007_merge_hex_grids')
 
 
 config = read_yaml_config()
@@ -40,13 +42,19 @@ grid_list = sorted([x for x in grid_list if x not in [0, '0']])
 Start = time.time()
 arcpy.env.workspace = os.path.join(hex_orig_folder, hex_gdb)
 arcpy.env.overwriteOutput = True
-print('Started')
-hex_grid_folder = os.path.join(hex_output_folder, 'GRID')
-fc_grid = [os.path.join(hex_grid_folder, 'HEX_' + grid + '.gdb', grid) for grid in grid_list]
-arcpy.Merge_management(fc_grid, hex_output)
-arcpy.AlterField_management(hex_output, 'HEXID', 'HEX_ID', 'HEX_ID')
+logger.info('Started merging hex grids')
+try:
+	hex_grid_folder = os.path.join(hex_output_folder, 'GRID')
+	fc_grid = [os.path.join(hex_grid_folder, 'HEX_' + grid + '.gdb', grid) for grid in grid_list]
+	logger.info(f"Merging {len(fc_grid)} grids into {hex_output}")
+	arcpy.Merge_management(fc_grid, hex_output)
+	logger.info(f"Merge completed: {hex_output}")
+	arcpy.AlterField_management(hex_output, 'HEXID', 'HEX_ID', 'HEX_ID')
+	logger.info(f"Altered field HEXID to HEX_ID in {hex_output}")
+except Exception as e:
+	logger.error(f"Error during merge or field alteration: {e}", exc_info=True)
 End = time.time()
 
-print(f"it takes {round((End - Start)/60, 2)} minutes to finish the script")
+logger.info(f"it takes {round((End - Start)/60, 2)} minutes to finish the script")
 #####################################
 

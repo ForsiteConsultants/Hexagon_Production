@@ -28,6 +28,7 @@ area = 'AREA_G'
 ########################################
 ### Data Prep for multi processing
 
+
 def multi_add_fields(hex_shp_folder, grid, output_folder, field_list, fields_dict):
     """
     hex_shp_folder: directory for original shapefile
@@ -36,37 +37,38 @@ def multi_add_fields(hex_shp_folder, grid, output_folder, field_list, fields_dic
     field_list: list of field names to add
     fields_dict: dictionary with field properties (like FieldType and FieldLength)
     """
-    shp = os.path.join(hex_shp_folder, 'GRID_' + grid, 'GRID_' + grid + '.shp')
-    gdb_path = os.path.join(output_folder, 'HEX_' + grid + '.gdb')
-    
-    # If the file GDB doesn't exist, create it and copy the shapefile into it.
-    if not os.path.exists(gdb_path):
-        arcpy.CreateFileGDB_management(output_folder, 'HEX_' + grid + '.gdb')
-        out_fc = os.path.join(gdb_path, grid)
-        arcpy.CopyFeatures_management(shp, out_fc)
-    else:
-        # If the GDB exists, assume the feature class exists inside it.
-        out_fc = os.path.join(gdb_path, grid)
-    
-    print('Start adding fields for grid:', grid)
-    
-    # Get a list of current field names (converted to lowercase for case-insensitive matching)
-    existing_fields = [f.name.lower() for f in arcpy.ListFields(out_fc)]
-    
-    for field in field_list:
-        # Skip certain predefined fields
-        if field in ['HEX_ID', 'EXPTGRIDID', 'PRODGRIDID']:
-            continue
-        
-        # Check if the field already exists; if so, skip adding it.
-        if field.lower() in existing_fields:
-            print(f"Field {field} already exists in grid {grid}, skipping.")
+    try:
+        shp = os.path.join(hex_shp_folder, 'GRID_' + grid, 'GRID_' + grid + '.shp')
+        gdb_path = os.path.join(output_folder, 'HEX_' + grid + '.gdb')
+        # If the file GDB doesn't exist, create it and copy the shapefile into it.
+        if not os.path.exists(gdb_path):
+            arcpy.CreateFileGDB_management(output_folder, 'HEX_' + grid + '.gdb')
+            out_fc = os.path.join(gdb_path, grid)
+            arcpy.CopyFeatures_management(shp, out_fc)
+            logger.info(f"Created GDB and copied features for grid {grid}")
         else:
-            field_props = fields_dict[field]
-            arcpy.AddField_management(out_fc, field, field_props['FieldType'], 
-                                      field_precision="", field_scale="",
-                                      field_length=field_props['FieldLength'])
-            print(f"Field {field} added for grid {grid}.")
+            # If the GDB exists, assume the feature class exists inside it.
+            out_fc = os.path.join(gdb_path, grid)
+            logger.info(f"GDB already exists for grid {grid}")
+        logger.info(f"Start adding fields for grid {grid}")
+        # Get a list of current field names (converted to lowercase for case-insensitive matching)
+        existing_fields = [f.name.lower() for f in arcpy.ListFields(out_fc)]
+        for field in field_list:
+            # Skip certain predefined fields
+            if field in ['HEX_ID', 'EXPTGRIDID', 'PRODGRIDID']:
+                continue
+            # Check if the field already exists; if so, skip adding it.
+            if field.lower() in existing_fields:
+                logger.info(f"Field {field} already exists in grid {grid}, skipping.")
+            else:
+                field_props = fields_dict[field]
+                arcpy.AddField_management(out_fc, field, field_props['FieldType'], 
+                                          field_precision="", field_scale="",
+                                          field_length=field_props['FieldLength'])
+                logger.info(f"Field {field} added for grid {grid}.")
+    except Exception as e:
+        logger.error(f"Failed processing grid {grid}: {e}", exc_info=True)
+        print(f"Failed processing grid {grid}: {e}")
 
 
 
@@ -78,14 +80,29 @@ output_folder = r'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production
 # get the list of grids to process
 multiprocess = r'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\csv_output\MultiProcessing_files_input_' + area + '.csv'
 
-grid_list = pd.read_csv(multiprocess).GRID.unique()
-# grid_list = grid_list[0:2]
-grid_list.sort()
+
+try:
+    grid_list = pd.read_csv(multiprocess).GRID.unique()
+    # grid_list = grid_list[0:2]
+    grid_list.sort()
+    logger.info(f"Loaded and sorted grid_list: {grid_list}")
+except Exception as e:
+    logger.error(f"Failed to load or sort grid list from {multiprocess}: {e}", exc_info=True)
+    print(f"Failed to load or sort grid list from {multiprocess}: {e}")
+    grid_list = []
 
 # read in field template
-fields = pd.read_excel(os.path.join(hex_root, 'Hex_Inventory_Proposed_Database_Deliverable.xlsx'), sheet_name='FieldListTemplate')
-fields_dict = fields.set_index('FieldName').to_dict(orient='index')
-field_list = fields.FieldName.tolist()
+
+try:
+    fields = pd.read_excel(os.path.join(hex_root, 'Hex_Inventory_Proposed_Database_Deliverable.xlsx'), sheet_name='FieldListTemplate')
+    fields_dict = fields.set_index('FieldName').to_dict(orient='index')
+    field_list = fields.FieldName.tolist()
+    logger.info(f"Loaded field template and field list: {field_list}")
+except Exception as e:
+    logger.error(f"Failed to load field template: {e}", exc_info=True)
+    print(f"Failed to load field template: {e}")
+    fields_dict = {}
+    field_list = []
 
 
 ##########################
@@ -99,11 +116,18 @@ field_list = fields.FieldName.tolist()
 args = [(hex_shp_folder, grid, output_folder, field_list, fields_dict) for grid in grid_list]
 cores = 8
 
+
 if __name__ == '__main__':
-    with Pool(processes=cores) as pool:
-        pool.starmap(multi_add_fields, args)
+    try:
+        with Pool(processes=cores) as pool:
+            pool.starmap(multi_add_fields, args)
+        logger.info("Multi-processing completed successfully.")
+    except Exception as e:
+        logger.error(f"Multi-processing failed: {e}", exc_info=True)
+        print(f"Multi-processing failed: {e}")
 
-End = time.time()
-
-print(round((End - Start)/60, 2), ' mins to finish')
+    End = time.time()
+    duration = round((End - Start)/60, 2)
+    logger.info(f"Total time to finish: {duration} mins")
+    print(f"{duration} mins to finish")
     

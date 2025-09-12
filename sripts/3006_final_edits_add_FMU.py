@@ -4,6 +4,9 @@ from shared.trees_to_csv_sp_split_ami import *
 import time
 import pandas as pd
 from multiprocessing import Pool
+from shared.logger_utils import get_logger
+
+logger = get_logger('3006_final_edits_add_FMU')
 
 config = read_yaml_config()
 csv_folder = config['csv_folder']

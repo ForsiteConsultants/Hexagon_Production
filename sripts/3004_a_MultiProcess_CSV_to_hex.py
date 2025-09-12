@@ -13,13 +13,13 @@ import pandas as pd
 import numpy as np
 import math
 from shared.trees_to_csv_sp_split_ami import *
-from multiprocessing import Pool
+from multiprocessing import Pool, Manager
 from shared.logger_utils import get_logger
 
 logger = get_logger('3004_a_MultiProcess_CSV_to_hex')
 
 
-def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid):
+def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, failed_grids=None):
     spMinTrees = 5
     TOP_HT_THRESH = 7  # top ht must be taller than or equal to this to be adjusted
     plot_multi = 25
@@ -47,33 +47,39 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid):
         fl.append(f.name)
         
     # Read in the adjustment outputs file
+
     try:
         hex_adj = pd.read_csv(os.path.join(csv_folder, grid, grid + "_Hex_predicted_output_v5.csv"), low_memory=False).set_index(hexid).fillna(0)
         iti_comp = pd.read_csv(os.path.join(compiled_grids_folder, grid, 'ITI_compile_' + grid + '.csv'), usecols=[hexid, 'MTPM_con', 'MTPM_dec']).set_index(hexid)
-    except:
-        print(grid, ' does not have ITI')
-        #raise
+    except Exception as e:
+        logger.error(f"{grid} does not have ITI: {e}", exc_info=True)
+        print(f"{grid} does not have ITI: {e}")
+        if failed_grids is not None:
+            failed_grids.append(grid)
+        return
 
-    print(">>> Processing " + grid )
+    logger.info(f"Processing {grid}")
+    print(f">>> Processing {grid}")
     try:
         arcpy.AlterField_management(hex_fc, 'HEX_ID', 'HEXID', 'HEXID')
+        logger.info(f"Field altered for {grid}")
         print('field altered')
-    except:
-        pass
+    except Exception as e:
+        logger.warning(f"Could not alter field for {grid}: {e}")
     # this secton only updates con/dec, and ignore dead stuff
+
     try:
         for t in ['CON', 'DEC']:
             try:
                 hex_gen = pd.read_csv(os.path.join(compiled_grids_folder, grid, "OUTPUT_SUM_" + t + '_' + grid + ".csv"), usecols = gen_list, low_memory=False).fillna(0)
-            except:
-                # if No species specific trees in that grid
-                print(grid, ' does not have ', t, ' ITI')
+            except Exception as e:
+                logger.warning(f"{grid} does not have {t} ITI: {e}")
+                print(f"{grid} does not have {t} ITI: {e}")
                 continue
 
             # combine original ITI summaries and predicted values into one file
             hex_gen = hex_gen.set_index(hexid).join(hex_adj).join(iti_comp).fillna(0)
             hex_gen = hex_gen.to_dict(orient='index')
-
             with arcpy.da.UpdateCursor(hex_fc, fl) as cursor:
                 for row in cursor:
                     hex_id = row[fdic[hexid]]
@@ -209,9 +215,12 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid):
             hex_all = pd.read_csv(os.path.join(compiled_grids_folder, grid, "OUTPUT_SUM_TOTAL_" + grid + ".csv")).set_index(hexid)
             iti_compile = pd.read_csv(os.path.join(compiled_grids_folder, grid, "ITI_compile_" + grid + ".csv"), usecols=[hexid, 'BPHD', 'SPHD', 'GVPHD']).set_index(hexid)
             hex_admin = pd.read_csv(os.path.join(compiled_grids_folder, grid, grid + "_admin_fields.csv")).set_index(hexid)
-        except:
-            print(grid, ' does not have ITI')
-            #raise
+        except Exception as e:
+            logger.warning(f"{grid} does not have ITI (whole species): {e}")
+            print(f"{grid} does not have ITI (whole species): {e}")
+            if failed_grids is not None:
+                failed_grids.append(grid)
+            return
             
             
         hex_all = hex_all.join(iti_compile).to_dict(orient='index')
@@ -364,11 +373,14 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid):
         
         df = pd.DataFrame(dead_list, columns = [hexid, 'DEAD_BA',  'DEAD_SPH', 'DEAD_VOL', 'SPH_con', 'SPH_dec', 'BPH_con',  'BPH_dec'])
         df.to_csv(os.path.join(csv_folder, grid, grid + '_DEAD_OUTPUT_v5.csv'), index=False)
-        print(f'{grid} processing complete')
-    except Exception as e:
 
-        print(grid, e)
-        
+        print(f'{grid} processing complete')
+        logger.info(f'{grid} processing complete')
+    except Exception as e:
+        logger.error(f"{grid} failed: {e}", exc_info=True)
+        print(f"{grid} failed: {e}")
+        if failed_grids is not None:
+            failed_grids.append(grid)
 
 # ####################################################
 config = read_yaml_config()
@@ -387,26 +399,39 @@ df = pd.read_csv(os.path.join(csv_folder, 'MultiProcessing_files_input_AREA_G.cs
 grid_list = df.GRID.tolist()
 grid_list.sort()
 
-
 # ##################
 # ### test function
+# Start = time.time()
+# grid = 'AB29'
+# csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid)
+# End = time.time()
+
+# print(round((End - Start)/60, 2), ' mins to finish')
+
+
+### Multiprocessing
 Start = time.time()
-grid = 'AB29'
-csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid)
 
+if __name__ == '__main__':
+    manager = Manager()
+    failed_grids = manager.list()
+    args = [(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, failed_grids) for grid in grid_list]
+    cores = 10
+    try:
+        with Pool(processes=cores) as pool:
+            pool.starmap(csv_to_hex, args)
+        logger.info("Multi-processing completed successfully.")
+    except Exception as e:
+        logger.error(f"Multi-processing failed: {e}", exc_info=True)
+        print(f"Multi-processing failed: {e}")
 
-# ###################3
-# #### run 
-# args = [(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid) for grid in grid_list]
-# cores = 10
-
-# if __name__ == '__main__':
-#     with Pool(processes=cores) as pool:
-#         pool.starmap(csv_to_hex, args)
-
-End = time.time()
-
-print(round((End - Start)/60, 2), ' mins to finish')
-
-
-
+    End = time.time()
+    duration = round((End - Start)/60, 2)
+    logger.info(f"Total time to finish: {duration} mins")
+    print(f"{duration} mins to finish")
+    if len(failed_grids) > 0:
+        print("\nFailed grids:")
+        for grid in set(failed_grids):
+            print(grid)
+    else:
+        print("\nAll grids processed successfully.")
