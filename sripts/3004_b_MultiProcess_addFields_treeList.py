@@ -3,6 +3,9 @@ import pandas as pd
 import time
 from shared.trees_to_csv_sp_split_ami import *
 from multiprocessing import Pool
+from shared.logger_utils import get_logger
+
+logger = get_logger('3004_b_MultiProcess_addFields_treeList')
 
 #Adding fields to the hexagon feature classes to prepare for summarized data
 Start = time.time()

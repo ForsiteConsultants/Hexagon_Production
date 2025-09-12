@@ -14,9 +14,12 @@ import numpy as np
 import math
 from shared.trees_to_csv_sp_split_ami import *
 from multiprocessing import Pool
+from shared.logger_utils import get_logger
+
+logger = get_logger('3004_a_MultiProcess_CSV_to_hex')
 
 
-def csv_to_hex(hex_grid_folder, grid, csv_folder, hexid):
+def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid):
     spMinTrees = 5
     TOP_HT_THRESH = 7  # top ht must be taller than or equal to this to be adjusted
     plot_multi = 25
@@ -45,10 +48,11 @@ def csv_to_hex(hex_grid_folder, grid, csv_folder, hexid):
         
     # Read in the adjustment outputs file
     try:
-        hex_adj = pd.read_csv(os.path.join(csv_folder, grid, grid + "_Hex_predicted_output.csv"), low_memory=False).set_index(hexid).fillna(0)
-        iti_comp = pd.read_csv(os.path.join(csv_folder, grid, 'ITI_compile_' + grid + '.csv'), usecols=[hexid, 'MTPM_con', 'MTPM_dec']).set_index(hexid)
+        hex_adj = pd.read_csv(os.path.join(csv_folder, grid, grid + "_Hex_predicted_output_v5.csv"), low_memory=False).set_index(hexid).fillna(0)
+        iti_comp = pd.read_csv(os.path.join(compiled_grids_folder, grid, 'ITI_compile_' + grid + '.csv'), usecols=[hexid, 'MTPM_con', 'MTPM_dec']).set_index(hexid)
     except:
         print(grid, ' does not have ITI')
+        #raise
 
     print(">>> Processing " + grid )
     try:
@@ -60,7 +64,7 @@ def csv_to_hex(hex_grid_folder, grid, csv_folder, hexid):
     try:
         for t in ['CON', 'DEC']:
             try:
-                hex_gen = pd.read_csv(os.path.join(csv_folder, grid, "OUTPUT_SUM_" + t + '_' + grid + ".csv"), usecols = gen_list, low_memory=False).fillna(0)
+                hex_gen = pd.read_csv(os.path.join(compiled_grids_folder, grid, "OUTPUT_SUM_" + t + '_' + grid + ".csv"), usecols = gen_list, low_memory=False).fillna(0)
             except:
                 # if No species specific trees in that grid
                 print(grid, ' does not have ', t, ' ITI')
@@ -73,6 +77,7 @@ def csv_to_hex(hex_grid_folder, grid, csv_folder, hexid):
             with arcpy.da.UpdateCursor(hex_fc, fl) as cursor:
                 for row in cursor:
                     hex_id = row[fdic[hexid]]
+                    # current_hex_id = row[fdic[hexid]]
                     # if there are any trees in CON or DEC group
                     if hex_id in hex_gen and hex_gen[hex_id]['TOTAL_TREES'] > 0:
                         # Dan added this because we still get partial hexagons with less than 4 tree points, this sets minimum at 4 actual trees in a hex sample area
@@ -80,6 +85,7 @@ def csv_to_hex(hex_grid_folder, grid, csv_folder, hexid):
                         # 1. Total trees > 9
                         # 2. Con/dec trees > 5
                         # 3. Con/dec top height > 10m
+                        
                         if hex_gen[hex_id]['TOTAL_TREES'] > spMinTrees and hex_gen[hex_id]['TOP_HEIGHT'] >= TOP_HT_THRESH and round(hex_gen[hex_id]['PRED_' + t + '_SPH_GT_5m']/plot_multi) > spMinTrees:
                             gv = min(hex_gen[hex_id]['PRED_' + t + '_GVOL_PRED_HA'], 850)
                             tsp = min(hex_gen[hex_id]['PRED_' + t + '_SPH_GT_5m'], 8000)
@@ -118,6 +124,7 @@ def csv_to_hex(hex_grid_folder, grid, csv_folder, hexid):
                                 else:
                                     tpm = 0
                         else:
+
                             gv = min(hex_gen[hex_id]['GROSS_VOL_HA'], 850)
                             gmv = min(hex_gen[hex_id]['GROSS_MVOL_HA'], 800)
                             nmv = min(hex_gen[hex_id]['NETMVOL_HA'], 750)
@@ -199,11 +206,13 @@ def csv_to_hex(hex_grid_folder, grid, csv_folder, hexid):
 
         # print(">>> Processing " + grid +" " + ' WHOLE SPECIES')
         try:
-            hex_all = pd.read_csv(os.path.join(csv_folder, grid, "OUTPUT_SUM_TOTAL_" + grid + ".csv")).set_index(hexid)
-            iti_compile = pd.read_csv(os.path.join(csv_folder, grid, "ITI_compile_" + grid + ".csv"), usecols=[hexid, 'BPHD', 'SPHD', 'GVPHD']).set_index(hexid)
-            hex_admin = pd.read_csv(os.path.join(csv_folder, grid, grid + "_admin_fields.csv")).set_index(hexid)
+            hex_all = pd.read_csv(os.path.join(compiled_grids_folder, grid, "OUTPUT_SUM_TOTAL_" + grid + ".csv")).set_index(hexid)
+            iti_compile = pd.read_csv(os.path.join(compiled_grids_folder, grid, "ITI_compile_" + grid + ".csv"), usecols=[hexid, 'BPHD', 'SPHD', 'GVPHD']).set_index(hexid)
+            hex_admin = pd.read_csv(os.path.join(compiled_grids_folder, grid, grid + "_admin_fields.csv")).set_index(hexid)
         except:
             print(grid, ' does not have ITI')
+            #raise
+            
             
         hex_all = hex_all.join(iti_compile).to_dict(orient='index')
         hex_admin = hex_admin.to_dict(orient='index')
@@ -211,11 +220,16 @@ def csv_to_hex(hex_grid_folder, grid, csv_folder, hexid):
         with arcpy.da.UpdateCursor(hex_fc, fl) as cursor:
             for row in cursor:
                 hex_id = row[fdic[hexid]]
+                sph_con = 0
+                sph_dec = 0
+                ba_con = 0
+                ba_dec = 0
+
                 for field in att_list:
                     if row[fdic[field]] is None:
                         row[fdic[field]] = 0
                 if hex_id in hex_admin:
-                    row[fdic['FMU']] = hex_admin[hex_id]['FMU']
+                    row[fdic['FMU']] = row[fdic['AOI_AREA']]
                     row[fdic['NSRCODE']] = hex_admin[hex_id]['NSRCODE']
 
                 if hex_id in hex_all and hex_all[hex_id]["TOTAL_TREES"] > 0:            
@@ -223,19 +237,25 @@ def csv_to_hex(hex_grid_folder, grid, csv_folder, hexid):
                     m_s = ['', 0]
                     pp = 0
                     for sp in spp:
-                        row[fdic[sp+"_pct"]] = 0
-                        if sp+suffix in hex_all[hex_id]:
-                            p = hex_all[hex_id][sp+suffix]*100
-                            if p > 0 and p < 1:
-                                p = 1
-                            p = int(round(p, 0))
-                            row[fdic[sp+"_pct"]] = p
-                            if m_s[1] < p:
-                                m_s[0] = sp
-                                m_s[1] = p
-                            pp += p
+                        if sp+"_pct" in fl:
+                            row[fdic[sp+"_pct"]] = 0
+                            if sp+suffix in hex_all[hex_id]:
+                                p = hex_all[hex_id][sp+suffix]*100
+                                if p > 0 and p < 1:
+                                    p = 1
+                                p = int(round(p, 0))
+                                row[fdic[sp+"_pct"]] = p
+                                if m_s[1] < p:
+                                    m_s[0] = sp
+                                    m_s[1] = p
+                                pp += p
+                        else:
+                            print(f"check {grid} does not have {sp}")
                     if pp != 100:
-                        row[fdic[m_s[0]+'_pct']] += 100 - pp
+                        try:
+                            row[fdic[m_s[0]+'_pct']] += 100 - pp
+                        except:
+                            print(hex_id, m_s[0]+'_pct', m_s, pp)
                     row[fdic['LEADING_SPP']] = m_s[0]
 
                     # adjust total metrics to add in dead stuff
@@ -255,7 +275,13 @@ def csv_to_hex(hex_grid_folder, grid, csv_folder, hexid):
                         dead_ba = 0
                         dead_sph = 0
                         dead_vol = 0
-                    dead_item = [hex_id, dead_ba, dead_sph, dead_vol]
+                    
+                    sph_con = row[fdic['CON_SPH_GT_5m']]
+                    sph_dec = row[fdic['DEC_SPH_GT_5m']]
+                    ba_con = row[fdic['CON_BA_HA']]
+                    ba_dec = row[fdic['DEC_BA_HA']]
+
+                    dead_item = [hex_id, dead_ba, dead_sph, dead_vol, sph_con, sph_dec, ba_con, ba_dec]
                     dead_list.append(dead_item)
 
                     # Get Metrics for all trees  
@@ -277,12 +303,13 @@ def csv_to_hex(hex_grid_folder, grid, csv_folder, hexid):
                     decsum = 0
                     deadsum = 0
                     for sp in spp:
-                        if sp in consp:
-                            consum += row[fdic[sp+"_pct"]]
-                        elif sp in decsp:
-                            decsum += row[fdic[sp+"_pct"]]
-                        else:
-                            deadsum += row[fdic[sp+"_pct"]]
+                        if sp+"_pct" in fl:
+                            if sp in consp:
+                                consum += row[fdic[sp+"_pct"]]
+                            elif sp in decsp:
+                                decsum += row[fdic[sp+"_pct"]]
+                            else:
+                                deadsum += row[fdic[sp+"_pct"]]
                     
                     if deadsum > 98:
                         row[fdic['STAND_TYPE']] = 'DEAD'
@@ -325,15 +352,23 @@ def csv_to_hex(hex_grid_folder, grid, csv_folder, hexid):
                     
                     row[fdic['LEADING_SPP']] = ''
                     for sp in spp:
-                        row[fdic[sp+"_pct"]] = 0
+                        if sp+"_pct" in fl:
+                            row[fdic[sp+"_pct"]] = 0
                     row[fdic['TOP_HEIGHT']] = 0
                     row[fdic['MAX_HT_ITI']] = 0
                     row[fdic['Con_u_Dec']] = ''
-                cursor.updateRow(row)
-        df = pd.DataFrame(dead_list, columns = [hexid, 'DEAD_BA',  'DEAD_SPH', 'DEAD_VOL'])
-        df.to_csv(os.path.join(csv_folder, grid, grid + '_DEAD_OUTPUT.csv'), index=False)
+                try:
+                    cursor.updateRow(row)
+                except Exception as e:
+                    print(hex_id, grid, e)
+        
+        df = pd.DataFrame(dead_list, columns = [hexid, 'DEAD_BA',  'DEAD_SPH', 'DEAD_VOL', 'SPH_con', 'SPH_dec', 'BPH_con',  'BPH_dec'])
+        df.to_csv(os.path.join(csv_folder, grid, grid + '_DEAD_OUTPUT_v5.csv'), index=False)
+        print(f'{grid} processing complete')
     except Exception as e:
-        print(grid, hex_id, e)
+
+        print(grid, e)
+        
 
 # ####################################################
 config = read_yaml_config()
@@ -341,29 +376,33 @@ hex_root = config['root_folder']
 hex_output_folder = config['hex_output_folder']
 hexid = 'HEXID'
 csv_folder = config['csv_folder']
+compiled_grids_folder = config['compiled_grids_folder']
 
 # ######################
 # #######################
 
 # grids to be processed:
-df = pd.read_csv(os.path.join(csv_folder, 'MultiProcessing_files_input_AREA_B.csv'))
+hex_grid_folder = os.path.join(hex_output_folder, 'GRID')
+df = pd.read_csv(os.path.join(csv_folder, 'MultiProcessing_files_input_AREA_G.csv'))
 grid_list = df.GRID.tolist()
 grid_list.sort()
-# grid_list = ['AA_12', 'AA_13']
-grid = 'AA_2'
 
-# nsr_dict = {'CM': '1', 'DMW': '2', 'LF': '11', 'UF': '10', 'SA': '8', 'A': '7'}
 
-hex_grid_folder = os.path.join(hex_output_folder, 'GRID')
-args = [(hex_grid_folder, grid, csv_folder, hexid) for grid in grid_list]
-
+# ##################
+# ### test function
 Start = time.time()
+grid = 'AB29'
+csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid)
 
-if __name__ == '__main__':
-    with Pool(processes=6) as pool:
-        pool.starmap(csv_to_hex, args)
 
-# csv_to_hex(hex_grid_folder, grid, csv_folder, hexid)
+# ###################3
+# #### run 
+# args = [(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid) for grid in grid_list]
+# cores = 10
+
+# if __name__ == '__main__':
+#     with Pool(processes=cores) as pool:
+#         pool.starmap(csv_to_hex, args)
 
 End = time.time()
 

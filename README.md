@@ -18,7 +18,7 @@ This repository contains scripts and workflows for processing modelling outputs 
 
 2. **3004\_a**
 
-   * Populate hexagon attributes using outputs from **1003\_b** and **3003\_c** (no treelist output needed).
+   * Populate hexagon attributes using outputs from **ITI complilation** and **3003\_c** (no treelist output needed).
    * Output:
 
      ```

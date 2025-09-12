@@ -46,13 +46,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 import numpy as np
 
-def root_mean_squared_error(y_true, y_pred):
-    """Return RMSE, equivalent to sklearn ≥1.4 helper."""
-    return mean_squared_error(y_true, y_pred, squared=False)
-
-def rmse(yreal, yhat):
-	return sqrt(mean_squared_error(yreal, yhat))
-
 from sklearn.preprocessing import StandardScaler, MaxAbsScaler, RobustScaler
 
 # other
@@ -83,6 +76,16 @@ from multiprocessing import Pool
 import warnings
 warnings.filterwarnings("ignore")
 import yaml
+from shared.logger_utils import get_logger
+
+logger = get_logger('3003_c_MultiProcess_modeling_to_csv')
+
+def root_mean_squared_error(y_true, y_pred):
+    """Return RMSE, equivalent to sklearn ≥1.4 helper."""
+    return mean_squared_error(y_true, y_pred, squared=False)
+
+def rmse(yreal, yhat):
+	return sqrt(mean_squared_error(yreal, yhat))
 
 def read_yaml_config():
 	"""

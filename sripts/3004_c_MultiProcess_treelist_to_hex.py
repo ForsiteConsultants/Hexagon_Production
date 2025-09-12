@@ -3,6 +3,9 @@ import pandas as pd
 import time
 from shared.trees_to_csv_sp_split_ami import *
 from multiprocessing import Pool
+from shared.logger_utils import get_logger
+
+logger = get_logger('3004_c_MultiProcess_treelist_to_hex')
 
 
 def treelist_to_hex(hex_grid_folder, grid, csv_folder, hexid):
@@ -26,7 +29,6 @@ def treelist_to_hex(hex_grid_folder, grid, csv_folder, hexid):
             try:
                 aws_folder = os.path.join(csv_folder, 'aws_output')
                 tl_input = pd.read_csv(os.path.join(aws_folder, grid + '_' + t.lower() + '_treelist_summary.csv'))
-                # tl_input = pd.read_csv(os.path.join(csv_folder, grid, grid + '_' + t.lower() + '_treelist_summary.csv'))
                 tl_sum_sph = tl_input.groupby(hexid)[['count']].sum()
                 tl_sum_sph.columns = ['SPH_LIVE']
                 tl_sum_sph *= 25
@@ -37,7 +39,9 @@ def treelist_to_hex(hex_grid_folder, grid, csv_folder, hexid):
             except:
                 # if No species specific trees in that grid
                 print(grid, ' does not have ', t, ' ITI')
-                return
+                raise
+                #return
+            
             with arcpy.da.UpdateCursor(hex_fc, fl) as cursor:
                 for row in cursor:
                     hex_id = row[fdic[hexid]]
@@ -201,16 +205,22 @@ hex_output = os.path.join(hex_output_folder, hex_gdb, hex_fc)
 hex_grid_folder = os.path.join(hex_output_folder, 'GRID')
 
 # grids to be processes
-df = pd.read_csv(os.path.join(csv_folder, 'MultiProcessing_files_input_AREA_B.csv'))
+df = pd.read_csv(os.path.join(csv_folder, 'MultiProcessing_files_input_AREA_G.csv'))
 grid_list = df.GRID.tolist()
 grid_list.sort()
-grid = 'AF_20'
+# grid = 'A24'
 
+# ##################
+# # test function
+# grid = 'A16'
 # treelist_to_hex(hex_grid_folder, grid, csv_folder, hexid)
 
+#################33
+## multi processing
 args = [(hex_grid_folder, grid, csv_folder, hexid) for grid in grid_list]
+cores = 10
 if __name__ == '__main__':
-    with Pool(processes=6) as pool:
+    with Pool(processes=cores) as pool:
         pool.starmap(treelist_to_hex, args)
 
 End = time.time()
