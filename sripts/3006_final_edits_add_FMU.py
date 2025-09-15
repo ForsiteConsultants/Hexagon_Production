@@ -21,31 +21,31 @@ fmu_fc = r'S:\1845\Client_Admin\Project_Wide_Data\AOI_ABCDEFGH.gdb\AOI_G'
 ######################
 #####################
 # # PART 1
-# arcpy.env.workspace = work_gdb
-# arcpy.env.overwriteOutput = True
+arcpy.env.workspace = work_gdb
+arcpy.env.overwriteOutput = True
 
 
-# # cleanup old intermediates
-# for name in ('nsr_AreaG','fmu_AreaG','hex_nsr','hex_fmu'):
-#     if arcpy.Exists(name):
-#         arcpy.Delete_management(name)
+# cleanup old intermediates
+for name in ('nsr_AreaG','fmu_AreaG','hex_nsr','hex_fmu'):
+    if arcpy.Exists(name):
+        arcpy.Delete_management(name)
 
-# # dissolve inputs
-# arcpy.Dissolve_management(fmu_fc, 'fmu_AreaG', ['FMU'], multi_part=False)
+# dissolve inputs
+arcpy.Dissolve_management(fmu_fc, 'fmu_AreaG', ['FMU'], multi_part=False)
 
-# # intersect each with the hexagon
-# arcpy.PairwiseIntersect_analysis(['fmu_AreaG', hex_orig], 'hex_fmu')
+# intersect each with the hexagon
+arcpy.PairwiseIntersect_analysis(['fmu_AreaG', hex_orig], 'hex_fmu')
 
-# # helper to summarize one field
-# def summarize(field_name):
-#     tbl      = f'hex_{field_name.lower()}'
-#     df       = feature_class_to_pandas_data_frame(tbl, ['HEXID', field_name])
-#     df_clean = df[(df.HEXID!=0) & (df[field_name]!=0)]
-#     summary  = df_clean.groupby('HEXID')[[field_name]].first()
-#     summary.to_csv(os.path.join(csv_folder, f'HEX_{field_name}.csv'))
-#     print(f'wrote HEX_{field_name}.csv')
+# helper to summarize one field
+def summarize(field_name):
+    tbl      = f'hex_{field_name.lower()}'
+    df       = feature_class_to_pandas_data_frame(tbl, ['HEXID', field_name])
+    df_clean = df[(df.HEXID!=0) & (df[field_name]!=0)]
+    summary  = df_clean.groupby('HEXID')[[field_name]].first()
+    summary.to_csv(os.path.join(csv_folder, f'HEX_{field_name}.csv'))
+    logger.info(f'wrote HEX_{field_name}.csv')
 
-# summarize('FMU')
+summarize('FMU')
 
 # ##########################
 # ##########################
@@ -59,7 +59,7 @@ df_dict = pd.read_csv(admin_info).set_index('HEXID').to_dict(orient='index')
 
 def add_info_to_hex(hex_grid_folder, grid, df_dict):
     fc = os.path.join(hex_grid_folder, 'HEX_' + grid + '.gdb', grid)
-    print('processing grid', grid)
+    logger.info(f"Processing grid: {grid}")
     fields = ['HEXID', 'FMU', 'Crown_Closure', 'TOP_HEIGHT', 'AOI_AREA']
     try:
         with arcpy.da.UpdateCursor(fc, fields) as cursor:
@@ -80,9 +80,9 @@ def add_info_to_hex(hex_grid_folder, grid, df_dict):
 
                 # write the changes
                 cursor.updateRow(row)
-
+        logger.info(f"Finished grid: {grid}")
     except Exception as e:
-        print(f"Error processing {grid}: {e}")
+        logger.error(f"Error processing {grid}: {e}", exc_info=True)
 
 
 #######
@@ -112,4 +112,4 @@ if __name__ == '__main__':
 
         
 End = time.time()
-print ('\n----Process finished---- \n\nProcessing time (s): ', End - Start, '\n')
+logger.info(f"it takes {round((End - Start)/60, 2)} minutes to finish the script")

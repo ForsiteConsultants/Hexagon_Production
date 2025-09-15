@@ -22,14 +22,15 @@ work_gdb = r'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production\work
 arcpy.env.workspace = work_gdb
 arcpy.env.overwriteOutput = True
 
-# arcpy.Dissolve_management(nsr, 'nsr_AreaG', ['NSRCODE'], multi_part=False)
-# print('finish dissolve and start intersect')
-# arcpy.PairwiseIntersect_analysis(['nsr_AreaG', hex_orig], 'hex_nsr')
-# print('finish intersect with NSR')
-# df = feature_class_to_pandas_data_frame('hex_nsr', ['HEXID', 'NSRCODE'])
-# df_sum = df[(~df['HEXID'].isin([0, '0']))&(~df['NSRCODE'].isin([0, '0']))].groupby('HEXID')[['NSRCODE']].first()
-# print(df_sum.head())
-# df_sum.to_csv(os.path.join(csv_folder, 'HEX_NSR.csv'))
+
+arcpy.Dissolve_management(nsr, 'nsr_AreaG', ['NSRCODE'], multi_part=False)
+logger.info('Finished dissolve, starting intersect')
+arcpy.PairwiseIntersect_analysis(['nsr_AreaG', hex_orig], 'hex_nsr')
+logger.info('Finished intersect with NSR')
+df = feature_class_to_pandas_data_frame('hex_nsr', ['HEXID', 'NSRCODE'])
+df_sum = df[(~df['HEXID'].isin([0, '0']))&(~df['NSRCODE'].isin([0, '0']))].groupby('HEXID')[['NSRCODE']].first()
+logger.info(f"NSR summary head:\n{df_sum.head()}")
+df_sum.to_csv(os.path.join(csv_folder, 'HEX_NSR.csv'))
 ##########################
 ##########################
 
@@ -42,7 +43,7 @@ df_dict = pd.read_csv(admin_info).set_index('HEXID').to_dict(orient='index')
 
 def add_info_to_hex(hex_grid_folder, grid, df_dict=None):
     fc = os.path.join(hex_grid_folder, 'HEX_' + grid + '.gdb', grid)
-    print('processing grid ', grid)
+    logger.info(f'Processing grid {grid}')
     try:
         with arcpy.da.UpdateCursor(fc, ['HEXID', 'NSRCODE', 'FMU', 'Crown_Closure', 'TOP_HEIGHT', 'AOI_AREA']) as cursor:
             for row in cursor:
@@ -55,8 +56,9 @@ def add_info_to_hex(hex_grid_folder, grid, df_dict=None):
                     row[1] = df_dict[hexid]['NSRCODE']
                 row[2] = row[5]
                 cursor.updateRow(row)
+        logger.info(f'Finished grid {grid}')
     except Exception as e:
-        print(grid, e)
+        logger.error(f'Error processing grid {grid}: {e}', exc_info=True)
 
 #######
 config = read_yaml_config()
@@ -81,4 +83,4 @@ if __name__ == '__main__':
         pool.starmap(add_info_to_hex, args)
 
 End = time.time()
-print ('\n----Process finished---- \n\nProcessing time (s): ', End - Start, '\n')
+logger.info(f'----Process finished---- Processing time (s): {End - Start}')
