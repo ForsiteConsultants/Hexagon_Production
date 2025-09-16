@@ -27,23 +27,23 @@ def multi_add_fields_treelist(output_folder, grid):
     field_list: fields need to be added
     """
     out_fc = os.path.join(output_folder, 'HEX_' + grid + '.gdb', grid)
-    
-    field_names = [f.name for f in arcpy.ListFields(out_fc)]
-
-    # Check for presence
-    if 'CON_HT_5_6' in field_names:
-        print(f"{grid} Field created")
-    else:
-        print('start adding fields ', grid)
-        for sp_type in ['CON', 'DEC']:
-            arcpy.AddField_management(out_fc, sp_type + '_HT_'+str(5)+"_"+str(6)+"_COUNT", "SHORT")
-            arcpy.AddField_management(out_fc, sp_type + '_HT_'+str(5)+"_"+str(6)+"_DBH", 'FLOAT')
-            arcpy.AddField_management(out_fc, sp_type + '_HT_'+str(5)+"_"+str(6)+"_SP", 'TEXT', field_length=30)
-
-            for i in range(6, 50, 2):
-                arcpy.AddField_management(out_fc, sp_type + '_HT_'+str(i)+"_"+str(i+2)+"_COUNT", "SHORT")
-                arcpy.AddField_management(out_fc, sp_type + '_HT_'+str(i)+"_"+str(i+2)+"_DBH", 'FLOAT')
-                arcpy.AddField_management(out_fc, sp_type + '_HT_'+str(i)+"_"+str(i+2)+"_SP", 'TEXT', field_length=30)
+    try:
+        field_names = [f.name for f in arcpy.ListFields(out_fc)]
+        if 'CON_HT_5_6' in field_names:
+            logger.info(f"{grid} Field created")
+        else:
+            logger.info(f'Start adding fields {grid}')
+            for sp_type in ['CON', 'DEC']:
+                arcpy.AddField_management(out_fc, sp_type + '_HT_'+str(5)+"_"+str(6)+"_COUNT", "SHORT")
+                arcpy.AddField_management(out_fc, sp_type + '_HT_'+str(5)+"_"+str(6)+"_DBH", 'FLOAT')
+                arcpy.AddField_management(out_fc, sp_type + '_HT_'+str(5)+"_"+str(6)+"_SP", 'TEXT', field_length=30)
+                for i in range(6, 50, 2):
+                    arcpy.AddField_management(out_fc, sp_type + '_HT_'+str(i)+"_"+str(i+2)+"_COUNT", "SHORT")
+                    arcpy.AddField_management(out_fc, sp_type + '_HT_'+str(i)+"_"+str(i+2)+"_DBH", 'FLOAT')
+                    arcpy.AddField_management(out_fc, sp_type + '_HT_'+str(i)+"_"+str(i+2)+"_SP", 'TEXT', field_length=30)
+            logger.info(f"Finished adding fields for {grid}")
+    except Exception as e:
+        logger.error(f"Error processing {grid}: {e}", exc_info=True)
 
 
 ##############################################
@@ -73,6 +73,5 @@ if __name__ == '__main__':
     with Pool(processes=cores) as pool:
         pool.starmap(multi_add_fields_treelist, args)
 End = time.time()
-
-print(f"it takes {round((End - Start)/60, 2)} mins to finish")
+logger.info(f"it takes {round((End - Start)/60, 2)} mins to finish")
 
