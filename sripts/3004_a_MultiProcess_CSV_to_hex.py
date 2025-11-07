@@ -402,11 +402,14 @@ grid_list.sort()
 # ##################
 # ### test function
 # Start = time.time()
-# grid = 'AB29'
-# csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid)
-# End = time.time()
+# if __name__ == '__main__':
+#     manager = Manager()
+#     failed_grids = manager.list()
+#     grid = 'AB29'
+#     csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, failed_grids)
+#     End = time.time()
 
-# print(round((End - Start)/60, 2), ' mins to finish')
+#     print(round((End - Start)/60, 2), ' mins to finish')
 
 
 ### Multiprocessing
