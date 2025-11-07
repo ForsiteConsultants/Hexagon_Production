@@ -245,8 +245,8 @@ def hex_modeling_output(grid, compiled_grids_folder, csv_folder, plot_chars_fold
             out_dir = os.path.join(csv_folder, grid)
             if not os.path.exists(out_dir):
                 os.makedirs(out_dir)
-            df_final.to_csv(os.path.join(out_dir, grid + '_' + source + '_predicted_output.csv'))
-            logger.info(f"Wrote CSV for grid {grid} source {source} to {os.path.join(out_dir, grid + '_' + source + '_predicted_output_v5.csv')}")
+            df_final.to_csv(os.path.join(out_dir, grid + '_' + source + '_predicted_output_v6.csv'))
+            logger.info(f"Wrote CSV for grid {grid} source {source} to {os.path.join(out_dir, grid + '_' + source + '_predicted_output_v6.csv')}")
             print(f"Wrote CSV for grid {grid} source {source}")
         except Exception as e:
             logger.error(f"Failed to write CSV for grid {grid} source {source}: {e}", exc_info=True)
@@ -272,8 +272,11 @@ except Exception as e:
 
 ########################
 ##### test function
-# grid = 'A16'
-# hex_modeling_output(grid, compiled_grids_folder, csv_folder, plot_chars_folder)
+# if __name__ == '__main__':
+#     manager = Manager()
+#     failed_grids = manager.list()
+#     grid = 'A16'
+#     hex_modeling_output(grid, compiled_grids_folder, csv_folder, plot_chars_folder, failed_grids)
 
 
 ######################
