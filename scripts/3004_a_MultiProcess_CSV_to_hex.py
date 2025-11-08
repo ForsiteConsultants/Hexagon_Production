@@ -12,11 +12,21 @@ from numpy.lib.type_check import mintypecode
 import pandas as pd
 import numpy as np
 import math
-from shared.trees_to_csv_sp_split_ami import *
+import yaml
+#from shared.trees_to_csv_sp_split_ami import *
 from multiprocessing import Pool, Manager
 from shared.logger_utils import get_logger
 
 logger = get_logger('3004_a_MultiProcess_CSV_to_hex')
+
+def read_yaml_config():
+	"""
+	Read yaml config and return dictionary of items
+	"""
+	yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\config_hex_G.yml'
+	with open(yml_file, 'r') as file:
+		config = yaml.safe_load(file)
+		return config
 
 
 def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, failed_grids=None):
@@ -49,7 +59,7 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
     # Read in the adjustment outputs file
 
     try:
-        hex_adj = pd.read_csv(os.path.join(csv_folder, grid, grid + "_Hex_predicted_output_v5.csv"), low_memory=False).set_index(hexid).fillna(0)
+        hex_adj = pd.read_csv(os.path.join(csv_folder, grid, grid + "_Hex_predicted_output_v6.csv"), low_memory=False).set_index(hexid).fillna(0)
         iti_comp = pd.read_csv(os.path.join(compiled_grids_folder, grid, 'ITI_compile_' + grid + '.csv'), usecols=[hexid, 'MTPM_con', 'MTPM_dec']).set_index(hexid)
     except Exception as e:
         logger.error(f"{grid} does not have ITI: {e}", exc_info=True)
@@ -58,11 +68,15 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
         return
 
     logger.info(f">>> Processing {grid}")
-    try:
-        arcpy.AlterField_management(hex_fc, 'HEX_ID', 'HEXID', 'HEXID')
-        logger.info(f"Field altered for {grid}")
-    except Exception as e:
-        logger.warning(f"Could not alter field for {grid}: {e}")
+
+    if 'HEX_ID' in fl:
+        try:
+            arcpy.AlterField_management(hex_fc, 'HEX_ID', 'HEXID', 'HEXID')
+            logger.info(f"Field altered for {grid}")
+        except Exception as e:
+            logger.warning(f"Could not alter field for {grid}: {e}")
+    else:
+        logger.info(f"'HEX_ID' field not found in {grid}, skipping alter.")
     # this secton only updates con/dec, and ignore dead stuff
 
     try:
@@ -367,7 +381,7 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
                     logger.error(f"Error updating row for hex_id {hex_id}, grid {grid}: {e}")
         
         df = pd.DataFrame(dead_list, columns = [hexid, 'DEAD_BA',  'DEAD_SPH', 'DEAD_VOL', 'SPH_con', 'SPH_dec', 'BPH_con',  'BPH_dec'])
-        df.to_csv(os.path.join(csv_folder, grid, grid + '_DEAD_OUTPUT_v5.csv'), index=False)
+        df.to_csv(os.path.join(csv_folder, grid, grid + '_DEAD_OUTPUT_v6.csv'), index=False)
 
         logger.info(f'{grid} processing complete')
     except Exception as e:
