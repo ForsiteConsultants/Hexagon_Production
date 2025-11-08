@@ -68,7 +68,6 @@ def multi_add_fields(hex_shp_folder, grid, output_folder, field_list, fields_dic
                 logger.info(f"Field {field} added for grid {grid}.")
     except Exception as e:
         logger.error(f"Failed processing grid {grid}: {e}", exc_info=True)
-        print(f"Failed processing grid {grid}: {e}")
 
 
 
@@ -88,7 +87,6 @@ try:
     logger.info(f"Loaded and sorted grid_list: {grid_list}")
 except Exception as e:
     logger.error(f"Failed to load or sort grid list from {multiprocess}: {e}", exc_info=True)
-    print(f"Failed to load or sort grid list from {multiprocess}: {e}")
     grid_list = []
 
 # read in field template
@@ -100,7 +98,6 @@ try:
     logger.info(f"Loaded field template and field list: {field_list}")
 except Exception as e:
     logger.error(f"Failed to load field template: {e}", exc_info=True)
-    print(f"Failed to load field template: {e}")
     fields_dict = {}
     field_list = []
 
@@ -124,10 +121,8 @@ if __name__ == '__main__':
         logger.info("Multi-processing completed successfully.")
     except Exception as e:
         logger.error(f"Multi-processing failed: {e}", exc_info=True)
-        print(f"Multi-processing failed: {e}")
 
     End = time.time()
     duration = round((End - Start)/60, 2)
     logger.info(f"Total time to finish: {duration} mins")
-    print(f"{duration} mins to finish")
     

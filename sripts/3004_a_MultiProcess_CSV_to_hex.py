@@ -53,17 +53,14 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
         iti_comp = pd.read_csv(os.path.join(compiled_grids_folder, grid, 'ITI_compile_' + grid + '.csv'), usecols=[hexid, 'MTPM_con', 'MTPM_dec']).set_index(hexid)
     except Exception as e:
         logger.error(f"{grid} does not have ITI: {e}", exc_info=True)
-        print(f"{grid} does not have ITI: {e}")
         if failed_grids is not None:
             failed_grids.append(grid)
         return
 
-    logger.info(f"Processing {grid}")
-    print(f">>> Processing {grid}")
+    logger.info(f">>> Processing {grid}")
     try:
         arcpy.AlterField_management(hex_fc, 'HEX_ID', 'HEXID', 'HEXID')
         logger.info(f"Field altered for {grid}")
-        print('field altered')
     except Exception as e:
         logger.warning(f"Could not alter field for {grid}: {e}")
     # this secton only updates con/dec, and ignore dead stuff
@@ -74,7 +71,6 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
                 hex_gen = pd.read_csv(os.path.join(compiled_grids_folder, grid, "OUTPUT_SUM_" + t + '_' + grid + ".csv"), usecols = gen_list, low_memory=False).fillna(0)
             except Exception as e:
                 logger.warning(f"{grid} does not have {t} ITI: {e}")
-                print(f"{grid} does not have {t} ITI: {e}")
                 continue
 
             # combine original ITI summaries and predicted values into one file
@@ -217,7 +213,6 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
             hex_admin = pd.read_csv(os.path.join(compiled_grids_folder, grid, grid + "_admin_fields.csv")).set_index(hexid)
         except Exception as e:
             logger.warning(f"{grid} does not have ITI (whole species): {e}")
-            print(f"{grid} does not have ITI (whole species): {e}")
             if failed_grids is not None:
                 failed_grids.append(grid)
             return
@@ -259,12 +254,12 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
                                     m_s[1] = p
                                 pp += p
                         else:
-                            print(f"check {grid} does not have {sp}")
+                            logger.warning(f"check {grid} does not have {sp}")
                     if pp != 100:
                         try:
                             row[fdic[m_s[0]+'_pct']] += 100 - pp
                         except:
-                            print(hex_id, m_s[0]+'_pct', m_s, pp)
+                            logger.warning(f"Failed to adjust {hex_id}, {m_s[0]+'_pct'}, {m_s}, {pp}")
                     row[fdic['LEADING_SPP']] = m_s[0]
 
                     # adjust total metrics to add in dead stuff
@@ -334,7 +329,7 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
                         elif consum >= 50:
                             row[fdic['STAND_TYPE']] = 'CD'
                         else:
-                            print('nostand', decsum, consum, decsum, hex_id)
+                            logger.warning(f'nostand {decsum} {consum} {deadsum} {hex_id}')
 
                     row[fdic['TOP_HEIGHT']] = round(hex_all[hex_id]['TOP_HEIGHT'], 2)
                     row[fdic['MAX_HT_ITI']] = round(hex_all[hex_id]['MaxHt'], 2)
@@ -369,16 +364,14 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
                 try:
                     cursor.updateRow(row)
                 except Exception as e:
-                    print(hex_id, grid, e)
+                    logger.error(f"Error updating row for hex_id {hex_id}, grid {grid}: {e}")
         
         df = pd.DataFrame(dead_list, columns = [hexid, 'DEAD_BA',  'DEAD_SPH', 'DEAD_VOL', 'SPH_con', 'SPH_dec', 'BPH_con',  'BPH_dec'])
         df.to_csv(os.path.join(csv_folder, grid, grid + '_DEAD_OUTPUT_v5.csv'), index=False)
 
-        print(f'{grid} processing complete')
         logger.info(f'{grid} processing complete')
     except Exception as e:
         logger.error(f"{grid} failed: {e}", exc_info=True)
-        print(f"{grid} failed: {e}")
         if failed_grids is not None:
             failed_grids.append(grid)
 
@@ -426,15 +419,13 @@ if __name__ == '__main__':
         logger.info("Multi-processing completed successfully.")
     except Exception as e:
         logger.error(f"Multi-processing failed: {e}", exc_info=True)
-        print(f"Multi-processing failed: {e}")
 
     End = time.time()
     duration = round((End - Start)/60, 2)
     logger.info(f"Total time to finish: {duration} mins")
-    print(f"{duration} mins to finish")
     if len(failed_grids) > 0:
-        print("\nFailed grids:")
+        logger.warning("\nFailed grids:")
         for grid in set(failed_grids):
-            print(grid)
+            logger.warning(grid)
     else:
-        print("\nAll grids processed successfully.")
+        logger.info("\nAll grids processed successfully.")
