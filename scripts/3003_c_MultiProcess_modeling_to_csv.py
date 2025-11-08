@@ -126,7 +126,6 @@ def hex_modeling_output(grid, compiled_grids_folder, csv_folder, plot_chars_fold
         logger.info(f"Loaded ITI and plot chars for grid {grid}")
     except Exception as e:
         logger.error(f"Failed to load ITI or plot chars for grid {grid}: {e}", exc_info=True)
-        print(f"Failed to load ITI or plot chars for grid {grid}: {e}")
         failed_grids.append(grid)
         return
 
@@ -159,7 +158,6 @@ def hex_modeling_output(grid, compiled_grids_folder, csv_folder, plot_chars_fold
         df[prefix + 'DEC_QMD'] = np.where(df[prefix + 'DEC_SPH_GT_5m'] > 0, np.sqrt(df[prefix + 'DEC_BA_HA']/(df[prefix + 'DEC_SPH_GT_5m'] * 0.0000785)), 0)
     except Exception as e:
         logger.error(f"Failed to clean or process data for grid {grid}: {e}", exc_info=True)
-        print(f"Failed to clean or process data for grid {grid}: {e}")
         failed_grids.append(grid)
         return
 
@@ -182,11 +180,9 @@ def hex_modeling_output(grid, compiled_grids_folder, csv_folder, plot_chars_fold
                 na_cols = df_cln.columns[df_cln.isna().any()].tolist()
                 if len(na_cols) > 0:
                     logger.warning(f"Data contains NaN in grid {grid}, columns: {na_cols}")
-                    print(f"Data contains NaN in grid {grid}, columns: {na_cols}")
                     df_cln = df_cln.dropna(axis=0, how='any')
             except Exception as e:
                 logger.error(f"ERROR grid={grid!r} source={source!r} var={var!r} missing cols: {e}", exc_info=True)
-                print(f"ERROR grid={grid!r} source={source!r} var={var!r} missing cols: {e}")
                 failed_grids.append(grid)
                 continue
 
@@ -204,12 +200,10 @@ def hex_modeling_output(grid, compiled_grids_folder, csv_folder, plot_chars_fold
                     model_output = os.path.join(model_output_folder, source, model + '.sav')
                 if not os.path.exists(model_output):
                     logger.error(f"Model file does not exist: {model_output}")
-                    print(f"Model file does not exist: {model_output}")
                     failed_grids.append(grid)
                     continue
                 if os.path.getsize(model_output) == 0:
                     logger.error(f"Model file is empty: {model_output}")
-                    print(f"Model file is empty: {model_output}")
                     failed_grids.append(grid)
                     continue
                 with open(model_output, 'rb') as f:
@@ -226,7 +220,6 @@ def hex_modeling_output(grid, compiled_grids_folder, csv_folder, plot_chars_fold
                 logger.info(f"Processed model {model} for grid {grid} source {source}")
             except Exception as e:
                 logger.error(f"Failed modeling for grid {grid}, var {var}, source {source}: {e}", exc_info=True)
-                print(f"Failed modeling for grid {grid}, var {var}, source {source}: {e}")
                 failed_grids.append(grid)
                 continue
 
@@ -245,12 +238,10 @@ def hex_modeling_output(grid, compiled_grids_folder, csv_folder, plot_chars_fold
             out_dir = os.path.join(csv_folder, grid)
             if not os.path.exists(out_dir):
                 os.makedirs(out_dir)
-            df_final.to_csv(os.path.join(out_dir, grid + '_' + source + '_predicted_output.csv'))
-            logger.info(f"Wrote CSV for grid {grid} source {source} to {os.path.join(out_dir, grid + '_' + source + '_predicted_output_v5.csv')}")
-            print(f"Wrote CSV for grid {grid} source {source}")
+            df_final.to_csv(os.path.join(out_dir, grid + '_' + source + '_predicted_output_v6.csv'))
+            logger.info(f"Wrote CSV for grid {grid} source {source} to {os.path.join(out_dir, grid + '_' + source + '_predicted_output_v6.csv')}")
         except Exception as e:
             logger.error(f"Failed to write CSV for grid {grid} source {source}: {e}", exc_info=True)
-            print(f"Failed to write CSV for grid {grid} source {source}: {e}")
             failed_grids.append(grid)
 
 
@@ -267,13 +258,15 @@ try:
     logger.info(f"Loaded and sorted grid_list: {grid_list}")
 except Exception as e:
     logger.error(f"Failed to load or sort grid list from {multiprocess}: {e}", exc_info=True)
-    print(f"Failed to load or sort grid list from {multiprocess}: {e}")
     grid_list = []
 
 ########################
 ##### test function
-# grid = 'A16'
-# hex_modeling_output(grid, compiled_grids_folder, csv_folder, plot_chars_folder)
+# if __name__ == '__main__':
+#     manager = Manager()
+#     failed_grids = manager.list()
+#     grid = 'A16'
+#     hex_modeling_output(grid, compiled_grids_folder, csv_folder, plot_chars_folder, failed_grids)
 
 
 ######################
@@ -289,15 +282,14 @@ if __name__ == '__main__':
         logger.info("Multi-processing completed successfully.")
     except Exception as e:
         logger.error(f"Multi-processing failed: {e}", exc_info=True)
-        print(f"Multi-processing failed: {e}")
 
     End = time.time()
     duration = round((End - Start)/60, 2)
     logger.info(f"Total time to finish: {duration} mins")
-    print(f"{duration} mins to finish")
+    
     if len(failed_grids) > 0:
-        print("\nFailed grids:")
+        logger.warning("\nFailed grids:")
         for grid in set(failed_grids):
-            print(grid)
+            logger.warning(grid)
     else:
-        print("\nAll grids processed successfully.")
+        logger.info("\nAll grids processed successfully.")

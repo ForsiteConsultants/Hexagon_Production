@@ -108,7 +108,6 @@ def process_single_grid(grid, config, progress_dict, failed_grids):
         progress_dict[grid] = f"Failed: {str(e)}"
         failed_grids.append(grid)
         logger.error(f"Error processing grid {grid}: {traceback.format_exc()}", exc_info=True)
-        print(f"Error processing grid {grid}: {traceback.format_exc()}")
         return False
 
 def init_worker(shared_progress, shared_failed):
@@ -150,7 +149,6 @@ def main():
     start_time = time.time()
 
     logger.info(f"Starting processing of {len(grid_list)} grids with {num_cores} cores...")
-    print(f"Starting processing of {len(grid_list)} grids with {num_cores} cores...")
 
     with Pool(processes=num_cores, initializer=init_worker,
              initargs=(progress_dict, failed_grids)) as pool:
@@ -158,26 +156,20 @@ def main():
 
     # Print summary
     logger.info("\nProcessing Summary:")
-    print("\nProcessing Summary:")
     for grid, status in progress_dict.items():
         logger.info(f"{grid}: {status}")
-        print(f"{grid}: {status}")
 
     if failed_grids:
         logger.warning("\nFailed grids:")
         print("\nFailed grids:")
         for grid in failed_grids:
             logger.warning(grid)
-            print(grid)
     else:
         logger.info("\nAll grids processed successfully.")
-        print("\nAll grids processed successfully.")
 
     total_time = time.time() - start_time
     logger.info(f"\nTotal processing time: {total_time:.2f} seconds")
     logger.info(f"Average time per grid: {total_time/len(grid_list):.2f} seconds")
-    print(f"\nTotal processing time: {total_time:.2f} seconds")
-    print(f"Average time per grid: {total_time/len(grid_list):.2f} seconds")
 
 if __name__ == '__main__':
     main()

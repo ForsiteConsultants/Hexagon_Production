@@ -24,7 +24,6 @@ try:
     logger.info(f"Created FileGDB: {os.path.join(hex_orig_folder, hex_gdb)}")
 except Exception as e:
     logger.error(f"Failed to create FileGDB: {e}", exc_info=True)
-    print(f"Failed to create FileGDB: {e}")
 
 arcpy.env.workspace = os.path.join(hex_orig_folder, hex_gdb)
 arcpy.env.overwriteOutput = True
@@ -40,7 +39,6 @@ try:
         logger.info("Removed 'GRID_HP' from grids_list. New list: %s", grids_list)
 except Exception as e:
     logger.error(f"Failed to list grids in {hex_shp}: {e}", exc_info=True)
-    print(f"Failed to list grids in {hex_shp}: {e}")
     grids_list = []
 
     
@@ -60,7 +58,6 @@ for i, grid in enumerate(grids_list):
             logger.info(f"Appended features from {grid_fc} to {hex_output} (grid {i})")
     except Exception as e:
         logger.error(f"Failed processing grid {grid}: {e}", exc_info=True)
-        print(f"Failed processing grid {grid}: {e}")
 
 ################################
 # prep production data and create working gdb
@@ -79,4 +76,3 @@ try:
     logger.info(f"Copied features from {grid_layer} to {output}")
 except Exception as e:
     logger.error(f"Failed to prepare production data: {e}", exc_info=True)
-    print(f"Failed to prepare production data: {e}")

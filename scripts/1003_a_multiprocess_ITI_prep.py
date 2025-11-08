@@ -30,7 +30,6 @@ try:
     logger.info(f"Loaded and sorted gridList: {gridList}")
 except Exception as e:
     logger.error(f"Failed to list or sort grids in {hex_grid}: {e}", exc_info=True)
-    print(f"Failed to list or sort grids in {hex_grid}: {e}")
     gridList = []
 
 i = 0  #**** use this to restart a process if interuppted, make sure 0 if starting new
@@ -51,10 +50,8 @@ for x in range(i, endAt):
             logger.info(f"Added ITI for grid {grid}: {fc_iti}")
         else:
             logger.warning(f"ITI does not exist for grid {grid}")
-            print(f"ITI does not exist for grid {grid}")
     except Exception as e:
         logger.error(f"Failed processing grid {gridList[x]}: {e}", exc_info=True)
-        print(f"Failed processing grid {gridList[x]}: {e}")
 
 try:
     df = pd.DataFrame(df_list, columns = ['CSV_FOLDER', 'GRID', 'ITI_PATH'])
@@ -63,4 +60,3 @@ try:
     logger.info(f"Saved DataFrame to CSV: {output_csv}")
 except Exception as e:
     logger.error(f"Failed to save DataFrame to CSV: {e}", exc_info=True)
-    print(f"Failed to save DataFrame to CSV: {e}")
