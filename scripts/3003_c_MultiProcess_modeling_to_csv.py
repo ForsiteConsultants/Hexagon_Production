@@ -77,6 +77,7 @@ import warnings
 warnings.filterwarnings("ignore")
 import yaml
 from shared.logger_utils import get_logger
+from shared.trees_to_csv_sp_split_ami import *
 
 logger = get_logger('3003_c_MultiProcess_modeling_to_csv')
 
@@ -87,18 +88,11 @@ def root_mean_squared_error(y_true, y_pred):
 def rmse(yreal, yhat):
 	return sqrt(mean_squared_error(yreal, yhat))
 
-def read_yaml_config():
-	"""
-	Read yaml config and return dictionary of items
-	"""
-	yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\config_hex_G.yml'
-	with open(yml_file, 'r') as file:
-		config = yaml.safe_load(file)
-		return config
-
 # original folder including ITI, some CSV output, model output
 # define working directory
-config = read_yaml_config()
+yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\config_hex_G.yml'
+
+config = read_yaml_config(yml_file)
 hex_root = config['root_folder']
 hex_output_folder = config['hex_output_folder']
 hex_gdb = config['hex_gdb']

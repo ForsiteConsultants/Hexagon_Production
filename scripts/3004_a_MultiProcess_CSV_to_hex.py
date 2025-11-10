@@ -13,20 +13,11 @@ import pandas as pd
 import numpy as np
 import math
 import yaml
-#from shared.trees_to_csv_sp_split_ami import *
+from shared.trees_to_csv_sp_split_ami import *
 from multiprocessing import Pool, Manager
 from shared.logger_utils import get_logger
 
 logger = get_logger('3004_a_MultiProcess_CSV_to_hex')
-
-def read_yaml_config():
-	"""
-	Read yaml config and return dictionary of items
-	"""
-	yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\config_hex_G.yml'
-	with open(yml_file, 'r') as file:
-		config = yaml.safe_load(file)
-		return config
 
 
 def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, failed_grids=None):
@@ -390,7 +381,8 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
             failed_grids.append(grid)
 
 # ####################################################
-config = read_yaml_config()
+yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\config_hex_G.yml'
+config = read_yaml_config(yml_file)
 hex_root = config['root_folder']
 hex_output_folder = config['hex_output_folder']
 hexid = 'HEXID'

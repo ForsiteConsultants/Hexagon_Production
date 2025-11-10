@@ -13,7 +13,8 @@ logger = get_logger('3002_MutliProcess_add_Fields')
 #Adding fields to the hexagon feature classes to prepare for summarized data
 Start = time.time()
 # define working directory
-config = read_yaml_config()
+yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\05_HEXAGON_PRODUCTION\config.yml'
+config = read_yaml_config(yml_file)
 hex_root = config['root_folder']
 hex_orig_folder = config['hex_orig_folder']
 hex_output_folder = config['hex_output_folder']
