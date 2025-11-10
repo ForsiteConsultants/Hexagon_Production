@@ -17,7 +17,7 @@ def read_yaml_config():
 	"""
 	Read yaml config and return dictionary of items
 	"""
-	yml_file = r'S:\1845\2\03_MappingAnalysisData\03_Scripts\05_HEXAGON_PRODUCTION\config.yml'
+	yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\config_hex_G.yml'
 	# with open('./data/config/config.yaml', 'r') as file:
 	# 	config = yaml.safe_load(file)
 	# 	return config
