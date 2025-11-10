@@ -13,14 +13,10 @@ import numpy as np
 
 arcpy.CheckOutExtension("Spatial")
 
-def read_yaml_config():
+def read_yaml_config(yml_file):
 	"""
 	Read yaml config and return dictionary of items
 	"""
-	yml_file = r'S:\1845\2\03_MappingAnalysisData\03_Scripts\05_HEXAGON_PRODUCTION\config.yml'
-	# with open('./data/config/config.yaml', 'r') as file:
-	# 	config = yaml.safe_load(file)
-	# 	return config
 	with open(yml_file, 'r') as file:
 		config = yaml.safe_load(file)
 		return config

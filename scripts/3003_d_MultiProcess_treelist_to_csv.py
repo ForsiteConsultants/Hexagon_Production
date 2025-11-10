@@ -37,10 +37,10 @@ def treelist_to_csv(csv_folder, grid, config, id_name = 'HEXID'):
 
 ################################
 ################################
-config_file = r'S:\1845\2\03_MappingAnalysisData\03_Scripts\05_HEXAGON_PRODUCTION\treelist_creation_al\config_ami\config_ami_B.yml'
+config_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\Hexagon_Production\shared\config.yml'
 with open(config_file, 'r') as file:
 	config = yaml.safe_load(file)
-multiprocess = r'S:\1845\2\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\csv_output\MultiProcessing_files_input_AREA_B.csv'
+multiprocess = r'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\csv_output\MultiProcessing_files_input_AREA_G.csv'
 grid_list = pd.read_csv(multiprocess).GRID.unique()
 grid_list.sort()
 

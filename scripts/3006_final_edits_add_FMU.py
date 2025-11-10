@@ -8,7 +8,8 @@ from shared.logger_utils import get_logger
 
 logger = get_logger('3006_final_edits_add_FMU')
 
-config = read_yaml_config()
+yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\Hexagon_Production\shared\config.yml'
+config = read_yaml_config(yml_file)
 csv_folder = config['csv_folder']
 
 # update NSR and FMU

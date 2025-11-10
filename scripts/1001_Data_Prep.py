@@ -5,7 +5,8 @@ from shared.logger_utils import get_logger
 
 logger = get_logger('1001_Data_Prep')
 
-config = read_yaml_config()
+yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\Hexagon_Production\shared\config.yml'
+config = read_yaml_config(yml_file)
 hex_root = config['root_folder']
 hex_orig_folder = config['hex_orig_folder']
 hex_gdb = config['hex_gdb']

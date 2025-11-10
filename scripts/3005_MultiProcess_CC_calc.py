@@ -8,48 +8,10 @@ import yaml
 import traceback
 from functools import partial
 from shared.logger_utils import get_logger
+from shared.trees_to_csv_sp_split_ami import *
 
 logger = get_logger('3005_MultiProcess_CC_calc')
-
-def hex_fc_topht_raster(path, Hex_FC, suffix):
-    """
-    This function convert TOP_HEIGHT from hexagons to raster file
-    """
-    output = os.path.join(path, "TOP_HEIGHT_" + suffix)
-    arcpy.conversion.PolygonToRaster(Hex_FC, "TOP_HEIGHT", output, "CELL_CENTER", "NONE", 1)
-
-def cc_calc(path, Hex_FC, CHM, suffix, perc=60, hexid='HEXID'):
-    """
-    This function calculates crown cover using top height
-    """
-    tpht = Raster(path + r"\TOP_HEIGHT_"+suffix)
-    out60pct = tpht * (perc/100)
-    out60pct.save(path + r"\pct"+str(perc)+"_"+suffix)
-    outCon = Con(Raster(CHM) >= Raster(path + "/pct"+str(perc)+"_"+suffix), 1, 0)
-    outCon2 = Con(Raster(CHM) >= 3, outCon, 0)
-    outCon2.save(path + "/gt"+str(perc)+"pct_TopHt_"+suffix)
-    ZonalStatisticsAsTable(Hex_FC, hexid, path + "/gt"+str(perc)+"pct_TopHt_"+suffix, 
-                          path+r'\CellContribute_CC_'+str(perc)+"_"+suffix, statistics_type="SUM")
-    return path+r'\CellContribute_CC_'+str(perc)+"_"+suffix
-
-def read_yaml_config():
-    """
-    Read yaml config and return dictionary of items
-    """
-    yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\config_hex_G.yml'
-    with open(yml_file, 'r') as file:
-        config = yaml.safe_load(file)
-        return config
     
-def feature_class_to_pandas_data_frame(feature_class, field_list):
-    return pd.DataFrame(
-        arcpy.da.FeatureClassToNumPyArray(
-            in_table=feature_class,
-            field_names=field_list,
-            skip_nulls=False,
-            null_value=0
-        )
-    )
 
 def process_single_grid(grid, config, progress_dict, failed_grids):
     """
@@ -122,7 +84,8 @@ def main():
         logger.error("Spatial Analyst extension is not available")
         raise RuntimeError("Spatial Analyst extension is not available")
 
-    config = read_yaml_config()
+    yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\Hexagon_Production\shared\config.yml'
+    config = read_yaml_config(yml_file)
     csv_folder = config['csv_folder']
 
     # Read grid list
