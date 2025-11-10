@@ -90,7 +90,7 @@ def rmse(yreal, yhat):
 
 # original folder including ITI, some CSV output, model output
 # define working directory
-yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\config_hex_G.yml'
+yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\Hexagon_Production\shared\config.yml'
 
 config = read_yaml_config(yml_file)
 hex_root = config['root_folder']

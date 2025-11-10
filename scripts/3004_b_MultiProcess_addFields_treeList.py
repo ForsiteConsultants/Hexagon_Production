@@ -10,7 +10,7 @@ logger = get_logger('3004_b_MultiProcess_addFields_treeList')
 #Adding fields to the hexagon feature classes to prepare for summarized data
 Start = time.time()
 # define working directory
-yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\05_HEXAGON_PRODUCTION\config.yml'
+yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\Hexagon_Production\shared\config.yml'
 config = read_yaml_config(yml_file)
 hex_root = config['root_folder']
 hex_output_folder = config['hex_output_folder']

@@ -84,7 +84,7 @@ def main():
         logger.error("Spatial Analyst extension is not available")
         raise RuntimeError("Spatial Analyst extension is not available")
 
-    yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\05_HEXAGON_PRODUCTION\config.yml'
+    yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\Hexagon_Production\shared\config.yml'
     config = read_yaml_config(yml_file)
     csv_folder = config['csv_folder']
 
