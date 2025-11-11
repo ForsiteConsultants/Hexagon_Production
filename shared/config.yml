@@ -1,30 +1,30 @@
 # hex config file
 # project folder
-root_folder: 'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production'
-compiled_grids_folder: 'S:\1845\5\03_MappingAnalysisData\02_Data\03_PlotCompilations\06_PlotCompilation\Compiled_output\03_landbase'
-csv_folder: 'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\csv_output'
-work_gdb: 'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production\working.gdb'
-area: 'AREA_G'
+root_folder: 'S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production'
+compiled_grids_folder: 'S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\csv_folder'
+csv_folder: 'S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\csv_folder'
+work_gdb: 'S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\working.gdb'
+area: 'AREA_H'
 spatial_reference: 'NAD 1983 CSRS UTM Zone 11N'
 
 # hexagon data
-hex_orig_folder: 'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\hex_orig'
-hex_output_folder: 'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\hex_output'
-hex_gdb: 'AMI_AREA_G_Hexagon.gdb'
-hex_fc: 'AMI_AREA_G_Hexagon'
+hex_orig_folder: 'S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\hex_orig'
+hex_output_folder: 'S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\hex_output'
+hex_gdb: 'AMI_AREA_H_Hexagon.gdb'
+hex_fc: 'AMI_AREA_H_Hexagon'
 hex_id: 'HEXID'
 
 
 # ITI related
-iti_gdb: 'S:\1845\5\03_MappingAnalysisData\02_Data\09_QC_GDB\ami_area_g_1845.sde'
+iti_gdb: 'S:\1845\6\03_MappingAnalysisData\02_Data\09_QC_GDB\ami_area_h_1845.sde'
 iti_fields: ['HEXID', 'HEIGHT', 'GROSS_VOL', 'GROSS_MVOL', 'NETMERCHVO', 'BASAL_AREA', 'SPECIES', 'DBH', 'LOC_DENSTY', 'DWB_FACTOR']
 
 
 # modeling related
 hex_y_variables: [
   'PLOT_CON_GVOL_PRED_HA', 'PLOT_DEC_GVOL_PRED_HA', 'PLOT_CON_GMVOL_PRED_HA', 'PLOT_DEC_GMVOL_PRED_HA', 
-  'PLOT_CON_SPH_GT_5m', 'PLOT_DEC_SPH_GT_5m', 
-  'PLOT_CON_BA_HA', 'PLOT_DEC_BA_HA', 'PLOT_CON_MBA_HA', 'PLOT_DEC_MBA_HA', 'PLOT_CON_STEM_PER_M3', 'PLOT_DEC_STEM_PER_M3'
+  'PLOT_CON_SPH_GT_5m', 'PLOT_DEC_SPH_GT_5m', 'PLOT_CON_BA_HA', 'PLOT_DEC_BA_HA', 'PLOT_CON_MBA_HA', 
+  'PLOT_DEC_MBA_HA', 'PLOT_CON_STEM_PER_M3', 'PLOT_DEC_STEM_PER_M3'
   ]
 # 'PLOT_CON_MERCH_SPH', 'PLOT_DEC_MERCH_SPH',  
 
@@ -37,9 +37,9 @@ treelist_y_variables: [
   'PLOT_S2DBHL', 'PLOT_S2HT_con', 'PLOT_S2HT_dec', 'PLOT_S2HTL', 'PLOT_SPH', 'PLOT_SPH_con', 'PLOT_SPH_dec', 'PLOT_SPHL'
   ]
 
-plot_chars_folder: 'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production\03_PLOT_CHARS'
-boruta_output_folder: 'S:\1845\5\03_MappingAnalysisData\02_Data\05_Modelling\04_HexModels\Boruta\output'
-model_output_folder: 'S:\1845\5\03_MappingAnalysisData\02_Data\05_Modelling\04_HexModels\model_output'
+plot_chars_folder: 'S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\03_Plot_Chars\Merged'
+boruta_output_folder: 'S:\1845\6\03_MappingAnalysisData\02_Data\05_Modelling\04_HexModels\Boruta\output'
+model_output_folder: 'S:\1845\6\03_MappingAnalysisData\02_Data\05_Modelling\04_HexModels\model_output'
 
 
 # other variables
