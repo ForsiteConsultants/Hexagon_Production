@@ -10,7 +10,7 @@ logger = get_logger('3004_b_MultiProcess_addFields_treeList')
 #Adding fields to the hexagon feature classes to prepare for summarized data
 Start = time.time()
 # define working directory
-yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\Hexagon_Production\shared\config.yml'
+yml_file = r'S:\1845\6\03_MappingAnalysisData\03_Scripts\08_Hex_Production\Hexagon_Production\shared\config.yml'
 config = read_yaml_config(yml_file)
 hex_root = config['root_folder']
 hex_output_folder = config['hex_output_folder']
@@ -49,7 +49,7 @@ def multi_add_fields_treelist(output_folder, grid):
 
 ##############################################
 ######## define path
-area = 'AREA_G'
+area = 'AREA_H'
 
 # get the list of grids to process
 multiprocess = os.path.join(csv_folder, 'MultiProcessing_files_input_' + area + '.csv')
@@ -66,7 +66,7 @@ Start = time.time()
 
 #############################
 #### multi process
-output_folder = r'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\hex_output\GRID'
+output_folder = r'S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\hex_output\GRID'
 args = [(output_folder, grid) for grid in grid_list]
 cores = 10
 

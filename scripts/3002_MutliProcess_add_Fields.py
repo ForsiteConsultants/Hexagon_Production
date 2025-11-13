@@ -13,7 +13,7 @@ logger = get_logger('3002_MutliProcess_add_Fields')
 #Adding fields to the hexagon feature classes to prepare for summarized data
 Start = time.time()
 # define working directory
-yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\Hexagon_Production\shared\config.yml'
+yml_file = r'S:\1845\6\03_MappingAnalysisData\03_Scripts\08_Hex_Production\Hexagon_Production\shared\config.yml'
 config = read_yaml_config(yml_file)
 hex_root = config['root_folder']
 hex_orig_folder = config['hex_orig_folder']
@@ -23,7 +23,7 @@ hex_fc = config['hex_fc']
 sr = config['spatial_reference']
 hex_orig = os.path.join(hex_orig_folder, hex_gdb, hex_fc)
 hex_output = os.path.join(hex_output_folder, hex_gdb, hex_fc)
-area = 'AREA_G'
+area = 'AREA_H'
 
 
 ########################################
@@ -74,11 +74,11 @@ def multi_add_fields(hex_shp_folder, grid, output_folder, field_list, fields_dic
 
 Start = time.time()
 
-hex_shp_folder = r'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production\01_HEX_GRID\unzipped'
-output_folder = r'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\hex_output\GRID'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+hex_shp_folder = r'S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\01_HEX_ORIG\unzipped'
+output_folder = r'S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\hex_output\GRID'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 
 # get the list of grids to process
-multiprocess = r'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\csv_output\MultiProcessing_files_input_' + area + '.csv'
+multiprocess = r'S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\csv_folder\MultiProcessing_files_input_' + area + '.csv'
 
 
 try:
