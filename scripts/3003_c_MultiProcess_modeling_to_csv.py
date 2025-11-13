@@ -90,7 +90,7 @@ def rmse(yreal, yhat):
 
 # original folder including ITI, some CSV output, model output
 # define working directory
-yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\Hexagon_Production\shared\config.yml'
+yml_file = r'S:\1845\6\03_MappingAnalysisData\03_Scripts\08_Hex_Production\Hexagon_Production\shared\config.yml'
 
 config = read_yaml_config(yml_file)
 hex_root = config['root_folder']
@@ -98,7 +98,7 @@ hex_output_folder = config['hex_output_folder']
 hex_gdb = config['hex_gdb']
 hex_fc = config['hex_fc']
 hex_output = os.path.join(hex_output_folder, hex_gdb, hex_fc)
-area = 'AREA_G'
+area = 'AREA_H'
 hex_y = config['hex_y_variables']
 treelist_y = config['treelist_y_variables']
 compiled_grids_folder = config['compiled_grids_folder']
@@ -232,8 +232,8 @@ def hex_modeling_output(grid, compiled_grids_folder, csv_folder, plot_chars_fold
             out_dir = os.path.join(csv_folder, grid)
             if not os.path.exists(out_dir):
                 os.makedirs(out_dir)
-            df_final.to_csv(os.path.join(out_dir, grid + '_' + source + '_predicted_output_v6.csv'))
-            logger.info(f"Wrote CSV for grid {grid} source {source} to {os.path.join(out_dir, grid + '_' + source + '_predicted_output_v6.csv')}")
+            df_final.to_csv(os.path.join(out_dir, grid + '_' + source + '_predicted_output.csv'))
+            logger.info(f"Wrote CSV for grid {grid} source {source} to {os.path.join(out_dir, grid + '_' + source + '_predicted_output.csv')}")
         except Exception as e:
             logger.error(f"Failed to write CSV for grid {grid} source {source}: {e}", exc_info=True)
             failed_grids.append(grid)
@@ -243,7 +243,7 @@ def hex_modeling_output(grid, compiled_grids_folder, csv_folder, plot_chars_fold
 # update path
 Start = time.time()
 
-multiprocess = multiprocess = r'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\csv_output\MultiProcessing_files_input_' + area + '.csv'
+multiprocess = r'S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\csv_folder\MultiProcessing_files_input_' + area + '.csv'
 
 try:
     grid_list = pd.read_csv(multiprocess).GRID.unique()
