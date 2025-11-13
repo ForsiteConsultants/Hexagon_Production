@@ -4,7 +4,7 @@ from shared.logger_utils import get_logger
 
 logger = get_logger('1003_a_multiprocess_ITI_prep')
 
-yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\Hexagon_Production\shared\config.yml'
+yml_file = r'S:\1845\6\03_MappingAnalysisData\03_Scripts\08_Hex_Production\Hexagon_Production\shared\config.yml'
 config = read_yaml_config(yml_file)
 hex_root = config['root_folder']
 hex_orig_folder = config['hex_orig_folder']
@@ -17,8 +17,8 @@ hex_output = os.path.join(hex_output_folder, hex_gdb, hex_fc)
 iti_root = config['iti_gdb']
 csv_folder = config['csv_folder']
 
-area = 'AREA_G'
-hex_grid = r'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production\01_HEX_GRID\unzipped'
+area = 'AREA_H'
+hex_grid = r'S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\01_HEX_ORIG\unzipped'
 
 # get tree gdb and hex grid gdb
 # final hex grid list should come from ITI not hex grids
