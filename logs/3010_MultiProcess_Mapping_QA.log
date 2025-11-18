@@ -1,0 +1,17 @@
+[2025-11-18 09:14:20] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: Crown_Closure
+[2025-11-18 09:14:24] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_DWB_FACTOR
+[2025-11-18 09:14:25] [WARNING] 3010_MultiProcess_Mapping_QA: Could not create jpeg folder: [WinError 183] Cannot create a file when that file already exists: 'S:\\1845\\5\\03_MappingAnalysisData\\04_Plotfiles\\QC_HEX\\AMI_AREA_G\\jpeg'
+[2025-11-18 09:14:26] [WARNING] 3010_MultiProcess_Mapping_QA: Could not create jpeg folder: [WinError 183] Cannot create a file when that file already exists: 'S:\\1845\\5\\03_MappingAnalysisData\\04_Plotfiles\\QC_HEX\\AMI_AREA_G\\jpeg'
+[2025-11-18 09:20:51] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: Crown_Closure
+[2025-11-18 09:20:55] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_DWB_FACTOR
+[2025-11-18 09:20:55] [WARNING] 3010_MultiProcess_Mapping_QA: Could not create jpeg folder: [WinError 183] Cannot create a file when that file already exists: 'S:\\1845\\5\\03_MappingAnalysisData\\04_Plotfiles\\QC_HEX\\AMI_AREA_G\\jpeg'
+[2025-11-18 09:20:58] [WARNING] 3010_MultiProcess_Mapping_QA: Could not create jpeg folder: [WinError 183] Cannot create a file when that file already exists: 'S:\\1845\\5\\03_MappingAnalysisData\\04_Plotfiles\\QC_HEX\\AMI_AREA_G\\jpeg'
+[2025-11-18 09:26:05] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: Crown_Closure
+[2025-11-18 09:26:09] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_DWB_FACTOR
+[2025-11-18 09:26:12] [WARNING] 3010_MultiProcess_Mapping_QA: Could not create jpeg folder: [WinError 183] Cannot create a file when that file already exists: 'S:\\1845\\5\\03_MappingAnalysisData\\04_Plotfiles\\QC_HEX\\AMI_AREA_G\\jpeg'
+[2025-11-18 09:29:37] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: Crown_Closure
+[2025-11-18 09:29:41] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_DWB_FACTOR
+[2025-11-18 10:29:10] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: DEC_DWB_FACTOR
+[2025-11-18 10:29:10] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: TOP_HEIGHT
+[2025-11-18 10:49:15] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: Crown_Closure
+[2025-11-18 10:49:15] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: CON_AV_DIAM
