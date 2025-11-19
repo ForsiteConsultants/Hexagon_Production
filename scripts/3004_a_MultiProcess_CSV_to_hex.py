@@ -403,38 +403,38 @@ grid_list.sort()
 
 # ##################
 # ### test function
-Start = time.time()
-if __name__ == '__main__':
-    manager = Manager()
-    failed_grids = manager.list()
-    grid = 'A20'
-    csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, failed_grids)
-    End = time.time()
-
-    print(round((End - Start)/60, 2), ' mins to finish')
-
-
-### Multiprocessing
 # Start = time.time()
-
 # if __name__ == '__main__':
 #     manager = Manager()
 #     failed_grids = manager.list()
-#     args = [(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, failed_grids) for grid in grid_list]
-#     cores = 10
-#     try:
-#         with Pool(processes=cores) as pool:
-#             pool.starmap(csv_to_hex, args)
-#         logger.info("Multi-processing completed successfully.")
-#     except Exception as e:
-#         logger.error(f"Multi-processing failed: {e}", exc_info=True)
-
+#     grid = 'A20'
+#     csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, failed_grids)
 #     End = time.time()
-#     duration = round((End - Start)/60, 2)
-#     logger.info(f"Total time to finish: {duration} mins")
-#     if len(failed_grids) > 0:
-#         logger.warning("\nFailed grids:")
-#         for grid in set(failed_grids):
-#             logger.warning(grid)
-#     else:
-#         logger.info("\nAll grids processed successfully.")
+
+#     print(round((End - Start)/60, 2), ' mins to finish')
+
+
+### Multiprocessing
+Start = time.time()
+
+if __name__ == '__main__':
+    manager = Manager()
+    failed_grids = manager.list()
+    args = [(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, failed_grids) for grid in grid_list]
+    cores = 10
+    try:
+        with Pool(processes=cores) as pool:
+            pool.starmap(csv_to_hex, args)
+        logger.info("Multi-processing completed successfully.")
+    except Exception as e:
+        logger.error(f"Multi-processing failed: {e}", exc_info=True)
+
+    End = time.time()
+    duration = round((End - Start)/60, 2)
+    logger.info(f"Total time to finish: {duration} mins")
+    if len(failed_grids) > 0:
+        logger.warning("\nFailed grids:")
+        for grid in set(failed_grids):
+            logger.warning(grid)
+    else:
+        logger.info("\nAll grids processed successfully.")
