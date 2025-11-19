@@ -23,7 +23,7 @@ def process_single_grid(grid, config, progress_dict, failed_grids):
         hexid = config['hex_id']
         area = config['area']
         sr = config['spatial_reference']
-        chm_1m = r"L:\Projects\1845\Area_G_CHM_HR_OVERVIEW\CHM_HR_OVERVIEW_COG.tif"
+        chm_1m = r" L:\LiDAR_Archive\2023\AB\1441_WestFraser\G16\LiDAR\mosaic_datasets.gdb\CHM_1m"
 
         logger.info(f"Processing grid {grid}")
         # Create a unique working GDB for this process
@@ -84,12 +84,12 @@ def main():
         logger.error("Spatial Analyst extension is not available")
         raise RuntimeError("Spatial Analyst extension is not available")
 
-    yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\Hexagon_Production\shared\config.yml'
+    yml_file = r'S:\1845\6\03_MappingAnalysisData\03_Scripts\08_Hex_Production\Hexagon_Production\shared\config.yml'
     config = read_yaml_config(yml_file)
     csv_folder = config['csv_folder']
 
     # Read grid list
-    df = pd.read_csv(os.path.join(csv_folder, 'MultiProcessing_files_input_AREA_G.csv'))
+    df = pd.read_csv(os.path.join(csv_folder, 'MultiProcessing_files_input_AREA_H.csv'))
     grid_list = df.GRID.tolist()
     grid_list = sorted([str(x) for x in grid_list if str(x) != '0'])
 
