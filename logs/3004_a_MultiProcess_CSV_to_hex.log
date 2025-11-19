@@ -1,0 +1,1540 @@
+[2025-11-18 15:44:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing A20
+[2025-11-18 15:44:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in A20, skipping alter.
+[2025-11-18 15:44:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing A33
+[2025-11-18 15:44:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in A33, skipping alter.
+[2025-11-18 15:44:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B29
+[2025-11-18 15:44:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B29, skipping alter.
+[2025-11-18 15:44:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B8
+[2025-11-18 15:44:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B8, skipping alter.
+[2025-11-18 15:44:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: A33 processing complete
+[2025-11-18 15:44:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing A36
+[2025-11-18 15:44:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in A36, skipping alter.
+[2025-11-18 15:44:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: A36 processing complete
+[2025-11-18 15:44:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C3
+[2025-11-18 15:44:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C3, skipping alter.
+[2025-11-18 15:44:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: A20 processing complete
+[2025-11-18 15:44:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B1
+[2025-11-18 15:44:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B1, skipping alter.
+[2025-11-18 15:45:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: B1 processing complete
+[2025-11-18 15:45:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing A21
+[2025-11-18 15:45:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in A21, skipping alter.
+[2025-11-18 15:45:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B2
+[2025-11-18 15:45:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B2, skipping alter.
+[2025-11-18 15:45:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D1
+[2025-11-18 15:45:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D1, skipping alter.
+[2025-11-18 15:45:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D30
+[2025-11-18 15:45:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D30, skipping alter.
+[2025-11-18 15:45:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: B2 processing complete
+[2025-11-18 15:45:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D8
+[2025-11-18 15:45:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D8, skipping alter.
+[2025-11-18 15:45:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: B8 processing complete
+[2025-11-18 15:45:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B20
+[2025-11-18 15:45:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B20, skipping alter.
+[2025-11-18 15:45:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C1
+[2025-11-18 15:45:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C1, skipping alter.
+[2025-11-18 15:45:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E29
+[2025-11-18 15:45:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E29, skipping alter.
+[2025-11-18 15:45:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E5
+[2025-11-18 15:45:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E5, skipping alter.
+[2025-11-18 15:45:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: A21 processing complete
+[2025-11-18 15:45:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: D1 processing complete
+[2025-11-18 15:45:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing A22
+[2025-11-18 15:45:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in A22, skipping alter.
+[2025-11-18 15:45:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: C1 processing complete
+[2025-11-18 15:46:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D2
+[2025-11-18 15:46:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D2, skipping alter.
+[2025-11-18 15:46:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C2
+[2025-11-18 15:46:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C2, skipping alter.
+[2025-11-18 15:46:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: B29 processing complete
+[2025-11-18 15:46:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B3
+[2025-11-18 15:46:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B3, skipping alter.
+[2025-11-18 15:46:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: B20 processing complete
+[2025-11-18 15:46:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B21
+[2025-11-18 15:46:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B21, skipping alter.
+[2025-11-18 15:46:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: D8 processing complete
+[2025-11-18 15:46:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: C3 processing complete
+[2025-11-18 15:46:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D9
+[2025-11-18 15:46:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D9, skipping alter.
+[2025-11-18 15:46:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: D9 processing complete
+[2025-11-18 15:46:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C30
+[2025-11-18 15:46:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C30, skipping alter.
+[2025-11-18 15:46:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: D30 processing complete
+[2025-11-18 15:46:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E1
+[2025-11-18 15:46:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E1, skipping alter.
+[2025-11-18 15:46:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: A22 processing complete
+[2025-11-18 15:46:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D31
+[2025-11-18 15:46:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D31, skipping alter.
+[2025-11-18 15:46:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing A23
+[2025-11-18 15:46:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in A23, skipping alter.
+[2025-11-18 15:46:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: E29 processing complete
+[2025-11-18 15:47:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E3
+[2025-11-18 15:47:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E3, skipping alter.
+[2025-11-18 15:47:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: E5 processing complete
+[2025-11-18 15:47:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E6
+[2025-11-18 15:47:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E6, skipping alter.
+[2025-11-18 15:47:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: B3 processing complete
+[2025-11-18 15:47:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B30
+[2025-11-18 15:47:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B30, skipping alter.
+[2025-11-18 15:47:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: D2 processing complete
+[2025-11-18 15:47:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: C2 processing complete
+[2025-11-18 15:47:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D20
+[2025-11-18 15:47:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D20, skipping alter.
+[2025-11-18 15:47:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: A23 processing complete
+[2025-11-18 15:47:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C20
+[2025-11-18 15:47:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C20, skipping alter.
+[2025-11-18 15:47:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing A24
+[2025-11-18 15:47:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in A24, skipping alter.
+[2025-11-18 15:47:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: B21 processing complete
+[2025-11-18 15:47:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B22
+[2025-11-18 15:47:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B22, skipping alter.
+[2025-11-18 15:47:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: E1 processing complete
+[2025-11-18 15:48:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: C30 processing complete
+[2025-11-18 15:48:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E2
+[2025-11-18 15:48:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E2, skipping alter.
+[2025-11-18 15:48:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C31
+[2025-11-18 15:48:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C31, skipping alter.
+[2025-11-18 15:48:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: D31 processing complete
+[2025-11-18 15:48:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D32
+[2025-11-18 15:48:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D32, skipping alter.
+[2025-11-18 15:48:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: D20 processing complete
+[2025-11-18 15:48:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: C20 processing complete
+[2025-11-18 15:48:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D21
+[2025-11-18 15:48:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D21, skipping alter.
+[2025-11-18 15:48:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: E3 processing complete
+[2025-11-18 15:48:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C21
+[2025-11-18 15:48:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C21, skipping alter.
+[2025-11-18 15:48:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: A24 processing complete
+[2025-11-18 15:48:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E30
+[2025-11-18 15:48:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E30, skipping alter.
+[2025-11-18 15:48:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing A25
+[2025-11-18 15:48:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in A25, skipping alter.
+[2025-11-18 15:48:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: E6 processing complete
+[2025-11-18 15:48:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: B30 processing complete
+[2025-11-18 15:48:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E7
+[2025-11-18 15:48:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E7, skipping alter.
+[2025-11-18 15:49:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B31
+[2025-11-18 15:49:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B31, skipping alter.
+[2025-11-18 15:49:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: D32 processing complete
+[2025-11-18 15:49:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: B22 processing complete
+[2025-11-18 15:49:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D33
+[2025-11-18 15:49:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D33, skipping alter.
+[2025-11-18 15:49:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B23
+[2025-11-18 15:49:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B23, skipping alter.
+[2025-11-18 15:49:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: E2 processing complete
+[2025-11-18 15:49:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: C31 processing complete
+[2025-11-18 15:49:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E20
+[2025-11-18 15:49:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C32
+[2025-11-18 15:49:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E20, skipping alter.
+[2025-11-18 15:49:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C32, skipping alter.
+[2025-11-18 15:49:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: A25 processing complete
+[2025-11-18 15:49:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing A26
+[2025-11-18 15:49:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in A26, skipping alter.
+[2025-11-18 15:49:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: D21 processing complete
+[2025-11-18 15:49:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: E30 processing complete
+[2025-11-18 15:49:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D22
+[2025-11-18 15:49:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D22, skipping alter.
+[2025-11-18 15:49:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: C21 processing complete
+[2025-11-18 15:50:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E31
+[2025-11-18 15:50:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E31, skipping alter.
+[2025-11-18 15:50:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C22
+[2025-11-18 15:50:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C22, skipping alter.
+[2025-11-18 15:50:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: E20 processing complete
+[2025-11-18 15:50:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: E7 processing complete
+[2025-11-18 15:50:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E21
+[2025-11-18 15:50:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E21, skipping alter.
+[2025-11-18 15:50:28] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E8
+[2025-11-18 15:50:28] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E8, skipping alter.
+[2025-11-18 15:50:28] [INFO] 3004_a_MultiProcess_CSV_to_hex: B31 processing complete
+[2025-11-18 15:50:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B32
+[2025-11-18 15:50:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B32, skipping alter.
+[2025-11-18 15:50:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: C32 processing complete
+[2025-11-18 15:50:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: A26 processing complete
+[2025-11-18 15:50:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C33
+[2025-11-18 15:50:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C33, skipping alter.
+[2025-11-18 15:50:49] [INFO] 3004_a_MultiProcess_CSV_to_hex: D33 processing complete
+[2025-11-18 15:50:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: B23 processing complete
+[2025-11-18 15:50:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing A27
+[2025-11-18 15:50:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in A27, skipping alter.
+[2025-11-18 15:50:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D34
+[2025-11-18 15:50:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D34, skipping alter.
+[2025-11-18 15:50:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B24
+[2025-11-18 15:50:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B24, skipping alter.
+[2025-11-18 15:51:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: D22 processing complete
+[2025-11-18 15:51:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D23
+[2025-11-18 15:51:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D23, skipping alter.
+[2025-11-18 15:51:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: E31 processing complete
+[2025-11-18 15:51:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: C22 processing complete
+[2025-11-18 15:51:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E32
+[2025-11-18 15:51:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E32, skipping alter.
+[2025-11-18 15:51:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C23
+[2025-11-18 15:51:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C23, skipping alter.
+[2025-11-18 15:51:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: E21 processing complete
+[2025-11-18 15:51:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: E8 processing complete
+[2025-11-18 15:51:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: A27 processing complete
+[2025-11-18 15:51:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E22
+[2025-11-18 15:51:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E22, skipping alter.
+[2025-11-18 15:51:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E9
+[2025-11-18 15:51:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E9, skipping alter.
+[2025-11-18 15:52:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: C33 processing complete
+[2025-11-18 15:52:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: B32 processing complete
+[2025-11-18 15:52:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing A28
+[2025-11-18 15:52:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in A28, skipping alter.
+[2025-11-18 15:52:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B33
+[2025-11-18 15:52:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B33, skipping alter.
+[2025-11-18 15:52:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C34
+[2025-11-18 15:52:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C34, skipping alter.
+[2025-11-18 15:52:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: E9 processing complete
+[2025-11-18 15:52:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F1
+[2025-11-18 15:52:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F1, skipping alter.
+[2025-11-18 15:52:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: B24 processing complete
+[2025-11-18 15:52:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: D34 processing complete
+[2025-11-18 15:52:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B25
+[2025-11-18 15:52:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B25, skipping alter.
+[2025-11-18 15:52:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D35
+[2025-11-18 15:52:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D35, skipping alter.
+[2025-11-18 15:52:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: D23 processing complete
+[2025-11-18 15:53:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D24
+[2025-11-18 15:53:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D24, skipping alter.
+[2025-11-18 15:53:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: B33 processing complete
+[2025-11-18 15:53:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: E32 processing complete
+[2025-11-18 15:53:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: C23 processing complete
+[2025-11-18 15:53:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B34
+[2025-11-18 15:53:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B34, skipping alter.
+[2025-11-18 15:53:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E33
+[2025-11-18 15:53:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E33, skipping alter.
+[2025-11-18 15:53:09] [INFO] 3004_a_MultiProcess_CSV_to_hex: A28 processing complete
+[2025-11-18 15:53:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: F1 processing complete
+[2025-11-18 15:53:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C24
+[2025-11-18 15:53:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C24, skipping alter.
+[2025-11-18 15:53:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing A29
+[2025-11-18 15:53:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in A29, skipping alter.
+[2025-11-18 15:53:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F2
+[2025-11-18 15:53:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F2, skipping alter.
+[2025-11-18 15:53:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: E22 processing complete
+[2025-11-18 15:53:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: C34 processing complete
+[2025-11-18 15:53:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E23
+[2025-11-18 15:53:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E23, skipping alter.
+[2025-11-18 15:53:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C35
+[2025-11-18 15:53:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C35, skipping alter.
+[2025-11-18 15:53:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: D35 processing complete
+[2025-11-18 15:53:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: B25 processing complete
+[2025-11-18 15:54:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D36
+[2025-11-18 15:54:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D36, skipping alter.
+[2025-11-18 15:54:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: B34 processing complete
+[2025-11-18 15:54:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B26
+[2025-11-18 15:54:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B26, skipping alter.
+[2025-11-18 15:54:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B35
+[2025-11-18 15:54:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B35, skipping alter.
+[2025-11-18 15:54:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: F2 processing complete
+[2025-11-18 15:54:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F20
+[2025-11-18 15:54:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F20, skipping alter.
+[2025-11-18 15:54:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: D24 processing complete
+[2025-11-18 15:54:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: D36 processing complete
+[2025-11-18 15:54:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: A29 processing complete
+[2025-11-18 15:54:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D25
+[2025-11-18 15:54:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D25, skipping alter.
+[2025-11-18 15:54:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D37
+[2025-11-18 15:54:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D37, skipping alter.
+[2025-11-18 15:54:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing A30
+[2025-11-18 15:54:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in A30, skipping alter.
+[2025-11-18 15:54:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: E33 processing complete
+[2025-11-18 15:54:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: C24 processing complete
+[2025-11-18 15:54:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E34
+[2025-11-18 15:54:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E34, skipping alter.
+[2025-11-18 15:54:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: D37 processing complete
+[2025-11-18 15:54:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C25
+[2025-11-18 15:54:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C25, skipping alter.
+[2025-11-18 15:54:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D38
+[2025-11-18 15:54:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D38, skipping alter.
+[2025-11-18 15:54:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: D38 processing complete
+[2025-11-18 15:54:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: E23 processing complete
+[2025-11-18 15:54:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D4
+[2025-11-18 15:54:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D4, skipping alter.
+[2025-11-18 15:55:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E24
+[2025-11-18 15:55:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E24, skipping alter.
+[2025-11-18 15:55:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: F20 processing complete
+[2025-11-18 15:55:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: C35 processing complete
+[2025-11-18 15:55:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: B35 processing complete
+[2025-11-18 15:55:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F21
+[2025-11-18 15:55:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F21, skipping alter.
+[2025-11-18 15:55:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C36
+[2025-11-18 15:55:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C36, skipping alter.
+[2025-11-18 15:55:09] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B36
+[2025-11-18 15:55:09] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B36, skipping alter.
+[2025-11-18 15:55:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: C36 processing complete
+[2025-11-18 15:55:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C4
+[2025-11-18 15:55:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C4, skipping alter.
+[2025-11-18 15:55:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: B26 processing complete
+[2025-11-18 15:55:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: B36 processing complete
+[2025-11-18 15:55:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B27
+[2025-11-18 15:55:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B27, skipping alter.
+[2025-11-18 15:55:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: A30 processing complete
+[2025-11-18 15:55:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B4
+[2025-11-18 15:55:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B4, skipping alter.
+[2025-11-18 15:55:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: D25 processing complete
+[2025-11-18 15:55:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing A31
+[2025-11-18 15:55:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in A31, skipping alter.
+[2025-11-18 15:56:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D26
+[2025-11-18 15:56:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D26, skipping alter.
+[2025-11-18 15:56:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: E34 processing complete
+[2025-11-18 15:56:05] [INFO] 3004_a_MultiProcess_CSV_to_hex: C25 processing complete
+[2025-11-18 15:56:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E35
+[2025-11-18 15:56:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E35, skipping alter.
+[2025-11-18 15:56:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C26
+[2025-11-18 15:56:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C26, skipping alter.
+[2025-11-18 15:56:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: C4 processing complete
+[2025-11-18 15:56:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: D4 processing complete
+[2025-11-18 15:56:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C5
+[2025-11-18 15:56:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C5, skipping alter.
+[2025-11-18 15:56:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D5
+[2025-11-18 15:56:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D5, skipping alter.
+[2025-11-18 15:56:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: E24 processing complete
+[2025-11-18 15:56:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: F21 processing complete
+[2025-11-18 15:56:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E25
+[2025-11-18 15:56:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E25, skipping alter.
+[2025-11-18 15:56:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F22
+[2025-11-18 15:56:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F22, skipping alter.
+[2025-11-18 15:56:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: C5 processing complete
+[2025-11-18 15:56:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C6
+[2025-11-18 15:56:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C6, skipping alter.
+[2025-11-18 15:56:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: B4 processing complete
+[2025-11-18 15:56:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B5
+[2025-11-18 15:56:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B5, skipping alter.
+[2025-11-18 15:57:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: B27 processing complete
+[2025-11-18 15:57:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B28
+[2025-11-18 15:57:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B28, skipping alter.
+[2025-11-18 15:57:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: A31 processing complete
+[2025-11-18 15:57:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing A32
+[2025-11-18 15:57:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in A32, skipping alter.
+[2025-11-18 15:57:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: D26 processing complete
+[2025-11-18 15:57:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: B5 processing complete
+[2025-11-18 15:57:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: E35 processing complete
+[2025-11-18 15:57:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D27
+[2025-11-18 15:57:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D27, skipping alter.
+[2025-11-18 15:57:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B6
+[2025-11-18 15:57:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B6, skipping alter.
+[2025-11-18 15:57:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E36
+[2025-11-18 15:57:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E36, skipping alter.
+[2025-11-18 15:57:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: C26 processing complete
+[2025-11-18 15:57:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: D5 processing complete
+[2025-11-18 15:57:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C27
+[2025-11-18 15:57:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C27, skipping alter.
+[2025-11-18 15:57:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D6
+[2025-11-18 15:57:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D6, skipping alter.
+[2025-11-18 15:57:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: E25 processing complete
+[2025-11-18 15:58:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: F22 processing complete
+[2025-11-18 15:58:05] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E26
+[2025-11-18 15:58:05] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E26, skipping alter.
+[2025-11-18 15:58:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F23
+[2025-11-18 15:58:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F23, skipping alter.
+[2025-11-18 15:58:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: C6 processing complete
+[2025-11-18 15:58:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C7
+[2025-11-18 15:58:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C7, skipping alter.
+[2025-11-18 15:58:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: B6 processing complete
+[2025-11-18 15:58:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: B28 processing complete
+[2025-11-18 15:58:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: A32 processing complete
+[2025-11-18 15:58:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing B7
+[2025-11-18 15:58:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in B7, skipping alter.
+[2025-11-18 15:58:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F26
+[2025-11-18 15:58:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F26, skipping alter.
+[2025-11-18 15:58:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F38
+[2025-11-18 15:58:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F38, skipping alter.
+[2025-11-18 15:58:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: D27 processing complete
+[2025-11-18 15:59:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: E36 processing complete
+[2025-11-18 15:59:05] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D28
+[2025-11-18 15:59:05] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D28, skipping alter.
+[2025-11-18 15:59:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: C27 processing complete
+[2025-11-18 15:59:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E37
+[2025-11-18 15:59:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E37, skipping alter.
+[2025-11-18 15:59:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: D6 processing complete
+[2025-11-18 15:59:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C28
+[2025-11-18 15:59:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C28, skipping alter.
+[2025-11-18 15:59:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D7
+[2025-11-18 15:59:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D7, skipping alter.
+[2025-11-18 15:59:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: E26 processing complete
+[2025-11-18 15:59:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: F23 processing complete
+[2025-11-18 15:59:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E27
+[2025-11-18 15:59:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E27, skipping alter.
+[2025-11-18 15:59:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: B7 processing complete
+[2025-11-18 15:59:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F24
+[2025-11-18 15:59:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F24, skipping alter.
+[2025-11-18 15:59:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: C7 processing complete
+[2025-11-18 15:59:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G23
+[2025-11-18 15:59:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G23, skipping alter.
+[2025-11-18 15:59:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C8
+[2025-11-18 15:59:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C8, skipping alter.
+[2025-11-18 16:00:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: F38 processing complete
+[2025-11-18 16:00:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F39
+[2025-11-18 16:00:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F39, skipping alter.
+[2025-11-18 16:00:17] [INFO] 3004_a_MultiProcess_CSV_to_hex: F26 processing complete
+[2025-11-18 16:00:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F27
+[2025-11-18 16:00:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F27, skipping alter.
+[2025-11-18 16:00:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: F39 processing complete
+[2025-11-18 16:00:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: D28 processing complete
+[2025-11-18 16:00:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F4
+[2025-11-18 16:00:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F4, skipping alter.
+[2025-11-18 16:00:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: E37 processing complete
+[2025-11-18 16:00:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D29
+[2025-11-18 16:00:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D29, skipping alter.
+[2025-11-18 16:00:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E38
+[2025-11-18 16:00:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E38, skipping alter.
+[2025-11-18 16:00:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: C8 processing complete
+[2025-11-18 16:00:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: C28 processing complete
+[2025-11-18 16:00:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G35
+[2025-11-18 16:00:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G35, skipping alter.
+[2025-11-18 16:00:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: D7 processing complete
+[2025-11-18 16:00:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing C29
+[2025-11-18 16:00:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in C29, skipping alter.
+[2025-11-18 16:00:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H23
+[2025-11-18 16:00:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H23, skipping alter.
+[2025-11-18 16:01:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: E27 processing complete
+[2025-11-18 16:01:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: F24 processing complete
+[2025-11-18 16:01:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E28
+[2025-11-18 16:01:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E28, skipping alter.
+[2025-11-18 16:01:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F25
+[2025-11-18 16:01:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F25, skipping alter.
+[2025-11-18 16:01:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: G23 processing complete
+[2025-11-18 16:01:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G24
+[2025-11-18 16:01:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G24, skipping alter.
+[2025-11-18 16:01:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: F4 processing complete
+[2025-11-18 16:01:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: E38 processing complete
+[2025-11-18 16:01:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: F27 processing complete
+[2025-11-18 16:01:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F5
+[2025-11-18 16:01:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F5, skipping alter.
+[2025-11-18 16:01:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E39
+[2025-11-18 16:01:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E39, skipping alter.
+[2025-11-18 16:01:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: E39 processing complete
+[2025-11-18 16:01:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F28
+[2025-11-18 16:01:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F28, skipping alter.
+[2025-11-18 16:01:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: D29 processing complete
+[2025-11-18 16:02:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing E4
+[2025-11-18 16:02:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in E4, skipping alter.
+[2025-11-18 16:02:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing D3
+[2025-11-18 16:02:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in D3, skipping alter.
+[2025-11-18 16:02:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: G35 processing complete
+[2025-11-18 16:02:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: C29 processing complete
+[2025-11-18 16:02:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G36
+[2025-11-18 16:02:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G36, skipping alter.
+[2025-11-18 16:02:22] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H35
+[2025-11-18 16:02:22] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H35, skipping alter.
+[2025-11-18 16:02:22] [INFO] 3004_a_MultiProcess_CSV_to_hex: H23 processing complete
+[2025-11-18 16:02:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H24
+[2025-11-18 16:02:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H24, skipping alter.
+[2025-11-18 16:02:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: E28 processing complete
+[2025-11-18 16:02:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: F25 processing complete
+[2025-11-18 16:02:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I23
+[2025-11-18 16:02:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I23, skipping alter.
+[2025-11-18 16:02:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I35
+[2025-11-18 16:02:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I35, skipping alter.
+[2025-11-18 16:02:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: G24 processing complete
+[2025-11-18 16:03:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G25
+[2025-11-18 16:03:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G25, skipping alter.
+[2025-11-18 16:03:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: F5 processing complete
+[2025-11-18 16:03:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: F28 processing complete
+[2025-11-18 16:03:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F6
+[2025-11-18 16:03:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F6, skipping alter.
+[2025-11-18 16:03:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F29
+[2025-11-18 16:03:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F29, skipping alter.
+[2025-11-18 16:03:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: E4 processing complete
+[2025-11-18 16:03:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: D3 processing complete
+[2025-11-18 16:03:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J23
+[2025-11-18 16:03:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J23, skipping alter.
+[2025-11-18 16:03:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J35
+[2025-11-18 16:03:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J35, skipping alter.
+[2025-11-18 16:03:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: G36 processing complete
+[2025-11-18 16:03:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: H35 processing complete
+[2025-11-18 16:03:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G37
+[2025-11-18 16:03:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G37, skipping alter.
+[2025-11-18 16:03:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H36
+[2025-11-18 16:03:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H36, skipping alter.
+[2025-11-18 16:03:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: H24 processing complete
+[2025-11-18 16:04:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H25
+[2025-11-18 16:04:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H25, skipping alter.
+[2025-11-18 16:04:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: I23 processing complete
+[2025-11-18 16:04:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I24
+[2025-11-18 16:04:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I24, skipping alter.
+[2025-11-18 16:04:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: I35 processing complete
+[2025-11-18 16:04:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I36
+[2025-11-18 16:04:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I36, skipping alter.
+[2025-11-18 16:04:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: G25 processing complete
+[2025-11-18 16:04:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G26
+[2025-11-18 16:04:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G26, skipping alter.
+[2025-11-18 16:04:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: J23 processing complete
+[2025-11-18 16:04:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: F29 processing complete
+[2025-11-18 16:04:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: F6 processing complete
+[2025-11-18 16:04:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F3
+[2025-11-18 16:04:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F3, skipping alter.
+[2025-11-18 16:04:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J24
+[2025-11-18 16:04:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J24, skipping alter.
+[2025-11-18 16:04:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F7
+[2025-11-18 16:04:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F7, skipping alter.
+[2025-11-18 16:04:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: J35 processing complete
+[2025-11-18 16:05:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J36
+[2025-11-18 16:05:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J36, skipping alter.
+[2025-11-18 16:05:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: G37 processing complete
+[2025-11-18 16:05:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: H36 processing complete
+[2025-11-18 16:05:22] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G38
+[2025-11-18 16:05:22] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G38, skipping alter.
+[2025-11-18 16:05:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H37
+[2025-11-18 16:05:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H37, skipping alter.
+[2025-11-18 16:05:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: H25 processing complete
+[2025-11-18 16:05:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H26
+[2025-11-18 16:05:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H26, skipping alter.
+[2025-11-18 16:05:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: I24 processing complete
+[2025-11-18 16:05:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I25
+[2025-11-18 16:05:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I25, skipping alter.
+[2025-11-18 16:05:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: I36 processing complete
+[2025-11-18 16:05:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I37
+[2025-11-18 16:05:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I37, skipping alter.
+[2025-11-18 16:05:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: G26 processing complete
+[2025-11-18 16:06:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: F3 processing complete
+[2025-11-18 16:06:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G27
+[2025-11-18 16:06:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G27, skipping alter.
+[2025-11-18 16:06:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F30
+[2025-11-18 16:06:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F30, skipping alter.
+[2025-11-18 16:06:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: J24 processing complete
+[2025-11-18 16:06:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: F7 processing complete
+[2025-11-18 16:06:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J25
+[2025-11-18 16:06:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J25, skipping alter.
+[2025-11-18 16:06:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: G38 processing complete
+[2025-11-18 16:06:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F8
+[2025-11-18 16:06:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F8, skipping alter.
+[2025-11-18 16:06:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G4
+[2025-11-18 16:06:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G4, skipping alter.
+[2025-11-18 16:06:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: J36 processing complete
+[2025-11-18 16:06:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J37
+[2025-11-18 16:06:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J37, skipping alter.
+[2025-11-18 16:06:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: H37 processing complete
+[2025-11-18 16:06:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H38
+[2025-11-18 16:06:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H38, skipping alter.
+[2025-11-18 16:07:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: H26 processing complete
+[2025-11-18 16:07:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H27
+[2025-11-18 16:07:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H27, skipping alter.
+[2025-11-18 16:07:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: I25 processing complete
+[2025-11-18 16:07:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: I37 processing complete
+[2025-11-18 16:07:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I26
+[2025-11-18 16:07:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I26, skipping alter.
+[2025-11-18 16:07:28] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I38
+[2025-11-18 16:07:28] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I38, skipping alter.
+[2025-11-18 16:07:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: G27 processing complete
+[2025-11-18 16:07:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: F30 processing complete
+[2025-11-18 16:07:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G28
+[2025-11-18 16:07:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G28, skipping alter.
+[2025-11-18 16:07:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F31
+[2025-11-18 16:07:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F31, skipping alter.
+[2025-11-18 16:07:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: J25 processing complete
+[2025-11-18 16:07:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: G4 processing complete
+[2025-11-18 16:07:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J26
+[2025-11-18 16:07:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J26, skipping alter.
+[2025-11-18 16:07:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: F8 processing complete
+[2025-11-18 16:08:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G5
+[2025-11-18 16:08:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G5, skipping alter.
+[2025-11-18 16:08:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F9
+[2025-11-18 16:08:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F9, skipping alter.
+[2025-11-18 16:08:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: J37 processing complete
+[2025-11-18 16:08:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J38
+[2025-11-18 16:08:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J38, skipping alter.
+[2025-11-18 16:08:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: H38 processing complete
+[2025-11-18 16:08:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: F9 processing complete
+[2025-11-18 16:08:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H39
+[2025-11-18 16:08:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H39, skipping alter.
+[2025-11-18 16:08:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: H27 processing complete
+[2025-11-18 16:08:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G1
+[2025-11-18 16:08:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G1, skipping alter.
+[2025-11-18 16:08:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H28
+[2025-11-18 16:08:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H28, skipping alter.
+[2025-11-18 16:08:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: H39 processing complete
+[2025-11-18 16:08:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: I26 processing complete
+[2025-11-18 16:08:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H4
+[2025-11-18 16:08:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H4, skipping alter.
+[2025-11-18 16:08:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: I38 processing complete
+[2025-11-18 16:08:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I27
+[2025-11-18 16:08:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I27, skipping alter.
+[2025-11-18 16:08:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: G28 processing complete
+[2025-11-18 16:08:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: G1 processing complete
+[2025-11-18 16:09:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I39
+[2025-11-18 16:09:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I39, skipping alter.
+[2025-11-18 16:09:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: F31 processing complete
+[2025-11-18 16:09:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G29
+[2025-11-18 16:09:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G29, skipping alter.
+[2025-11-18 16:09:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G2
+[2025-11-18 16:09:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G2, skipping alter.
+[2025-11-18 16:09:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F32
+[2025-11-18 16:09:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F32, skipping alter.
+[2025-11-18 16:09:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: G2 processing complete
+[2025-11-18 16:09:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: J26 processing complete
+[2025-11-18 16:09:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G20
+[2025-11-18 16:09:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G20, skipping alter.
+[2025-11-18 16:09:22] [INFO] 3004_a_MultiProcess_CSV_to_hex: G5 processing complete
+[2025-11-18 16:09:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J27
+[2025-11-18 16:09:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J27, skipping alter.
+[2025-11-18 16:09:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G6
+[2025-11-18 16:09:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G6, skipping alter.
+[2025-11-18 16:09:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: J38 processing complete
+[2025-11-18 16:09:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J39
+[2025-11-18 16:09:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J39, skipping alter.
+[2025-11-18 16:09:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: G20 processing complete
+[2025-11-18 16:09:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: H28 processing complete
+[2025-11-18 16:10:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G21
+[2025-11-18 16:10:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G21, skipping alter.
+[2025-11-18 16:10:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H29
+[2025-11-18 16:10:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H29, skipping alter.
+[2025-11-18 16:10:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: I39 processing complete
+[2025-11-18 16:10:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: I27 processing complete
+[2025-11-18 16:10:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: H4 processing complete
+[2025-11-18 16:10:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I4
+[2025-11-18 16:10:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I4, skipping alter.
+[2025-11-18 16:10:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I28
+[2025-11-18 16:10:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I28, skipping alter.
+[2025-11-18 16:10:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H5
+[2025-11-18 16:10:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H5, skipping alter.
+[2025-11-18 16:10:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: G29 processing complete
+[2025-11-18 16:10:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: F32 processing complete
+[2025-11-18 16:10:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G3
+[2025-11-18 16:10:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G3, skipping alter.
+[2025-11-18 16:10:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F33
+[2025-11-18 16:10:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F33, skipping alter.
+[2025-11-18 16:10:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: J27 processing complete
+[2025-11-18 16:10:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J28
+[2025-11-18 16:10:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J28, skipping alter.
+[2025-11-18 16:10:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: G6 processing complete
+[2025-11-18 16:10:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: J39 processing complete
+[2025-11-18 16:11:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G7
+[2025-11-18 16:11:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G7, skipping alter.
+[2025-11-18 16:11:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J4
+[2025-11-18 16:11:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J4, skipping alter.
+[2025-11-18 16:11:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: G21 processing complete
+[2025-11-18 16:11:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: H29 processing complete
+[2025-11-18 16:11:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G22
+[2025-11-18 16:11:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G22, skipping alter.
+[2025-11-18 16:11:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H3
+[2025-11-18 16:11:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H3, skipping alter.
+[2025-11-18 16:11:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: I4 processing complete
+[2025-11-18 16:11:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: I28 processing complete
+[2025-11-18 16:11:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: H5 processing complete
+[2025-11-18 16:11:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I40
+[2025-11-18 16:11:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I40, skipping alter.
+[2025-11-18 16:11:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I29
+[2025-11-18 16:11:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I29, skipping alter.
+[2025-11-18 16:11:49] [INFO] 3004_a_MultiProcess_CSV_to_hex: I40 processing complete
+[2025-11-18 16:11:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: G3 processing complete
+[2025-11-18 16:11:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H6
+[2025-11-18 16:11:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H6, skipping alter.
+[2025-11-18 16:11:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I5
+[2025-11-18 16:11:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I5, skipping alter.
+[2025-11-18 16:12:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: F33 processing complete
+[2025-11-18 16:12:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G30
+[2025-11-18 16:12:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G30, skipping alter.
+[2025-11-18 16:12:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F34
+[2025-11-18 16:12:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F34, skipping alter.
+[2025-11-18 16:12:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: J28 processing complete
+[2025-11-18 16:12:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J29
+[2025-11-18 16:12:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J29, skipping alter.
+[2025-11-18 16:12:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: J4 processing complete
+[2025-11-18 16:12:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: G7 processing complete
+[2025-11-18 16:12:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J40
+[2025-11-18 16:12:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J40, skipping alter.
+[2025-11-18 16:12:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G8
+[2025-11-18 16:12:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G8, skipping alter.
+[2025-11-18 16:12:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: J40 processing complete
+[2025-11-18 16:12:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J5
+[2025-11-18 16:12:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J5, skipping alter.
+[2025-11-18 16:12:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: H3 processing complete
+[2025-11-18 16:12:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: G22 processing complete
+[2025-11-18 16:13:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H30
+[2025-11-18 16:13:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H30, skipping alter.
+[2025-11-18 16:13:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K23
+[2025-11-18 16:13:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K23, skipping alter.
+[2025-11-18 16:13:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: I29 processing complete
+[2025-11-18 16:13:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: H6 processing complete
+[2025-11-18 16:13:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: I5 processing complete
+[2025-11-18 16:13:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I3
+[2025-11-18 16:13:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I3, skipping alter.
+[2025-11-18 16:13:22] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H7
+[2025-11-18 16:13:22] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H7, skipping alter.
+[2025-11-18 16:13:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I6
+[2025-11-18 16:13:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I6, skipping alter.
+[2025-11-18 16:13:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: G30 processing complete
+[2025-11-18 16:13:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: F34 processing complete
+[2025-11-18 16:13:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G31
+[2025-11-18 16:13:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G31, skipping alter.
+[2025-11-18 16:13:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: G8 processing complete
+[2025-11-18 16:13:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F35
+[2025-11-18 16:13:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F35, skipping alter.
+[2025-11-18 16:13:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: J29 processing complete
+[2025-11-18 16:13:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G9
+[2025-11-18 16:13:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G9, skipping alter.
+[2025-11-18 16:13:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J3
+[2025-11-18 16:13:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J3, skipping alter.
+[2025-11-18 16:13:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: G9 processing complete
+[2025-11-18 16:14:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H20
+[2025-11-18 16:14:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H20, skipping alter.
+[2025-11-18 16:14:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: J5 processing complete
+[2025-11-18 16:14:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J6
+[2025-11-18 16:14:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J6, skipping alter.
+[2025-11-18 16:14:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: I3 processing complete
+[2025-11-18 16:14:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: K23 processing complete
+[2025-11-18 16:14:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: H30 processing complete
+[2025-11-18 16:14:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I30
+[2025-11-18 16:14:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I30, skipping alter.
+[2025-11-18 16:14:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K24
+[2025-11-18 16:14:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K24, skipping alter.
+[2025-11-18 16:14:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: H20 processing complete
+[2025-11-18 16:14:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: J3 processing complete
+[2025-11-18 16:14:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H31
+[2025-11-18 16:14:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H31, skipping alter.
+[2025-11-18 16:14:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: H7 processing complete
+[2025-11-18 16:14:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: I6 processing complete
+[2025-11-18 16:14:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H21
+[2025-11-18 16:14:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H21, skipping alter.
+[2025-11-18 16:14:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J30
+[2025-11-18 16:14:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J30, skipping alter.
+[2025-11-18 16:14:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H8
+[2025-11-18 16:14:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H8, skipping alter.
+[2025-11-18 16:14:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I7
+[2025-11-18 16:14:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I7, skipping alter.
+[2025-11-18 16:14:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: G31 processing complete
+[2025-11-18 16:14:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: H8 processing complete
+[2025-11-18 16:14:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G32
+[2025-11-18 16:14:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G32, skipping alter.
+[2025-11-18 16:14:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I20
+[2025-11-18 16:14:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I20, skipping alter.
+[2025-11-18 16:15:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: F35 processing complete
+[2025-11-18 16:15:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F36
+[2025-11-18 16:15:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F36, skipping alter.
+[2025-11-18 16:15:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: I20 processing complete
+[2025-11-18 16:15:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: J6 processing complete
+[2025-11-18 16:15:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: I7 processing complete
+[2025-11-18 16:15:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I21
+[2025-11-18 16:15:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I21, skipping alter.
+[2025-11-18 16:15:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J7
+[2025-11-18 16:15:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J7, skipping alter.
+[2025-11-18 16:15:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J20
+[2025-11-18 16:15:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J20, skipping alter.
+[2025-11-18 16:15:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: I30 processing complete
+[2025-11-18 16:15:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: K24 processing complete
+[2025-11-18 16:15:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: H31 processing complete
+[2025-11-18 16:16:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I31
+[2025-11-18 16:16:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I31, skipping alter.
+[2025-11-18 16:16:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K25
+[2025-11-18 16:16:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K25, skipping alter.
+[2025-11-18 16:16:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H32
+[2025-11-18 16:16:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H32, skipping alter.
+[2025-11-18 16:16:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: J7 processing complete
+[2025-11-18 16:16:09] [INFO] 3004_a_MultiProcess_CSV_to_hex: H21 processing complete
+[2025-11-18 16:16:09] [INFO] 3004_a_MultiProcess_CSV_to_hex: J30 processing complete
+[2025-11-18 16:16:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K20
+[2025-11-18 16:16:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K20, skipping alter.
+[2025-11-18 16:16:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: J20 processing complete
+[2025-11-18 16:16:17] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H22
+[2025-11-18 16:16:17] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H22, skipping alter.
+[2025-11-18 16:16:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J31
+[2025-11-18 16:16:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J31, skipping alter.
+[2025-11-18 16:16:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: G32 processing complete
+[2025-11-18 16:16:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J21
+[2025-11-18 16:16:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J21, skipping alter.
+[2025-11-18 16:16:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G33
+[2025-11-18 16:16:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G33, skipping alter.
+[2025-11-18 16:16:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: F36 processing complete
+[2025-11-18 16:16:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: K20 processing complete
+[2025-11-18 16:16:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing F37
+[2025-11-18 16:16:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in F37, skipping alter.
+[2025-11-18 16:16:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K21
+[2025-11-18 16:16:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K21, skipping alter.
+[2025-11-18 16:17:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: I21 processing complete
+[2025-11-18 16:17:17] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I22
+[2025-11-18 16:17:17] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I22, skipping alter.
+[2025-11-18 16:17:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: I31 processing complete
+[2025-11-18 16:17:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: K25 processing complete
+[2025-11-18 16:17:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: H32 processing complete
+[2025-11-18 16:17:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I32
+[2025-11-18 16:17:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I32, skipping alter.
+[2025-11-18 16:17:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K26
+[2025-11-18 16:17:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K26, skipping alter.
+[2025-11-18 16:17:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H33
+[2025-11-18 16:17:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H33, skipping alter.
+[2025-11-18 16:17:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: H22 processing complete
+[2025-11-18 16:17:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: J31 processing complete
+[2025-11-18 16:17:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: J21 processing complete
+[2025-11-18 16:17:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K35
+[2025-11-18 16:17:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K35, skipping alter.
+[2025-11-18 16:17:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J32
+[2025-11-18 16:17:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J32, skipping alter.
+[2025-11-18 16:17:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: G33 processing complete
+[2025-11-18 16:17:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J22
+[2025-11-18 16:17:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J22, skipping alter.
+[2025-11-18 16:18:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing G34
+[2025-11-18 16:18:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in G34, skipping alter.
+[2025-11-18 16:18:05] [INFO] 3004_a_MultiProcess_CSV_to_hex: K21 processing complete
+[2025-11-18 16:18:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: F37 processing complete
+[2025-11-18 16:18:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K22
+[2025-11-18 16:18:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K22, skipping alter.
+[2025-11-18 16:18:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L24
+[2025-11-18 16:18:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L24, skipping alter.
+[2025-11-18 16:18:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: I22 processing complete
+[2025-11-18 16:18:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L36
+[2025-11-18 16:18:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L36, skipping alter.
+[2025-11-18 16:18:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: I32 processing complete
+[2025-11-18 16:19:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: H33 processing complete
+[2025-11-18 16:19:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: K26 processing complete
+[2025-11-18 16:19:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I33
+[2025-11-18 16:19:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I33, skipping alter.
+[2025-11-18 16:19:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing H34
+[2025-11-18 16:19:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in H34, skipping alter.
+[2025-11-18 16:19:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K27
+[2025-11-18 16:19:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K27, skipping alter.
+[2025-11-18 16:19:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: J22 processing complete
+[2025-11-18 16:19:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: J32 processing complete
+[2025-11-18 16:19:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: K35 processing complete
+[2025-11-18 16:19:22] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M23
+[2025-11-18 16:19:22] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M23, skipping alter.
+[2025-11-18 16:19:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J33
+[2025-11-18 16:19:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J33, skipping alter.
+[2025-11-18 16:19:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K36
+[2025-11-18 16:19:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K36, skipping alter.
+[2025-11-18 16:19:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: G34 processing complete
+[2025-11-18 16:19:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M35
+[2025-11-18 16:19:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M35, skipping alter.
+[2025-11-18 16:19:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: K22 processing complete
+[2025-11-18 16:19:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: L24 processing complete
+[2025-11-18 16:19:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N22
+[2025-11-18 16:19:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N22, skipping alter.
+[2025-11-18 16:19:49] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L25
+[2025-11-18 16:19:49] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L25, skipping alter.
+[2025-11-18 16:20:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: L36 processing complete
+[2025-11-18 16:20:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L37
+[2025-11-18 16:20:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L37, skipping alter.
+[2025-11-18 16:20:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: I33 processing complete
+[2025-11-18 16:20:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: K27 processing complete
+[2025-11-18 16:20:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: H34 processing complete
+[2025-11-18 16:20:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing I34
+[2025-11-18 16:20:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in I34, skipping alter.
+[2025-11-18 16:20:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K28
+[2025-11-18 16:20:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K28, skipping alter.
+[2025-11-18 16:20:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N35
+[2025-11-18 16:20:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N35, skipping alter.
+[2025-11-18 16:20:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: M23 processing complete
+[2025-11-18 16:20:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: K36 processing complete
+[2025-11-18 16:20:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: J33 processing complete
+[2025-11-18 16:20:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M24
+[2025-11-18 16:20:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M24, skipping alter.
+[2025-11-18 16:20:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K37
+[2025-11-18 16:20:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K37, skipping alter.
+[2025-11-18 16:20:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing J34
+[2025-11-18 16:20:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in J34, skipping alter.
+[2025-11-18 16:20:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: M35 processing complete
+[2025-11-18 16:21:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M36
+[2025-11-18 16:21:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M36, skipping alter.
+[2025-11-18 16:21:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: L25 processing complete
+[2025-11-18 16:21:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: N22 processing complete
+[2025-11-18 16:21:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L26
+[2025-11-18 16:21:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L26, skipping alter.
+[2025-11-18 16:21:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N23
+[2025-11-18 16:21:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N23, skipping alter.
+[2025-11-18 16:21:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: L37 processing complete
+[2025-11-18 16:21:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L38
+[2025-11-18 16:21:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L38, skipping alter.
+[2025-11-18 16:21:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: I34 processing complete
+[2025-11-18 16:22:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: K28 processing complete
+[2025-11-18 16:22:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: N35 processing complete
+[2025-11-18 16:22:05] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O23
+[2025-11-18 16:22:05] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O23, skipping alter.
+[2025-11-18 16:22:09] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K29
+[2025-11-18 16:22:09] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K29, skipping alter.
+[2025-11-18 16:22:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: M24 processing complete
+[2025-11-18 16:22:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N36
+[2025-11-18 16:22:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N36, skipping alter.
+[2025-11-18 16:22:17] [INFO] 3004_a_MultiProcess_CSV_to_hex: K37 processing complete
+[2025-11-18 16:22:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: J34 processing complete
+[2025-11-18 16:22:22] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M25
+[2025-11-18 16:22:22] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M25, skipping alter.
+[2025-11-18 16:22:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: M36 processing complete
+[2025-11-18 16:22:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K38
+[2025-11-18 16:22:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K38, skipping alter.
+[2025-11-18 16:22:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O36
+[2025-11-18 16:22:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O36, skipping alter.
+[2025-11-18 16:22:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M37
+[2025-11-18 16:22:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M37, skipping alter.
+[2025-11-18 16:22:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: N23 processing complete
+[2025-11-18 16:22:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: L26 processing complete
+[2025-11-18 16:22:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N24
+[2025-11-18 16:22:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N24, skipping alter.
+[2025-11-18 16:22:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L27
+[2025-11-18 16:22:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L27, skipping alter.
+[2025-11-18 16:23:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: L38 processing complete
+[2025-11-18 16:23:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L39
+[2025-11-18 16:23:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L39, skipping alter.
+[2025-11-18 16:23:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: O23 processing complete
+[2025-11-18 16:23:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: K29 processing complete
+[2025-11-18 16:23:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: N36 processing complete
+[2025-11-18 16:23:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K3
+[2025-11-18 16:23:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K3, skipping alter.
+[2025-11-18 16:23:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O24
+[2025-11-18 16:23:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O24, skipping alter.
+[2025-11-18 16:23:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N37
+[2025-11-18 16:23:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N37, skipping alter.
+[2025-11-18 16:23:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: M25 processing complete
+[2025-11-18 16:23:49] [INFO] 3004_a_MultiProcess_CSV_to_hex: K38 processing complete
+[2025-11-18 16:23:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: O36 processing complete
+[2025-11-18 16:23:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M26
+[2025-11-18 16:23:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M26, skipping alter.
+[2025-11-18 16:23:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: L39 processing complete
+[2025-11-18 16:23:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: M37 processing complete
+[2025-11-18 16:23:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K39
+[2025-11-18 16:23:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K39, skipping alter.
+[2025-11-18 16:24:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O37
+[2025-11-18 16:24:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O37, skipping alter.
+[2025-11-18 16:24:05] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L4
+[2025-11-18 16:24:05] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L4, skipping alter.
+[2025-11-18 16:24:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M38
+[2025-11-18 16:24:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M38, skipping alter.
+[2025-11-18 16:24:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: K3 processing complete
+[2025-11-18 16:24:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: L27 processing complete
+[2025-11-18 16:24:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K30
+[2025-11-18 16:24:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K30, skipping alter.
+[2025-11-18 16:24:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: N24 processing complete
+[2025-11-18 16:24:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L28
+[2025-11-18 16:24:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L28, skipping alter.
+[2025-11-18 16:24:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N25
+[2025-11-18 16:24:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N25, skipping alter.
+[2025-11-18 16:24:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: K39 processing complete
+[2025-11-18 16:24:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K4
+[2025-11-18 16:24:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K4, skipping alter.
+[2025-11-18 16:25:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: O24 processing complete
+[2025-11-18 16:25:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: N37 processing complete
+[2025-11-18 16:25:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O25
+[2025-11-18 16:25:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O25, skipping alter.
+[2025-11-18 16:25:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N38
+[2025-11-18 16:25:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N38, skipping alter.
+[2025-11-18 16:25:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: M26 processing complete
+[2025-11-18 16:25:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: O37 processing complete
+[2025-11-18 16:25:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M27
+[2025-11-18 16:25:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M27, skipping alter.
+[2025-11-18 16:25:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: L4 processing complete
+[2025-11-18 16:25:28] [INFO] 3004_a_MultiProcess_CSV_to_hex: M38 processing complete
+[2025-11-18 16:25:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O38
+[2025-11-18 16:25:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O38, skipping alter.
+[2025-11-18 16:25:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: K30 processing complete
+[2025-11-18 16:25:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L40
+[2025-11-18 16:25:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L40, skipping alter.
+[2025-11-18 16:25:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M39
+[2025-11-18 16:25:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M39, skipping alter.
+[2025-11-18 16:25:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: L40 processing complete
+[2025-11-18 16:25:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: L28 processing complete
+[2025-11-18 16:25:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K31
+[2025-11-18 16:25:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K31, skipping alter.
+[2025-11-18 16:25:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L5
+[2025-11-18 16:25:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L5, skipping alter.
+[2025-11-18 16:25:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: N25 processing complete
+[2025-11-18 16:25:49] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L29
+[2025-11-18 16:25:49] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L29, skipping alter.
+[2025-11-18 16:25:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N26
+[2025-11-18 16:25:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N26, skipping alter.
+[2025-11-18 16:26:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: K4 processing complete
+[2025-11-18 16:26:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K5
+[2025-11-18 16:26:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K5, skipping alter.
+[2025-11-18 16:26:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: M39 processing complete
+[2025-11-18 16:26:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M4
+[2025-11-18 16:26:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M4, skipping alter.
+[2025-11-18 16:26:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: O25 processing complete
+[2025-11-18 16:26:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: N38 processing complete
+[2025-11-18 16:26:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O26
+[2025-11-18 16:26:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O26, skipping alter.
+[2025-11-18 16:26:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N39
+[2025-11-18 16:26:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N39, skipping alter.
+[2025-11-18 16:26:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: O38 processing complete
+[2025-11-18 16:26:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: M27 processing complete
+[2025-11-18 16:26:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O39
+[2025-11-18 16:26:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O39, skipping alter.
+[2025-11-18 16:26:49] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M28
+[2025-11-18 16:26:49] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M28, skipping alter.
+[2025-11-18 16:27:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: K31 processing complete
+[2025-11-18 16:27:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: O39 processing complete
+[2025-11-18 16:27:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: L5 processing complete
+[2025-11-18 16:27:09] [INFO] 3004_a_MultiProcess_CSV_to_hex: L29 processing complete
+[2025-11-18 16:27:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K32
+[2025-11-18 16:27:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K32, skipping alter.
+[2025-11-18 16:27:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O7
+[2025-11-18 16:27:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O7, skipping alter.
+[2025-11-18 16:27:17] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L6
+[2025-11-18 16:27:17] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L6, skipping alter.
+[2025-11-18 16:27:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L3
+[2025-11-18 16:27:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L3, skipping alter.
+[2025-11-18 16:27:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: N39 processing complete
+[2025-11-18 16:27:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: N26 processing complete
+[2025-11-18 16:27:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: M4 processing complete
+[2025-11-18 16:27:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N4
+[2025-11-18 16:27:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N4, skipping alter.
+[2025-11-18 16:27:28] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N27
+[2025-11-18 16:27:28] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N27, skipping alter.
+[2025-11-18 16:27:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M5
+[2025-11-18 16:27:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M5, skipping alter.
+[2025-11-18 16:27:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: K5 processing complete
+[2025-11-18 16:27:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: L3 processing complete
+[2025-11-18 16:27:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: N4 processing complete
+[2025-11-18 16:27:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: O7 processing complete
+[2025-11-18 16:27:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K6
+[2025-11-18 16:27:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K6, skipping alter.
+[2025-11-18 16:27:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L30
+[2025-11-18 16:27:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L30, skipping alter.
+[2025-11-18 16:27:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N5
+[2025-11-18 16:27:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N5, skipping alter.
+[2025-11-18 16:27:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O8
+[2025-11-18 16:27:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O8, skipping alter.
+[2025-11-18 16:28:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: L6 processing complete
+[2025-11-18 16:28:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: O26 processing complete
+[2025-11-18 16:28:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: M28 processing complete
+[2025-11-18 16:28:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L7
+[2025-11-18 16:28:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L7, skipping alter.
+[2025-11-18 16:28:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O27
+[2025-11-18 16:28:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O27, skipping alter.
+[2025-11-18 16:28:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: N5 processing complete
+[2025-11-18 16:28:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M29
+[2025-11-18 16:28:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M29, skipping alter.
+[2025-11-18 16:28:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N7
+[2025-11-18 16:28:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N7, skipping alter.
+[2025-11-18 16:28:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: K32 processing complete
+[2025-11-18 16:28:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K33
+[2025-11-18 16:28:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K33, skipping alter.
+[2025-11-18 16:28:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: N27 processing complete
+[2025-11-18 16:28:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: N7 processing complete
+[2025-11-18 16:28:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: M5 processing complete
+[2025-11-18 16:28:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N28
+[2025-11-18 16:28:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N28, skipping alter.
+[2025-11-18 16:28:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N8
+[2025-11-18 16:28:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N8, skipping alter.
+[2025-11-18 16:29:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M6
+[2025-11-18 16:29:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M6, skipping alter.
+[2025-11-18 16:29:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: L30 processing complete
+[2025-11-18 16:29:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: K6 processing complete
+[2025-11-18 16:29:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: M6 processing complete
+[2025-11-18 16:29:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L31
+[2025-11-18 16:29:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L31, skipping alter.
+[2025-11-18 16:29:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: L7 processing complete
+[2025-11-18 16:29:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K7
+[2025-11-18 16:29:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K7, skipping alter.
+[2025-11-18 16:29:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M7
+[2025-11-18 16:29:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M7, skipping alter.
+[2025-11-18 16:29:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: O8 processing complete
+[2025-11-18 16:29:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L8
+[2025-11-18 16:29:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L8, skipping alter.
+[2025-11-18 16:29:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O9
+[2025-11-18 16:29:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O9, skipping alter.
+[2025-11-18 16:29:28] [INFO] 3004_a_MultiProcess_CSV_to_hex: O27 processing complete
+[2025-11-18 16:29:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: M29 processing complete
+[2025-11-18 16:29:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O28
+[2025-11-18 16:29:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O28, skipping alter.
+[2025-11-18 16:29:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: K7 processing complete
+[2025-11-18 16:29:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M3
+[2025-11-18 16:29:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M3, skipping alter.
+[2025-11-18 16:29:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: M7 processing complete
+[2025-11-18 16:29:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L20
+[2025-11-18 16:29:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L20, skipping alter.
+[2025-11-18 16:29:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: M3 processing complete
+[2025-11-18 16:29:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M8
+[2025-11-18 16:29:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M8, skipping alter.
+[2025-11-18 16:30:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: K33 processing complete
+[2025-11-18 16:30:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M30
+[2025-11-18 16:30:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M30, skipping alter.
+[2025-11-18 16:30:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: L8 processing complete
+[2025-11-18 16:30:05] [INFO] 3004_a_MultiProcess_CSV_to_hex: O9 processing complete
+[2025-11-18 16:30:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing K34
+[2025-11-18 16:30:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in K34, skipping alter.
+[2025-11-18 16:30:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: L20 processing complete
+[2025-11-18 16:30:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M20
+[2025-11-18 16:30:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M20, skipping alter.
+[2025-11-18 16:30:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: N28 processing complete
+[2025-11-18 16:30:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P17
+[2025-11-18 16:30:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P17, skipping alter.
+[2025-11-18 16:30:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: N8 processing complete
+[2025-11-18 16:30:17] [INFO] 3004_a_MultiProcess_CSV_to_hex: P17 processing complete
+[2025-11-18 16:30:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L21
+[2025-11-18 16:30:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L21, skipping alter.
+[2025-11-18 16:30:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N29
+[2025-11-18 16:30:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N29, skipping alter.
+[2025-11-18 16:30:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N9
+[2025-11-18 16:30:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N9, skipping alter.
+[2025-11-18 16:30:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P18
+[2025-11-18 16:30:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P18, skipping alter.
+[2025-11-18 16:30:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: L31 processing complete
+[2025-11-18 16:30:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: M20 processing complete
+[2025-11-18 16:30:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L32
+[2025-11-18 16:30:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L32, skipping alter.
+[2025-11-18 16:30:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: P18 processing complete
+[2025-11-18 16:30:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M21
+[2025-11-18 16:30:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M21, skipping alter.
+[2025-11-18 16:30:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P19
+[2025-11-18 16:30:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P19, skipping alter.
+[2025-11-18 16:30:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: P19 processing complete
+[2025-11-18 16:30:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: O28 processing complete
+[2025-11-18 16:31:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P20
+[2025-11-18 16:31:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P20, skipping alter.
+[2025-11-18 16:31:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O29
+[2025-11-18 16:31:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O29, skipping alter.
+[2025-11-18 16:31:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: M8 processing complete
+[2025-11-18 16:31:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: N9 processing complete
+[2025-11-18 16:31:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M9
+[2025-11-18 16:31:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M9, skipping alter.
+[2025-11-18 16:31:17] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O20
+[2025-11-18 16:31:17] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O20, skipping alter.
+[2025-11-18 16:31:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: M30 processing complete
+[2025-11-18 16:31:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: M9 processing complete
+[2025-11-18 16:31:28] [INFO] 3004_a_MultiProcess_CSV_to_hex: O20 processing complete
+[2025-11-18 16:31:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: K34 processing complete
+[2025-11-18 16:31:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M31
+[2025-11-18 16:31:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M31, skipping alter.
+[2025-11-18 16:31:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: P20 processing complete
+[2025-11-18 16:31:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N20
+[2025-11-18 16:31:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N20, skipping alter.
+[2025-11-18 16:31:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O21
+[2025-11-18 16:31:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O21, skipping alter.
+[2025-11-18 16:31:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: L21 processing complete
+[2025-11-18 16:31:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: N29 processing complete
+[2025-11-18 16:31:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P23
+[2025-11-18 16:31:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P23, skipping alter.
+[2025-11-18 16:31:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P21
+[2025-11-18 16:31:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P21, skipping alter.
+[2025-11-18 16:31:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L22
+[2025-11-18 16:31:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L22, skipping alter.
+[2025-11-18 16:31:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N30
+[2025-11-18 16:31:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N30, skipping alter.
+[2025-11-18 16:31:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: N20 processing complete
+[2025-11-18 16:31:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: L32 processing complete
+[2025-11-18 16:31:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: M21 processing complete
+[2025-11-18 16:31:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N21
+[2025-11-18 16:31:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N21, skipping alter.
+[2025-11-18 16:32:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L33
+[2025-11-18 16:32:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L33, skipping alter.
+[2025-11-18 16:32:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M22
+[2025-11-18 16:32:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M22, skipping alter.
+[2025-11-18 16:32:22] [INFO] 3004_a_MultiProcess_CSV_to_hex: P21 processing complete
+[2025-11-18 16:32:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: O29 processing complete
+[2025-11-18 16:32:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: O21 processing complete
+[2025-11-18 16:32:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P22
+[2025-11-18 16:32:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P22, skipping alter.
+[2025-11-18 16:32:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O30
+[2025-11-18 16:32:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O30, skipping alter.
+[2025-11-18 16:32:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O22
+[2025-11-18 16:32:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O22, skipping alter.
+[2025-11-18 16:32:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: M31 processing complete
+[2025-11-18 16:33:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M32
+[2025-11-18 16:33:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M32, skipping alter.
+[2025-11-18 16:33:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: P23 processing complete
+[2025-11-18 16:33:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: L22 processing complete
+[2025-11-18 16:33:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: N30 processing complete
+[2025-11-18 16:33:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P24
+[2025-11-18 16:33:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P24, skipping alter.
+[2025-11-18 16:33:17] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L23
+[2025-11-18 16:33:17] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L23, skipping alter.
+[2025-11-18 16:33:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N31
+[2025-11-18 16:33:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N31, skipping alter.
+[2025-11-18 16:33:22] [INFO] 3004_a_MultiProcess_CSV_to_hex: N21 processing complete
+[2025-11-18 16:33:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: L33 processing complete
+[2025-11-18 16:33:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P36
+[2025-11-18 16:33:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P36, skipping alter.
+[2025-11-18 16:33:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: M22 processing complete
+[2025-11-18 16:33:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L34
+[2025-11-18 16:33:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L34, skipping alter.
+[2025-11-18 16:33:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: P22 processing complete
+[2025-11-18 16:33:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q24
+[2025-11-18 16:33:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q24, skipping alter.
+[2025-11-18 16:33:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q37
+[2025-11-18 16:33:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q37, skipping alter.
+[2025-11-18 16:33:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: O30 processing complete
+[2025-11-18 16:34:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: O22 processing complete
+[2025-11-18 16:34:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O31
+[2025-11-18 16:34:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O31, skipping alter.
+[2025-11-18 16:34:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R26
+[2025-11-18 16:34:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R26, skipping alter.
+[2025-11-18 16:34:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: M32 processing complete
+[2025-11-18 16:34:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M33
+[2025-11-18 16:34:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M33, skipping alter.
+[2025-11-18 16:34:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q37 processing complete
+[2025-11-18 16:34:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: P24 processing complete
+[2025-11-18 16:34:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: L23 processing complete
+[2025-11-18 16:34:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q7
+[2025-11-18 16:34:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q7, skipping alter.
+[2025-11-18 16:34:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: N31 processing complete
+[2025-11-18 16:34:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P25
+[2025-11-18 16:34:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P25, skipping alter.
+[2025-11-18 16:34:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R8
+[2025-11-18 16:34:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R8, skipping alter.
+[2025-11-18 16:34:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: P36 processing complete
+[2025-11-18 16:34:49] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N32
+[2025-11-18 16:34:49] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N32, skipping alter.
+[2025-11-18 16:34:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: L34 processing complete
+[2025-11-18 16:34:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P37
+[2025-11-18 16:34:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P37, skipping alter.
+[2025-11-18 16:35:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q24 processing complete
+[2025-11-18 16:35:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q7 processing complete
+[2025-11-18 16:35:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing L35
+[2025-11-18 16:35:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in L35, skipping alter.
+[2025-11-18 16:35:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q25
+[2025-11-18 16:35:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q25, skipping alter.
+[2025-11-18 16:35:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q8
+[2025-11-18 16:35:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q8, skipping alter.
+[2025-11-18 16:35:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: O31 processing complete
+[2025-11-18 16:35:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: R26 processing complete
+[2025-11-18 16:35:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O32
+[2025-11-18 16:35:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O32, skipping alter.
+[2025-11-18 16:35:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: M33 processing complete
+[2025-11-18 16:35:49] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R27
+[2025-11-18 16:35:49] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R27, skipping alter.
+[2025-11-18 16:35:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing M34
+[2025-11-18 16:35:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in M34, skipping alter.
+[2025-11-18 16:36:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: R8 processing complete
+[2025-11-18 16:36:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: P25 processing complete
+[2025-11-18 16:36:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: N32 processing complete
+[2025-11-18 16:36:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: P37 processing complete
+[2025-11-18 16:36:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R9
+[2025-11-18 16:36:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R9, skipping alter.
+[2025-11-18 16:36:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P26
+[2025-11-18 16:36:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P26, skipping alter.
+[2025-11-18 16:36:17] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N33
+[2025-11-18 16:36:17] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N33, skipping alter.
+[2025-11-18 16:36:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P38
+[2025-11-18 16:36:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P38, skipping alter.
+[2025-11-18 16:36:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: L35 processing complete
+[2025-11-18 16:36:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: P38 processing complete
+[2025-11-18 16:36:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S29
+[2025-11-18 16:36:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S29, skipping alter.
+[2025-11-18 16:36:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q8 processing complete
+[2025-11-18 16:36:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q25 processing complete
+[2025-11-18 16:36:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P7
+[2025-11-18 16:36:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P7, skipping alter.
+[2025-11-18 16:36:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q9
+[2025-11-18 16:36:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q9, skipping alter.
+[2025-11-18 16:36:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q26
+[2025-11-18 16:36:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q26, skipping alter.
+[2025-11-18 16:37:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: O32 processing complete
+[2025-11-18 16:37:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: R9 processing complete
+[2025-11-18 16:37:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: P7 processing complete
+[2025-11-18 16:37:09] [INFO] 3004_a_MultiProcess_CSV_to_hex: R27 processing complete
+[2025-11-18 16:37:09] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O33
+[2025-11-18 16:37:09] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O33, skipping alter.
+[2025-11-18 16:37:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S17
+[2025-11-18 16:37:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S17, skipping alter.
+[2025-11-18 16:37:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: M34 processing complete
+[2025-11-18 16:37:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P8
+[2025-11-18 16:37:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P8, skipping alter.
+[2025-11-18 16:37:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R28
+[2025-11-18 16:37:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R28, skipping alter.
+[2025-11-18 16:37:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing T19
+[2025-11-18 16:37:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in T19, skipping alter.
+[2025-11-18 16:37:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: S17 processing complete
+[2025-11-18 16:37:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q9 processing complete
+[2025-11-18 16:37:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: N33 processing complete
+[2025-11-18 16:37:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S18
+[2025-11-18 16:37:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S18, skipping alter.
+[2025-11-18 16:37:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: P26 processing complete
+[2025-11-18 16:37:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R17
+[2025-11-18 16:37:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R17, skipping alter.
+[2025-11-18 16:37:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing N34
+[2025-11-18 16:37:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in N34, skipping alter.
+[2025-11-18 16:37:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: R17 processing complete
+[2025-11-18 16:37:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: T19 processing complete
+[2025-11-18 16:37:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P27
+[2025-11-18 16:37:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P27, skipping alter.
+[2025-11-18 16:37:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: S29 processing complete
+[2025-11-18 16:37:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing T25
+[2025-11-18 16:37:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in T25, skipping alter.
+[2025-11-18 16:37:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R18
+[2025-11-18 16:37:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R18, skipping alter.
+[2025-11-18 16:37:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S30
+[2025-11-18 16:37:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S30, skipping alter.
+[2025-11-18 16:38:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: T25 processing complete
+[2025-11-18 16:38:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q26 processing complete
+[2025-11-18 16:38:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing T27
+[2025-11-18 16:38:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in T27, skipping alter.
+[2025-11-18 16:38:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q27
+[2025-11-18 16:38:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q27, skipping alter.
+[2025-11-18 16:38:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: T27 processing complete
+[2025-11-18 16:38:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: O33 processing complete
+[2025-11-18 16:38:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing T28
+[2025-11-18 16:38:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in T28, skipping alter.
+[2025-11-18 16:38:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: P8 processing complete
+[2025-11-18 16:38:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: R28 processing complete
+[2025-11-18 16:38:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O34
+[2025-11-18 16:38:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O34, skipping alter.
+[2025-11-18 16:38:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P9
+[2025-11-18 16:38:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P9, skipping alter.
+[2025-11-18 16:38:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R29
+[2025-11-18 16:38:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R29, skipping alter.
+[2025-11-18 16:38:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: S18 processing complete
+[2025-11-18 16:38:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S19
+[2025-11-18 16:38:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S19, skipping alter.
+[2025-11-18 16:39:01] [INFO] 3004_a_MultiProcess_CSV_to_hex: N34 processing complete
+[2025-11-18 16:39:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: P27 processing complete
+[2025-11-18 16:39:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: R18 processing complete
+[2025-11-18 16:39:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing U16
+[2025-11-18 16:39:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in U16, skipping alter.
+[2025-11-18 16:39:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P28
+[2025-11-18 16:39:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P28, skipping alter.
+[2025-11-18 16:39:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: S30 processing complete
+[2025-11-18 16:39:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R19
+[2025-11-18 16:39:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R19, skipping alter.
+[2025-11-18 16:39:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: U16 processing complete
+[2025-11-18 16:39:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S31
+[2025-11-18 16:39:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S31, skipping alter.
+[2025-11-18 16:39:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: R29 processing complete
+[2025-11-18 16:39:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q27 processing complete
+[2025-11-18 16:39:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing U17
+[2025-11-18 16:39:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in U17, skipping alter.
+[2025-11-18 16:39:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R30
+[2025-11-18 16:39:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R30, skipping alter.
+[2025-11-18 16:39:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q28
+[2025-11-18 16:39:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q28, skipping alter.
+[2025-11-18 16:39:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: T28 processing complete
+[2025-11-18 16:39:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: P9 processing complete
+[2025-11-18 16:39:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q17
+[2025-11-18 16:39:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q17, skipping alter.
+[2025-11-18 16:39:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing T29
+[2025-11-18 16:39:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in T29, skipping alter.
+[2025-11-18 16:39:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: O34 processing complete
+[2025-11-18 16:39:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: S19 processing complete
+[2025-11-18 16:40:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q17 processing complete
+[2025-11-18 16:40:05] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing O35
+[2025-11-18 16:40:05] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in O35, skipping alter.
+[2025-11-18 16:40:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S20
+[2025-11-18 16:40:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S20, skipping alter.
+[2025-11-18 16:40:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q18
+[2025-11-18 16:40:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q18, skipping alter.
+[2025-11-18 16:40:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: P28 processing complete
+[2025-11-18 16:40:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: R19 processing complete
+[2025-11-18 16:40:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P29
+[2025-11-18 16:40:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P29, skipping alter.
+[2025-11-18 16:40:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: S20 processing complete
+[2025-11-18 16:40:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: S31 processing complete
+[2025-11-18 16:40:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R20
+[2025-11-18 16:40:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R20, skipping alter.
+[2025-11-18 16:40:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: U17 processing complete
+[2025-11-18 16:40:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S21
+[2025-11-18 16:40:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S21, skipping alter.
+[2025-11-18 16:40:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S32
+[2025-11-18 16:40:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S32, skipping alter.
+[2025-11-18 16:40:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: R30 processing complete
+[2025-11-18 16:40:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing U18
+[2025-11-18 16:40:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in U18, skipping alter.
+[2025-11-18 16:40:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q28 processing complete
+[2025-11-18 16:41:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: S21 processing complete
+[2025-11-18 16:41:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R31
+[2025-11-18 16:41:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R31, skipping alter.
+[2025-11-18 16:41:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q29
+[2025-11-18 16:41:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q29, skipping alter.
+[2025-11-18 16:41:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S23
+[2025-11-18 16:41:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S23, skipping alter.
+[2025-11-18 16:41:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: T29 processing complete
+[2025-11-18 16:41:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q18 processing complete
+[2025-11-18 16:41:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing T30
+[2025-11-18 16:41:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in T30, skipping alter.
+[2025-11-18 16:41:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: O35 processing complete
+[2025-11-18 16:41:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: S23 processing complete
+[2025-11-18 16:41:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q19
+[2025-11-18 16:41:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q19, skipping alter.
+[2025-11-18 16:41:30] [INFO] 3004_a_MultiProcess_CSV_to_hex: U18 processing complete
+[2025-11-18 16:41:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing V18
+[2025-11-18 16:41:32] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in V18, skipping alter.
+[2025-11-18 16:41:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S24
+[2025-11-18 16:41:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S24, skipping alter.
+[2025-11-18 16:41:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing U19
+[2025-11-18 16:41:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in U19, skipping alter.
+[2025-11-18 16:41:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: V18 processing complete
+[2025-11-18 16:41:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: U19 processing complete
+[2025-11-18 16:41:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing V29
+[2025-11-18 16:41:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in V29, skipping alter.
+[2025-11-18 16:41:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: P29 processing complete
+[2025-11-18 16:41:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: R20 processing complete
+[2025-11-18 16:42:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing U28
+[2025-11-18 16:42:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in U28, skipping alter.
+[2025-11-18 16:42:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P30
+[2025-11-18 16:42:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P30, skipping alter.
+[2025-11-18 16:42:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R21
+[2025-11-18 16:42:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R21, skipping alter.
+[2025-11-18 16:42:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: S32 processing complete
+[2025-11-18 16:42:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: V29 processing complete
+[2025-11-18 16:42:17] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q29 processing complete
+[2025-11-18 16:42:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: R31 processing complete
+[2025-11-18 16:42:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S33
+[2025-11-18 16:42:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S33, skipping alter.
+[2025-11-18 16:42:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing V30
+[2025-11-18 16:42:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in V30, skipping alter.
+[2025-11-18 16:42:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: U28 processing complete
+[2025-11-18 16:42:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q30
+[2025-11-18 16:42:26] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q30, skipping alter.
+[2025-11-18 16:42:28] [INFO] 3004_a_MultiProcess_CSV_to_hex: S24 processing complete
+[2025-11-18 16:42:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R32
+[2025-11-18 16:42:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R32, skipping alter.
+[2025-11-18 16:42:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing U29
+[2025-11-18 16:42:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in U29, skipping alter.
+[2025-11-18 16:42:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: T30 processing complete
+[2025-11-18 16:42:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S25
+[2025-11-18 16:42:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S25, skipping alter.
+[2025-11-18 16:42:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q19 processing complete
+[2025-11-18 16:42:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing T31
+[2025-11-18 16:42:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in T31, skipping alter.
+[2025-11-18 16:42:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: V30 processing complete
+[2025-11-18 16:42:49] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q20
+[2025-11-18 16:42:49] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q20, skipping alter.
+[2025-11-18 16:42:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing V8
+[2025-11-18 16:42:55] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in V8, skipping alter.
+[2025-11-18 16:43:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: V8 processing complete
+[2025-11-18 16:43:08] [INFO] 3004_a_MultiProcess_CSV_to_hex: R21 processing complete
+[2025-11-18 16:43:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing V9
+[2025-11-18 16:43:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in V9, skipping alter.
+[2025-11-18 16:43:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R22
+[2025-11-18 16:43:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R22, skipping alter.
+[2025-11-18 16:43:20] [INFO] 3004_a_MultiProcess_CSV_to_hex: V9 processing complete
+[2025-11-18 16:43:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: P30 processing complete
+[2025-11-18 16:43:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P31
+[2025-11-18 16:43:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P31, skipping alter.
+[2025-11-18 16:43:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: S33 processing complete
+[2025-11-18 16:43:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: S25 processing complete
+[2025-11-18 16:43:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S26
+[2025-11-18 16:43:44] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S26, skipping alter.
+[2025-11-18 16:43:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q30 processing complete
+[2025-11-18 16:43:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S34
+[2025-11-18 16:43:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S34, skipping alter.
+[2025-11-18 16:43:46] [INFO] 3004_a_MultiProcess_CSV_to_hex: R32 processing complete
+[2025-11-18 16:43:49] [INFO] 3004_a_MultiProcess_CSV_to_hex: R22 processing complete
+[2025-11-18 16:43:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: U29 processing complete
+[2025-11-18 16:43:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q31
+[2025-11-18 16:43:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q31, skipping alter.
+[2025-11-18 16:43:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R33
+[2025-11-18 16:43:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R33, skipping alter.
+[2025-11-18 16:43:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R23
+[2025-11-18 16:43:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R23, skipping alter.
+[2025-11-18 16:43:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing U30
+[2025-11-18 16:43:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in U30, skipping alter.
+[2025-11-18 16:44:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: T31 processing complete
+[2025-11-18 16:44:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q20 processing complete
+[2025-11-18 16:44:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing T32
+[2025-11-18 16:44:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in T32, skipping alter.
+[2025-11-18 16:44:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q21
+[2025-11-18 16:44:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q21, skipping alter.
+[2025-11-18 16:44:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: S26 processing complete
+[2025-11-18 16:44:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S27
+[2025-11-18 16:44:35] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S27, skipping alter.
+[2025-11-18 16:44:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: P31 processing complete
+[2025-11-18 16:44:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: S34 processing complete
+[2025-11-18 16:44:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: T32 processing complete
+[2025-11-18 16:44:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P32
+[2025-11-18 16:44:54] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P32, skipping alter.
+[2025-11-18 16:44:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S35
+[2025-11-18 16:44:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S35, skipping alter.
+[2025-11-18 16:44:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing T33
+[2025-11-18 16:44:59] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in T33, skipping alter.
+[2025-11-18 16:45:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: R23 processing complete
+[2025-11-18 16:45:05] [INFO] 3004_a_MultiProcess_CSV_to_hex: T33 processing complete
+[2025-11-18 16:45:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q31 processing complete
+[2025-11-18 16:45:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: R33 processing complete
+[2025-11-18 16:45:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R24
+[2025-11-18 16:45:11] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R24, skipping alter.
+[2025-11-18 16:45:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing T34
+[2025-11-18 16:45:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in T34, skipping alter.
+[2025-11-18 16:45:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: U30 processing complete
+[2025-11-18 16:45:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q32
+[2025-11-18 16:45:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q32, skipping alter.
+[2025-11-18 16:45:16] [INFO] 3004_a_MultiProcess_CSV_to_hex: T34 processing complete
+[2025-11-18 16:45:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R34
+[2025-11-18 16:45:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R34, skipping alter.
+[2025-11-18 16:45:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing U31
+[2025-11-18 16:45:23] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in U31, skipping alter.
+[2025-11-18 16:45:24] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q21 processing complete
+[2025-11-18 16:45:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing T7
+[2025-11-18 16:45:25] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in T7, skipping alter.
+[2025-11-18 16:45:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q22
+[2025-11-18 16:45:33] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q22, skipping alter.
+[2025-11-18 16:45:43] [INFO] 3004_a_MultiProcess_CSV_to_hex: S35 processing complete
+[2025-11-18 16:45:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: S27 processing complete
+[2025-11-18 16:45:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S36
+[2025-11-18 16:45:48] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S36, skipping alter.
+[2025-11-18 16:45:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: S36 processing complete
+[2025-11-18 16:45:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S28
+[2025-11-18 16:45:56] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S28, skipping alter.
+[2025-11-18 16:46:05] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S7
+[2025-11-18 16:46:05] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S7, skipping alter.
+[2025-11-18 16:46:07] [INFO] 3004_a_MultiProcess_CSV_to_hex: U31 processing complete
+[2025-11-18 16:46:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: P32 processing complete
+[2025-11-18 16:46:12] [INFO] 3004_a_MultiProcess_CSV_to_hex: T7 processing complete
+[2025-11-18 16:46:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing U32
+[2025-11-18 16:46:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in U32, skipping alter.
+[2025-11-18 16:46:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P33
+[2025-11-18 16:46:18] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P33, skipping alter.
+[2025-11-18 16:46:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: U32 processing complete
+[2025-11-18 16:46:22] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing T8
+[2025-11-18 16:46:22] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in T8, skipping alter.
+[2025-11-18 16:46:27] [INFO] 3004_a_MultiProcess_CSV_to_hex: R24 processing complete
+[2025-11-18 16:46:28] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing U8
+[2025-11-18 16:46:28] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in U8, skipping alter.
+[2025-11-18 16:46:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q32 processing complete
+[2025-11-18 16:46:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: R34 processing complete
+[2025-11-18 16:46:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R25
+[2025-11-18 16:46:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R25, skipping alter.
+[2025-11-18 16:46:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q33
+[2025-11-18 16:46:37] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q33, skipping alter.
+[2025-11-18 16:46:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R35
+[2025-11-18 16:46:40] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R35, skipping alter.
+[2025-11-18 16:46:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q22 processing complete
+[2025-11-18 16:46:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q23
+[2025-11-18 16:46:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q23, skipping alter.
+[2025-11-18 16:47:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: U8 processing complete
+[2025-11-18 16:47:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: S28 processing complete
+[2025-11-18 16:47:13] [INFO] 3004_a_MultiProcess_CSV_to_hex: S7 processing complete
+[2025-11-18 16:47:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing U9
+[2025-11-18 16:47:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in U9, skipping alter.
+[2025-11-18 16:47:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S8
+[2025-11-18 16:47:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S8, skipping alter.
+[2025-11-18 16:47:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: P33 processing complete
+[2025-11-18 16:47:36] [INFO] 3004_a_MultiProcess_CSV_to_hex: T8 processing complete
+[2025-11-18 16:47:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P34
+[2025-11-18 16:47:42] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P34, skipping alter.
+[2025-11-18 16:47:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing T9
+[2025-11-18 16:47:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in T9, skipping alter.
+[2025-11-18 16:47:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q33 processing complete
+[2025-11-18 16:47:51] [INFO] 3004_a_MultiProcess_CSV_to_hex: R25 processing complete
+[2025-11-18 16:47:53] [INFO] 3004_a_MultiProcess_CSV_to_hex: R35 processing complete
+[2025-11-18 16:47:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q34
+[2025-11-18 16:47:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q34, skipping alter.
+[2025-11-18 16:48:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R36
+[2025-11-18 16:48:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R36, skipping alter.
+[2025-11-18 16:48:00] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q23 processing complete
+[2025-11-18 16:48:02] [INFO] 3004_a_MultiProcess_CSV_to_hex: U9 processing complete
+[2025-11-18 16:48:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing V16
+[2025-11-18 16:48:06] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in V16, skipping alter.
+[2025-11-18 16:48:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: V16 processing complete
+[2025-11-18 16:48:28] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing V17
+[2025-11-18 16:48:28] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in V17, skipping alter.
+[2025-11-18 16:48:31] [INFO] 3004_a_MultiProcess_CSV_to_hex: S8 processing complete
+[2025-11-18 16:48:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing S9
+[2025-11-18 16:48:38] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in S9, skipping alter.
+[2025-11-18 16:48:39] [INFO] 3004_a_MultiProcess_CSV_to_hex: T9 processing complete
+[2025-11-18 16:48:41] [INFO] 3004_a_MultiProcess_CSV_to_hex: R36 processing complete
+[2025-11-18 16:48:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: P34 processing complete
+[2025-11-18 16:48:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R37
+[2025-11-18 16:48:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R37, skipping alter.
+[2025-11-18 16:48:47] [INFO] 3004_a_MultiProcess_CSV_to_hex: R37 processing complete
+[2025-11-18 16:48:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing P35
+[2025-11-18 16:48:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in P35, skipping alter.
+[2025-11-18 16:48:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing R7
+[2025-11-18 16:48:52] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in R7, skipping alter.
+[2025-11-18 16:48:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q34 processing complete
+[2025-11-18 16:49:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q35
+[2025-11-18 16:49:03] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q35, skipping alter.
+[2025-11-18 16:49:14] [INFO] 3004_a_MultiProcess_CSV_to_hex: V17 processing complete
+[2025-11-18 16:49:19] [INFO] 3004_a_MultiProcess_CSV_to_hex: R7 processing complete
+[2025-11-18 16:49:29] [INFO] 3004_a_MultiProcess_CSV_to_hex: S9 processing complete
+[2025-11-18 16:49:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing T17
+[2025-11-18 16:49:34] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in T17, skipping alter.
+[2025-11-18 16:49:45] [INFO] 3004_a_MultiProcess_CSV_to_hex: P35 processing complete
+[2025-11-18 16:49:58] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q35 processing complete
+[2025-11-18 16:50:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing Q36
+[2025-11-18 16:50:04] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in Q36, skipping alter.
+[2025-11-18 16:50:10] [INFO] 3004_a_MultiProcess_CSV_to_hex: T17 processing complete
+[2025-11-18 16:50:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: >>> Processing T18
+[2025-11-18 16:50:15] [INFO] 3004_a_MultiProcess_CSV_to_hex: 'HEX_ID' field not found in T18, skipping alter.
+[2025-11-18 16:50:50] [INFO] 3004_a_MultiProcess_CSV_to_hex: T18 processing complete
+[2025-11-18 16:50:57] [INFO] 3004_a_MultiProcess_CSV_to_hex: Q36 processing complete
+[2025-11-18 16:51:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: Multi-processing completed successfully.
+[2025-11-18 16:51:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: Total time to finish: 66.94 mins
+[2025-11-18 16:51:21] [INFO] 3004_a_MultiProcess_CSV_to_hex: 
+All grids processed successfully.
