@@ -1,0 +1,5 @@
+[2025-11-20 20:44:39] [INFO] 3007_merge_hex_grids: Started merging hex grids
+[2025-11-20 20:44:39] [INFO] 3007_merge_hex_grids: Merging 512 grids into S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\hex_orig\AMI_AREA_H_Hexagon.gdb\AMI_AREA_H_Hexagon_merged
+[2025-11-20 21:57:44] [INFO] 3007_merge_hex_grids: Merge completed: S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\hex_orig\AMI_AREA_H_Hexagon.gdb\AMI_AREA_H_Hexagon_merged
+[2025-11-20 21:57:45] [INFO] 3007_merge_hex_grids: Altered field HEXID to HEX_ID in S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\hex_orig\AMI_AREA_H_Hexagon.gdb\AMI_AREA_H_Hexagon_merged
+[2025-11-20 21:57:45] [INFO] 3007_merge_hex_grids: it takes 73.11 minutes to finish the script
