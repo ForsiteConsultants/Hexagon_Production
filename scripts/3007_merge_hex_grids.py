@@ -17,7 +17,7 @@ from shared.logger_utils import get_logger
 
 logger = get_logger('3007_merge_hex_grids')
 
-yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\Hexagon_Production\shared\config.ymll'
+yml_file = r'S:\1845\6\03_MappingAnalysisData\03_Scripts\08_Hex_Production\Hexagon_Production\shared\config.yml'
 config = read_yaml_config(yml_file)
 hex_root = config['root_folder']
 hex_output_folder = config['hex_output_folder']
@@ -32,7 +32,7 @@ csv_folder = config['csv_folder']
 # #######################
 
 # grids to be processed:
-df = pd.read_csv(os.path.join(csv_folder, 'MultiProcessing_files_input_AREA_G.csv'))
+df = pd.read_csv(os.path.join(csv_folder, 'MultiProcessing_files_input_AREA_H.csv'))
 grid_list = df.GRID.tolist()
 grid_list.sort()
 # grid_list = ['AA_12', 'AA_13']
