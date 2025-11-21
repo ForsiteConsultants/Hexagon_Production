@@ -8,35 +8,39 @@ from shared.logger_utils import get_logger
 
 logger = get_logger('3006_final_edits_add_FMU')
 
-yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\Hexagon_Production\shared\config.yml'
+yml_file = r'S:\1845\6\03_MappingAnalysisData\03_Scripts\08_Hex_Production\Hexagon_Production\shared\config.yml'
 config = read_yaml_config(yml_file)
 csv_folder = config['csv_folder']
 
 # update NSR and FMU
-nsr_fc = r'S:\1845\5\03_MappingAnalysisData\02_Data\01_Base_Data\basedata.gdb\Area_G_AVI_Combined_UseForStage2'
-hex_orig = r'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\hex_orig\AMI_AREA_G_Hexagon.gdb\AMI_AREA_G_Hexagon'
-work_gdb = r'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Production\working.gdb'
+fmu_fc = r'S:\1845\Client_Admin\Project_Wide_Data\AOI_ABCDEFGH.gdb\AOI_H'
+hex_orig = r'S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\02_Process\hex_orig\AMI_AREA_H_Hexagon.gdb\AMI_AREA_H_Hexagon'
+work_gdb = r'S:\1845\6\03_MappingAnalysisData\02_Data\06_Hexagon_Production\working.gdb'
 
-fmu_fc = r'S:\1845\Client_Admin\Project_Wide_Data\AOI_ABCDEFGH.gdb\AOI_G'
 
 ######################
 #####################
 # # PART 1
+if not arcpy.Exists(work_gdb):
+    folder = os.path.dirname(work_gdb)
+    gdb_name = os.path.basename(work_gdb)
+    arcpy.CreateFileGDB_management(folder, gdb_name)
+    logger.info(f"Created geodatabase: {work_gdb}")
 arcpy.env.workspace = work_gdb
 arcpy.env.overwriteOutput = True
 
 
 # cleanup old intermediates
-for name in ('nsr_AreaG','fmu_AreaG','hex_nsr','hex_fmu'):
-    if arcpy.Exists(name):
-        arcpy.Delete_management(name)
+# for name in ('nsr_AreaG','fmu_AreaG','hex_nsr','hex_fmu'):
+#     if arcpy.Exists(name):
+#         arcpy.Delete_management(name)
 
 # dissolve inputs
-arcpy.Dissolve_management(fmu_fc, 'fmu_AreaG', ['FMU'], multi_part=False)
-
+arcpy.Dissolve_management(fmu_fc, 'fmu_AreaH', ['FMU'], multi_part=False)
+logger.info('Finished dissolve, starting intersect')
 # intersect each with the hexagon
-arcpy.PairwiseIntersect_analysis(['fmu_AreaG', hex_orig], 'hex_fmu')
-
+arcpy.PairwiseIntersect_analysis(['fmu_AreaH', hex_orig], 'hex_fmu')
+logger.info('Finished intersect with FMU')
 # helper to summarize one field
 def summarize(field_name):
     tbl      = f'hex_{field_name.lower()}'
@@ -87,13 +91,13 @@ def add_info_to_hex(hex_grid_folder, grid, df_dict):
 
 
 #######
-config = read_yaml_config()
+config = read_yaml_config(yml_file)
 hex_root = config['root_folder']
 hex_output_folder = config['hex_output_folder']
 hex_grid_folder = os.path.join(hex_output_folder, 'GRID')
 
 # grids to be processes
-df = pd.read_csv(os.path.join(csv_folder, 'MultiProcessing_files_input_AREA_G.csv'))
+df = pd.read_csv(os.path.join(csv_folder, 'MultiProcessing_files_input_AREA_H.csv'))
 grid_list = df.GRID.tolist()
 grid_list.sort()
 # grid_list = grid_list[:4]
@@ -112,5 +116,5 @@ if __name__ == '__main__':
         pool.starmap(add_info_to_hex, args)
 
         
-End = time.time()
-logger.info(f"it takes {round((End - Start)/60, 2)} minutes to finish the script")
+    End = time.time()
+    logger.info(f"it takes {round((End - Start)/60, 2)} minutes to finish the script")
