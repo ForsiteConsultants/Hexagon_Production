@@ -38,11 +38,11 @@ def create_QC_maps(area, col, aprx_file, field):
 
 Start = time.time()
 
-area = 'AMI_AREA_G'
+area = 'AMI_AREA_H'
 col = 'Voxel Sequential'
 field = 'TOTAL_BA_HA'
-aprx_file = r"S:\1845\5\03_MappingAnalysisData\01_ArcMapProjects\AreaG_ITI_QC_FINAL_numeric_template.aprx"
-output_root = r'S:\1845\5\03_MappingAnalysisData\04_Plotfiles\QC_HEX'
+aprx_file = r"S:\1845\6\03_MappingAnalysisData\01_ArcMapProjects\AreaH_ITI_QC_FINAL_numeric_template.aprx"
+output_root = r'S:\1845\6\03_MappingAnalysisData\04_Plotfiles\QC_HEX'
 
 field_list = ['Crown_Closure', 'CON_AV_DIAM', 'DEC_AV_DIAM', 'CON_LOREY_HT', 'DEC_LOREY_HT',
               'CON_DWB_FACTOR', 'DEC_DWB_FACTOR', 'TOP_HEIGHT', 'MAX_HT_ITI',  
