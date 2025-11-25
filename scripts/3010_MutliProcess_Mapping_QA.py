@@ -27,7 +27,7 @@ def create_QC_maps(area, col, aprx_file, field):
         legend = lyt.listElements("LEGEND_ELEMENT", "Legend")[0]
         legend.addItem(lyr)
         try:
-            os.makedirs(os.path.join(output_root, area, "jpeg"))
+            os.makedirs(os.path.join(output_root, area, "jpeg"), exist_ok=True)
         except Exception as e:
             logger.warning(f"Could not create jpeg folder: {e}")
         lyt.exportToJPEG(os.path.join(output_root, area, "jpeg", field+".jpg"), resolution=100)
