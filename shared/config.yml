@@ -13,6 +13,11 @@ hex_output_folder: 'S:\1845\5\03_MappingAnalysisData\02_Data\06_Hexagon_Producti
 hex_gdb: 'AMI_AREA_G_Hexagon.gdb'
 hex_fc: 'AMI_AREA_G_Hexagon'
 hex_id: 'HEXID'
+hex_grid_shps: ''  # unzipped hex shapefiles
+exptgrid_file: ''  # 4km grid shapefile
+chm: ''  # CHM raster
+grid_list: ''  # list of grids to process
+merged_fc: ''  # final FC output to produce
 
 
 # ITI related
