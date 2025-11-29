@@ -419,3 +419,92 @@ IndexError: list index out of range
 [2025-11-24 22:39:28] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: sn_pct
 [2025-11-24 22:39:29] [INFO] 3010_MultiProcess_Mapping_QA: Multi-processing completed successfully.
 [2025-11-24 22:39:29] [INFO] 3010_MultiProcess_Mapping_QA: 137.58 mins to finish
+[2025-11-25 15:03:39] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: Crown_Closure
+[2025-11-25 15:03:43] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_DWB_FACTOR
+[2025-11-25 15:32:39] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: DEC_DWB_FACTOR
+[2025-11-25 15:32:39] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: TOP_HEIGHT
+[2025-11-25 19:10:24] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: Crown_Closure
+[2025-11-25 19:10:24] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: CON_AV_DIAM
+[2025-11-25 19:28:48] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: CON_AV_DIAM
+[2025-11-25 19:28:48] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_AV_DIAM
+[2025-11-25 19:47:07] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: DEC_AV_DIAM
+[2025-11-25 19:47:07] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: CON_LOREY_HT
+[2025-11-25 20:05:39] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: CON_LOREY_HT
+[2025-11-25 20:05:39] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_LOREY_HT
+[2025-11-25 20:24:09] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: DEC_LOREY_HT
+[2025-11-25 20:24:09] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: CON_DWB_FACTOR
+[2025-11-25 20:49:48] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: CON_DWB_FACTOR
+[2025-11-25 20:49:48] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: CON_NET_VOL_TREE
+[2025-11-25 23:15:02] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: TOP_HEIGHT
+[2025-11-25 23:15:02] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: MAX_HT_ITI
+[2025-11-26 01:20:59] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: CON_NET_VOL_TREE
+[2025-11-26 01:20:59] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: TOTAL_SPH_GT_5m
+[2025-11-26 05:59:58] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: MAX_HT_ITI
+[2025-11-26 05:59:58] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_NET_VOL_TREE
+[2025-11-26 08:32:33] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: TOTAL_SPH_GT_5m
+[2025-11-26 08:32:33] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: CON_SPH_GT_5m
+[2025-11-26 09:34:16] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: DEC_NET_VOL_TREE
+[2025-11-26 09:34:16] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: CON_STEM_PER_M3
+[2025-11-26 12:35:49] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: CON_SPH_GT_5m
+[2025-11-26 12:35:49] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_SPH_GT_5m
+[2025-11-26 13:27:00] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: CON_STEM_PER_M3
+[2025-11-26 13:27:00] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_STEM_PER_M3
+[2025-11-26 15:46:47] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: DEC_SPH_GT_5m
+[2025-11-26 15:46:47] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: TOTAL_MERCH_SPH
+[2025-11-26 16:35:34] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: DEC_STEM_PER_M3
+[2025-11-26 16:35:34] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_MERCH_SPH
+[2025-11-26 18:53:58] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: DEC_MERCH_SPH
+[2025-11-26 18:53:58] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: TOTAL_GVOL_PRED_HA
+[2025-11-26 21:09:59] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: TOTAL_MERCH_SPH
+[2025-11-26 21:10:00] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: CON_MERCH_SPH
+[2025-11-27 00:11:16] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: CON_MERCH_SPH
+[2025-11-27 00:11:16] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_GMVOL_PRED_HA
+[2025-11-27 03:06:38] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: TOTAL_GVOL_PRED_HA
+[2025-11-27 03:06:38] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: CON_GVOL_PRED_HA
+[2025-11-27 04:01:10] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: DEC_GMVOL_PRED_HA
+[2025-11-27 04:01:10] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: TOTAL_NMVOL_PRED_HA
+[2025-11-27 08:57:15] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: CON_GVOL_PRED_HA
+[2025-11-27 08:57:15] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_GVOL_PRED_HA
+[2025-11-27 11:51:32] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: TOTAL_NMVOL_PRED_HA
+[2025-11-27 11:51:32] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: CON_NMVOL_PRED_HA
+[2025-11-27 14:51:03] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: DEC_GVOL_PRED_HA
+[2025-11-27 14:51:03] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: TOTAL_GMVOL_PRED_HA
+[2025-11-27 18:18:26] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: CON_NMVOL_PRED_HA
+[2025-11-27 18:18:26] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_NMVOL_PRED_HA
+[2025-11-27 22:54:46] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: DEC_NMVOL_PRED_HA
+[2025-11-27 22:54:46] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: TOTAL_BA_HA
+[2025-11-27 23:20:56] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: TOTAL_GMVOL_PRED_HA
+[2025-11-27 23:20:56] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: CON_GMVOL_PRED_HA
+[2025-11-28 05:08:45] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: CON_GMVOL_PRED_HA
+[2025-11-28 05:08:45] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_BA_HA
+[2025-11-28 08:03:30] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: TOTAL_BA_HA
+[2025-11-28 08:03:30] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: CON_BA_HA
+[2025-11-28 10:35:09] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: DEC_BA_HA
+[2025-11-28 10:35:09] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: TOTAL_MBA_HA
+[2025-11-28 14:47:57] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: CON_BA_HA
+[2025-11-28 14:47:57] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: aw_pct
+[2025-11-28 17:34:30] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: aw_pct
+[2025-11-28 17:34:30] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: bw_pct
+[2025-11-28 18:55:48] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: bw_pct
+[2025-11-28 18:55:48] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: pb_pct
+[2025-11-28 20:04:42] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: TOTAL_MBA_HA
+[2025-11-28 20:04:42] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: CON_MBA_HA
+[2025-11-28 20:20:32] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: pb_pct
+[2025-11-28 20:20:32] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: fb_pct
+[2025-11-28 21:19:10] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: fb_pct
+[2025-11-28 21:19:10] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: pl_pct
+[2025-11-28 23:12:50] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: pl_pct
+[2025-11-28 23:12:50] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: lt_pct
+[2025-11-29 00:05:38] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: lt_pct
+[2025-11-29 00:05:38] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: sw_pct
+[2025-11-29 03:05:52] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: sw_pct
+[2025-11-29 03:05:52] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: sb_pct
+[2025-11-29 04:23:56] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: sb_pct
+[2025-11-29 04:23:56] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: dp_pct
+[2025-11-29 04:37:51] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: CON_MBA_HA
+[2025-11-29 04:37:51] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_MBA_HA
+[2025-11-29 04:57:02] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: dp_pct
+[2025-11-29 04:57:02] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: sn_pct
+[2025-11-29 06:14:01] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: sn_pct
+[2025-11-29 11:06:20] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: DEC_MBA_HA
+[2025-11-29 11:06:20] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: CON_QMD
