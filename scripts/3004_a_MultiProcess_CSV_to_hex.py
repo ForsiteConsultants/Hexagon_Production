@@ -36,8 +36,9 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
 
     hex_fc = os.path.join(hex_grid_folder, 'HEX_' + grid + '.gdb', grid)
 
-    gen_list = [hexid, 'TOTAL_TREES', 'TOP_HEIGHT', 'GROSS_VOL_HA',	'GROSS_MVOL_HA', 'NETMVOL_HA',
-            'BA_ha', 'MBA_ha', 'MERCH_TREES', 'TOTAL_SPH', 'MERCH_SPH', 'DWB_FACTOR']
+    gen_list = [hexid, 'TOP_HEIGHT', 'DWB_FACTOR']
+    iti_comp_list = [hexid, 'MTPM_con', 'MTPM_dec', 'nTrees_con', 'nTrees_dec', 'GVPH_con', 'GVPH_dec', 'MVPH_con', 'MVPH_dec', 'NMVPH_con', 'NMVPH_dec',
+                     'BPH_con', 'BPH_dec', 'MBPH_con', 'MBPH_dec', 'SPH_con', 'SPH_dec', 'MSPH_con', 'MSPH_dec']
 
 
     flist = arcpy.ListFields(hex_fc)
@@ -50,8 +51,8 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
     # Read in the adjustment outputs file
 
     try:
-        hex_adj = pd.read_csv(os.path.join(csv_folder, grid, grid + "_Hex_predicted_output_v6.csv"), low_memory=False).set_index(hexid).fillna(0)
-        iti_comp = pd.read_csv(os.path.join(compiled_grids_folder, grid, 'ITI_compile_' + grid + '.csv'), usecols=[hexid, 'MTPM_con', 'MTPM_dec']).set_index(hexid)
+        hex_adj = pd.read_csv(os.path.join(csv_folder, grid, grid + "_Hex_predicted_output.csv"), low_memory=False).set_index(hexid).fillna(0)
+        iti_comp = pd.read_csv(os.path.join(compiled_grids_folder, grid, 'ITI_compile_' + grid + '.csv'), usecols=iti_comp_list).set_index(hexid).fillna(0)
     except Exception as e:
         logger.error(f"{grid} does not have ITI: {e}", exc_info=True)
         if failed_grids is not None:
@@ -72,6 +73,10 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
 
     try:
         for t in ['CON', 'DEC']:
+            #calc MERCH_TREES from ITI compile
+            iti_comp['MERCH_TREES'] = iti_comp['MSPH_' + t.lower()] / plot_multi if plot_multi > 0 else 0
+
+            # read in the  summary csv for each species group
             try:
                 hex_gen = pd.read_csv(os.path.join(compiled_grids_folder, grid, "OUTPUT_SUM_" + t + '_' + grid + ".csv"), usecols = gen_list, low_memory=False).fillna(0)
             except Exception as e:
@@ -86,14 +91,14 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
                     hex_id = row[fdic[hexid]]
                     # current_hex_id = row[fdic[hexid]]
                     # if there are any trees in CON or DEC group
-                    if hex_id in hex_gen and hex_gen[hex_id]['TOTAL_TREES'] > 0:
+                    if hex_id in hex_gen and hex_gen[hex_id]['nTrees_' + t.lower()] > 0:
                         # Dan added this because we still get partial hexagons with less than 4 tree points, this sets minimum at 4 actual trees in a hex sample area
                         # use adjusted values if meets ALL 3 conditions
                         # 1. Total trees > 9
                         # 2. Con/dec trees > 5
                         # 3. Con/dec top height > 10m
                         
-                        if hex_gen[hex_id]['TOTAL_TREES'] > spMinTrees and hex_gen[hex_id]['TOP_HEIGHT'] >= TOP_HT_THRESH and round(hex_gen[hex_id]['PRED_' + t + '_SPH_GT_5m']/plot_multi) > spMinTrees:
+                        if hex_gen[hex_id]['nTrees_' + t.lower()] > spMinTrees and hex_gen[hex_id]['TOP_HEIGHT'] >= TOP_HT_THRESH and round(hex_gen[hex_id]['PRED_' + t + '_SPH_GT_5m']/plot_multi) > spMinTrees:
                             gv = min(hex_gen[hex_id]['PRED_' + t + '_GVOL_PRED_HA'], 850)
                             tsp = min(hex_gen[hex_id]['PRED_' + t + '_SPH_GT_5m'], 8000)
                             ts = tsp/plot_multi
@@ -111,20 +116,20 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
                                 # adjust tpm
                                 
                                 if tpm < 0.5 or tpm > 20 or msp > 2000:
-                                    gmv = min(hex_gen[hex_id]['GROSS_MVOL_HA'], 800)
-                                    nmv = min(hex_gen[hex_id]['NETMVOL_HA'], 750)
-                                    msp = min(hex_gen[hex_id]['MERCH_SPH'], 2000)
+                                    gmv = min(hex_gen[hex_id]['MVPH_' + t.lower()], 800)
+                                    nmv = min(hex_gen[hex_id]['NMVPH_' + t.lower()], 750)
+                                    msp = min(hex_gen[hex_id]['MSPH_' + t.lower()], 2000)
                                     ms = hex_gen[hex_id]['MERCH_TREES']
-                                    m_baha = min(hex_gen[hex_id]['MBA_ha'], 80)
+                                    m_baha = min(hex_gen[hex_id]['MBPH_' + t.lower()], 80)
                                     # tpm = max(hex_gen[hex_id]['MTPM_' + t.lower()], 0.2)
                                     tpm = max(msp/gmv, 0.2)
 
                             else:
-                                gmv = min(hex_gen[hex_id]['GROSS_MVOL_HA'], 800)
-                                nmv = min(hex_gen[hex_id]['NETMVOL_HA'], 750)
-                                msp = min(hex_gen[hex_id]['MERCH_SPH'], 2000)
+                                gmv = min(hex_gen[hex_id]['MVPH_' + t.lower()], 800)
+                                nmv = min(hex_gen[hex_id]['NMVPH_' + t.lower()], 750)
+                                msp = min(hex_gen[hex_id]['MSPH_' + t.lower()], 2000)
                                 ms = hex_gen[hex_id]['MERCH_TREES']
-                                m_baha = min(hex_gen[hex_id]['MBA_ha'], 80)
+                                m_baha = min(hex_gen[hex_id]['MBPH_' + t.lower()], 80)
                                 # tpm = max(hex_gen[hex_id]['MTPM_' + t.lower()], 0.2)
                                 if gmv > 0:
                                     tpm = max(msp/gmv, 0.2)
@@ -132,32 +137,32 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
                                     tpm = 0
                         else:
 
-                            gv = min(hex_gen[hex_id]['GROSS_VOL_HA'], 850)
-                            gmv = min(hex_gen[hex_id]['GROSS_MVOL_HA'], 800)
-                            nmv = min(hex_gen[hex_id]['NETMVOL_HA'], 750)
-                            tsp = hex_gen[hex_id]['TOTAL_SPH']
-                            ts = hex_gen[hex_id]['TOTAL_TREES']
-                            msp = hex_gen[hex_id]['MERCH_SPH']
+                            gv = min(hex_gen[hex_id]['GVPH_' + t.lower()], 850)
+                            gmv = min(hex_gen[hex_id]['MVPH_' + t.lower()], 800)
+                            nmv = min(hex_gen[hex_id]['NMVPH_' + t.lower()], 750)
+                            tsp = hex_gen[hex_id]['SPH_' + t.lower()]
+                            ts = hex_gen[hex_id]['nTrees_' + t.lower()]
+                            msp = hex_gen[hex_id]['MSPH_' + t.lower()]
                             ms = hex_gen[hex_id]['MERCH_TREES']
-                            baha = min(hex_gen[hex_id]['BA_ha'], 85)
-                            m_baha = min(hex_gen[hex_id]['MBA_ha'], 80)
+                            baha = min(hex_gen[hex_id]['BPH_' + t.lower()], 85)
+                            m_baha = min(hex_gen[hex_id]['MBPH_' + t.lower()], 80)
                             # tpm = max(hex_gen[hex_id]['MTPM_' + t.lower()], 0.2)
                             if gmv > 0:
                                 tpm = max(msp/gmv, 0.2)
                             else:
                                 tpm = 0
 
-                        if hex_gen[hex_id]['GROSS_MVOL_HA'] > 0:
+                        if hex_gen[hex_id]['MVPH_' + t.lower()] > 0:
                             # ADJUST GROSS VOLUME
-                            vol_ratio = hex_gen[hex_id]['GROSS_VOL_HA']/hex_gen[hex_id]['GROSS_MVOL_HA']
+                            vol_ratio = hex_gen[hex_id]['GVPH_' + t.lower()]/hex_gen[hex_id]['MVPH_' + t.lower()]
                             if gmv > gv:
                                 gv = min(gmv*vol_ratio, 850)
                                 # row[fdic['OVR_GMVOL']] = 1
                                 if gv-gmv > 150:
                                     gv = min(gmv + 150, 850)
 
-                        if hex_gen[hex_id]['MERCH_SPH'] > 0:
-                            sph_ratio = hex_gen[hex_id]['TOTAL_SPH']/hex_gen[hex_id]['MERCH_SPH']
+                        if hex_gen[hex_id]['MSPH_' + t.lower()] > 0:
+                            sph_ratio = hex_gen[hex_id]['SPH_' + t.lower()]/hex_gen[hex_id]['MSPH_' + t.lower()]
                             if msp > tsp:
                                 # row[fdic['OVR_SPH']] = 1
                                 tsp = min(msp*sph_ratio, 8000)
@@ -165,8 +170,8 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
                                     tsp = min(msp+2000, 8000)
                                 ts = round(tsp/plot_multi)
 
-                        if hex_gen[hex_id]['MBA_ha'] > 0:
-                            baha_ratio = hex_gen[hex_id]['BA_ha']/hex_gen[hex_id]['MBA_ha']
+                        if hex_gen[hex_id]['MBPH_' + t.lower()] > 0:
+                            baha_ratio = hex_gen[hex_id]['BPH_' + t.lower()]/hex_gen[hex_id]['MBPH_' + t.lower()]
                             if m_baha > baha:
                                 # row[fdic['OVR_BA']] = 1
                                 baha = min(m_baha*baha_ratio, 80)
@@ -214,8 +219,9 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
         # print(">>> Processing " + grid +" " + ' WHOLE SPECIES')
         try:
             hex_all = pd.read_csv(os.path.join(compiled_grids_folder, grid, "OUTPUT_SUM_TOTAL_" + grid + ".csv")).set_index(hexid)
-            iti_compile = pd.read_csv(os.path.join(compiled_grids_folder, grid, "ITI_compile_" + grid + ".csv"), usecols=[hexid, 'BPHD', 'SPHD', 'GVPHD']).set_index(hexid)
-            hex_admin = pd.read_csv(os.path.join(compiled_grids_folder, grid, grid + "_admin_fields.csv")).set_index(hexid)
+            iti_compile = pd.read_csv(os.path.join(compiled_grids_folder, grid, "ITI_compile_" + grid + ".csv"), usecols=[hexid, 'BPHD', 'SPHD', 'GVPHD',
+                                                                                                                          'nTrees']).set_index(hexid)
+            
         except Exception as e:
             logger.warning(f"{grid} does not have ITI (whole species): {e}")
             if failed_grids is not None:
@@ -224,7 +230,7 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
             
             
         hex_all = hex_all.join(iti_compile).to_dict(orient='index')
-        hex_admin = hex_admin.to_dict(orient='index')
+        
         dead_list = []
         with arcpy.da.UpdateCursor(hex_fc, fl) as cursor:
             for row in cursor:
@@ -237,11 +243,8 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
                 for field in att_list:
                     if row[fdic[field]] is None:
                         row[fdic[field]] = 0
-                if hex_id in hex_admin:
-                    row[fdic['FMU']] = row[fdic['AOI_AREA']]
-                    row[fdic['NSRCODE']] = hex_admin[hex_id]['NSRCODE']
 
-                if hex_id in hex_all and hex_all[hex_id]["TOTAL_TREES"] > 0:            
+                if hex_id in hex_all and hex_all[hex_id]["nTrees"] > 0:            
                     # get species percentage info
                     m_s = ['', 0]
                     pp = 0
@@ -338,13 +341,13 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
 
                     row[fdic['TOP_HEIGHT']] = round(hex_all[hex_id]['TOP_HEIGHT'], 2)
                     row[fdic['MAX_HT_ITI']] = round(hex_all[hex_id]['MaxHt'], 2)
-                    try:
-                        if hex_all[hex_id]['TOP_HEIGHT'] > 17.5 and hex_all[hex_id]['T'] in decsp and hex_all[hex_id]['S'] in consp:
-                            row[fdic['Con_u_Dec']] = 'Y'  # hex_gen[hex_id][]
-                        else:
-                            row[fdic['Con_u_Dec']] = 'N'  # hex_gen[hex_id][]
-                    except:
-                        row[fdic['Con_u_Dec']] = 'N'  # hex_gen[hex_id][]
+                    # try:
+                    #     if hex_all[hex_id]['TOP_HEIGHT'] > 17.5 and hex_all[hex_id]['T'] in decsp and hex_all[hex_id]['S'] in consp:
+                    #         row[fdic['Con_u_Dec']] = 'Y'  # hex_gen[hex_id][]
+                    #     else:
+                    #         row[fdic['Con_u_Dec']] = 'N'  # hex_gen[hex_id][]
+                    # except:
+                    #     row[fdic['Con_u_Dec']] = 'N'  # hex_gen[hex_id][]
                 else:
                     row[fdic['TOTAL_GVOL_PRED_HA']] = 0
                     row[fdic['TOTAL_GMVOL_PRED_HA']] = 0
@@ -372,7 +375,7 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
                     logger.error(f"Error updating row for hex_id {hex_id}, grid {grid}: {e}")
         
         df = pd.DataFrame(dead_list, columns = [hexid, 'DEAD_BA',  'DEAD_SPH', 'DEAD_VOL', 'SPH_con', 'SPH_dec', 'BPH_con',  'BPH_dec'])
-        df.to_csv(os.path.join(csv_folder, grid, grid + '_DEAD_OUTPUT_v6.csv'), index=False)
+        df.to_csv(os.path.join(csv_folder, grid, grid + '_DEAD_OUTPUT.csv'), index=False)
 
         logger.info(f'{grid} processing complete')
     except Exception as e:
@@ -381,7 +384,7 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
             failed_grids.append(grid)
 
 # ####################################################
-yml_file = r'S:\1845\5\03_MappingAnalysisData\03_Scripts\06_HexProduction\Hexagon_Production\shared\config.yml'
+yml_file = r'S:\1845\6\03_MappingAnalysisData\03_Scripts\08_Hex_Production\Hexagon_Production\shared\config.yml'
 config = read_yaml_config(yml_file)
 hex_root = config['root_folder']
 hex_output_folder = config['hex_output_folder']
@@ -394,44 +397,44 @@ compiled_grids_folder = config['compiled_grids_folder']
 
 # grids to be processed:
 hex_grid_folder = os.path.join(hex_output_folder, 'GRID')
-df = pd.read_csv(os.path.join(csv_folder, 'MultiProcessing_files_input_AREA_G.csv'))
+df = pd.read_csv(os.path.join(csv_folder, 'MultiProcessing_files_input_AREA_H.csv'))
 grid_list = df.GRID.tolist()
 grid_list.sort()
 
 # ##################
 # ### test function
-# Start = time.time()
-# if __name__ == '__main__':
-#     manager = Manager()
-#     failed_grids = manager.list()
-#     grid = 'AB29'
-#     csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, failed_grids)
-#     End = time.time()
-
-#     print(round((End - Start)/60, 2), ' mins to finish')
-
-
-### Multiprocessing
 Start = time.time()
-
 if __name__ == '__main__':
     manager = Manager()
     failed_grids = manager.list()
-    args = [(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, failed_grids) for grid in grid_list]
-    cores = 10
-    try:
-        with Pool(processes=cores) as pool:
-            pool.starmap(csv_to_hex, args)
-        logger.info("Multi-processing completed successfully.")
-    except Exception as e:
-        logger.error(f"Multi-processing failed: {e}", exc_info=True)
-
+    grid = 'A20'
+    csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, failed_grids)
     End = time.time()
-    duration = round((End - Start)/60, 2)
-    logger.info(f"Total time to finish: {duration} mins")
-    if len(failed_grids) > 0:
-        logger.warning("\nFailed grids:")
-        for grid in set(failed_grids):
-            logger.warning(grid)
-    else:
-        logger.info("\nAll grids processed successfully.")
+
+    print(round((End - Start)/60, 2), ' mins to finish')
+
+
+### Multiprocessing
+# Start = time.time()
+
+# if __name__ == '__main__':
+#     manager = Manager()
+#     failed_grids = manager.list()
+#     args = [(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, failed_grids) for grid in grid_list]
+#     cores = 10
+#     try:
+#         with Pool(processes=cores) as pool:
+#             pool.starmap(csv_to_hex, args)
+#         logger.info("Multi-processing completed successfully.")
+#     except Exception as e:
+#         logger.error(f"Multi-processing failed: {e}", exc_info=True)
+
+#     End = time.time()
+#     duration = round((End - Start)/60, 2)
+#     logger.info(f"Total time to finish: {duration} mins")
+#     if len(failed_grids) > 0:
+#         logger.warning("\nFailed grids:")
+#         for grid in set(failed_grids):
+#             logger.warning(grid)
+#     else:
+#         logger.info("\nAll grids processed successfully.")
