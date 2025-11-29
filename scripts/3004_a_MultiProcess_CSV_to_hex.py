@@ -189,7 +189,7 @@ def csv_to_hex(hex_grid_folder, grid, compiled_grids_folder, csv_folder, hexid, 
                             row[fdic[t + '_MERCH_STEM']] = round(ms, 0)
                             row[fdic[t + '_MERCH_SPH']] = int(round(msp))
                         else:
-                            row[fdic[t + '_QMD']] = 0
+                            # row[fdic[t + '_QMD']] = 0
                             row[fdic[t + '_NET_VOL_TREE']] = 0
                             row[fdic[t + '_STEM_PER_M3']] = 0
                             row[fdic[t + '_MBA_HA']] = 0
