@@ -508,3 +508,8 @@ IndexError: list index out of range
 [2025-11-29 06:14:01] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: sn_pct
 [2025-11-29 11:06:20] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: DEC_MBA_HA
 [2025-11-29 11:06:20] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: CON_QMD
+[2025-11-29 18:23:56] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: CON_QMD
+[2025-11-29 18:23:56] [INFO] 3010_MultiProcess_Mapping_QA: Processing field: DEC_QMD
+[2025-11-30 01:36:56] [INFO] 3010_MultiProcess_Mapping_QA: Exported JPEG for field: DEC_QMD
+[2025-11-30 01:36:57] [INFO] 3010_MultiProcess_Mapping_QA: Multi-processing completed successfully.
+[2025-11-30 01:36:57] [INFO] 3010_MultiProcess_Mapping_QA: 6393.4 mins to finish
