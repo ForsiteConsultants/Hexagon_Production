@@ -30,7 +30,11 @@ HEIGHT_FIELDS = ['CON_LOREY_HT', 'DEC_LOREY_HT', 'TOP_HEIGHT', 'MAX_HT_ITI']
 SCATTERS = [
     ("TOP_HEIGHT", "TOTAL_GVOL_PRED_HA"),
     ("DEC_QMD", "DEC_GVOL_PRED_HA"),
+    ("DEC_QMD", "DEC_GMVOL_PRED_HA"),
+    ("DEC_QMD", "DEC_NMVOL_PRED_HA"),
     ("CON_QMD", "CON_GVOL_PRED_HA"),
+    ("CON_QMD", "CON_GMVOL_PRED_HA"),
+    ("CON_QMD", "CON_NMVOL_PRED_HA"),
 ]
 # ---------------------------------------------------------
 
